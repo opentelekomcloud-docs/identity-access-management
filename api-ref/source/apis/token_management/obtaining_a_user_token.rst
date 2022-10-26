@@ -103,7 +103,7 @@ Request Parameters
 
 -  Example request
 
-   The following is a sample request for obtaining a token for **user A**. The login password of the user is **``**********``** and the domain name is **domain A**. The scope of the token is **domain**.
+   The following is a sample request for obtaining a token for **user A**. The login password of the user is **\*********\*** and the domain name is **domain A**. The scope of the token is **domain**.
 
    .. code-block::
 
@@ -285,7 +285,7 @@ Response Parameters
 
 -  Example response
 
-   The following is a sample request for obtaining a token for **user A**. The login password of the user is **``**********``** and the domain name is **domain A**. The scope of the token is **domain**.
+   The following is a sample request for obtaining a token for **user A**. The login password of the user is **\*********\*** and the domain name is **domain A**. The scope of the token is **domain**.
 
    .. code-block::
 

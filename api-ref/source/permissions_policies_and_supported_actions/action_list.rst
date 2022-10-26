@@ -101,9 +101,9 @@ User Management
 +-------------------------------------------------------+------------------------------------------------------------------------------+-------------------------------------+
 | Querying the MFA Device Information of a User         | :ref:`GET /v3.0/OS-MFA/users/{user_id}/virtual-mfa-device <iam_08_0013>`     | iam:mfa:getVirtualMFADevice         |
 +-------------------------------------------------------+------------------------------------------------------------------------------+-------------------------------------+
-| Querying Login Protection Configurations of Users     | :ref:`GET  /v3.0/OS-USER/login-protects <iam_08_0014>`                       | iam:users:listUserLoginProtects     |
+| Querying Login Protection Configurations of Users     | :ref:`GET /v3.0/OS-USER/login-protects <iam_08_0014>`                        | iam:users:listUserLoginProtects     |
 +-------------------------------------------------------+------------------------------------------------------------------------------+-------------------------------------+
-| Querying the Login Protection Configuration of a User | :ref:`GET  /v3.0/OS-USER/users/{user_id}/login-protect <iam_08_0016>`        | iam:users:getUserLoginProtect       |
+| Querying the Login Protection Configuration of a User | :ref:`GET /v3.0/OS-USER/users/{user_id}/login-protect <iam_08_0016>`         | iam:users:getUserLoginProtect       |
 +-------------------------------------------------------+------------------------------------------------------------------------------+-------------------------------------+
 
 User Group Management
@@ -229,13 +229,13 @@ Agency Management
 Security Settings
 -----------------
 
-+------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------+
-| Permission                               | API                                                                                  | Action                                 |
-+==========================================+======================================================================================+========================================+
-| Querying the Password Policy             | :ref:`GET  v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy <iam_02_0024>` | iam:securitypolicies:getPasswordPolicy |
-+------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------+
-| Querying the Login Authentication Policy | :ref:`GET v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy <iam_02_0026>`     | iam:securitypolicies:getLoginPolicy    |
-+------------------------------------------+--------------------------------------------------------------------------------------+----------------------------------------+
++------------------------------------------+-------------------------------------------------------------------------------------+----------------------------------------+
+| Permission                               | API                                                                                 | Action                                 |
++==========================================+=====================================================================================+========================================+
+| Querying the Password Policy             | :ref:`GET v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy <iam_02_0024>` | iam:securitypolicies:getPasswordPolicy |
++------------------------------------------+-------------------------------------------------------------------------------------+----------------------------------------+
+| Querying the Login Authentication Policy | :ref:`GET v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy <iam_02_0026>`    | iam:securitypolicies:getLoginPolicy    |
++------------------------------------------+-------------------------------------------------------------------------------------+----------------------------------------+
 
 Federated Identity Authentication Management
 --------------------------------------------
