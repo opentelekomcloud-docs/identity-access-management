@@ -83,7 +83,7 @@ The body of a request is often sent in a structured format as specified in the *
 
 The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
 
-In the case of the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *username*, *domianname*, *\*******\** (login password), and *xxxxxxxxxxxxxxxxxx* (project ID) with the actual values. If you obtain a token using an account, ensure that you set *username* and *domianname* to the same value.
+In the case of the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *username*, *domianname*, ``********`` (login password), and *xxxxxxxxxxxxxxxxxx* (project ID) with the actual values. If you obtain a token using an account, ensure that you set *username* and *domianname* to the same value.
 
 .. note::
 
