@@ -93,7 +93,7 @@ html_static_path = ['_static']
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
-('index',
+    ('index',
      'iam-api-ref.tex',
      u'Identity and Access Management - API Reference',
      u'OpenTelekomCloud', 'manual'),
