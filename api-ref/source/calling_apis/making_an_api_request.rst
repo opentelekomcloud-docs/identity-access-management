@@ -30,7 +30,7 @@ A request URI is in the following format:
 
 .. code-block::
 
-
+   https://www.example.com/v3/auth/tokens
 
 .. note::
 
@@ -52,7 +52,7 @@ For example, in the case of the API used to obtain a user token (:ref:`Obtaining
 
 .. code-block::
 
-
+   https://www.example.com/v3/auth/tokens
 
 Request Header
 --------------
