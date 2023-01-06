@@ -36,7 +36,7 @@ A fine-grained policy consists of the policy version (the **Version** field) and
 
       Resources on which the policy takes effect.
 
-      Format: *Service name*:*Region*:*Account ID*:*Resource type*:*Resource path*. An asterisk (*) means all based on its position in the resource path.
+      Format: *Service name*:*Region*:*Account ID*:*Resource type*:*Resource path*. An asterisk (``*``) means all based on its position in the resource path.
 
    -  Condition
 
