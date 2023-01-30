@@ -37,7 +37,7 @@ Viewing IAM Audit Logs
 
    .. _iam_01_0013__fig181771925164317:
 
-   .. figure:: /_static/images/en-us_image_0000001420274829.png
+   .. figure:: /_static/images/en-us_image_0000001135554103.png
       :alt: **Figure 1** Expanding trace details
 
       **Figure 1** Expanding trace details
@@ -46,7 +46,7 @@ Viewing IAM Audit Logs
 
    .. _iam_01_0013__fig9310171012116:
 
-   .. figure:: /_static/images/en-us_image_0000001420034725.png
+   .. figure:: /_static/images/en-us_image_0274187205.png
       :alt: **Figure 2** Viewing a trace
 
       **Figure 2** Viewing a trace

@@ -12,7 +12,7 @@ Procedure
 
 #. Set the login authentication policy.
 
-   a. In the navigation pane, choose **Account Settings** > **Login Authentication Policy**.
+   a. In the navigation pane, choose **Security Settings** > **Login Authentication Policy**.
 
    b. In the **Account Lockout** area, enter the idle duration, maximum number of invalid login attempts, and lockout duration.
 
@@ -36,7 +36,7 @@ Procedure
 
 #. Set the password policy.
 
-   a. In the navigation pane, choose **Account Settings** > **Password Policy**.
+   a. In the navigation pane, choose **Security Settings** > **Password Policy**.
 
    b. In the **Password Composition & Reuse** area, do as follows:
 
@@ -59,7 +59,7 @@ Procedure
          The password must meet the following requirements:
 
          -  Must contain 6 to 32 characters.
-         -  Must contain at least two types of the following characters: uppercase letters (A to Z), lowercase letters (a to z), digits (0 to 9), spaces, and special characters (:literal:`~`!?,.:;-_'"(){}[]/<>@#$%^&*+|\\=`).
+         -  Must contain at least two types of the following: uppercase letters, lowercase letters, digits, and special characters (:literal:`~`!?,.:;-_'"(`){}[]/<>@#$%^&*+|\\= and spaces).
          -  Cannot be the username or the username spelled backwards. For example, if the username is **A12345**, the password cannot be **A12345**, **a12345**, **54321A**, or **54321a**.
          -  Cannot contain the user's mobile number or email address.
 
@@ -71,7 +71,7 @@ Procedure
 
 #. Set the ACL.
 
-   a. In the navigation pane, choose **Account Settings** > **ACL**.
+   a. In the navigation pane, choose **Security Settings** > **ACL**.
    b. On the **ACL** page, enter the allowed IP address ranges or IPv4 CIDR blocks.
 
       -  **IP Address Ranges**: only allow users to access the system using IP addresses in specified ranges.

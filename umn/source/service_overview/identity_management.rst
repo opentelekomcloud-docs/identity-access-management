@@ -15,7 +15,7 @@ A domain, also called an "account", is created upon successful registration with
 For security purposes, create a security administrator and grant them **Security Administrator** permissions to manage users and their permissions in your account.
 
 
-.. figure:: /_static/images/en-us_image_0000001369235146.png
+.. figure:: /_static/images/en-us_image_0274187193.png
    :alt: **Figure 1** Account management module
 
    **Figure 1** Account management module
@@ -26,7 +26,7 @@ User
 You or other administrators can create users for employees, systems, or applications in IAM. The users can log in to the console or access APIs using their own identity credentials (passwords and access keys).
 
 
-.. figure:: /_static/images/en-us_image_0000001369714790.png
+.. figure:: /_static/images/en-us_image_0274186863.png
    :alt: **Figure 2** Relationship between the account and users
 
    **Figure 2** Relationship between the account and users

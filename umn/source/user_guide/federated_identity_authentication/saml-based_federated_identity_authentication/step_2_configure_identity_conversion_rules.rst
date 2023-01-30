@@ -78,7 +78,7 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM conv
 
    #. If the rule is correct, click **OK** in the **Edit Rule** dialog box. Then click **OK** on the **Modify Identity Provider** page.
 
-      If a message indicating that the JSON file is incomplete is displayed, modify the statement or click \ **Cancel**\  to cancel the modifications.
+      If a message indicating that the JSON file is incomplete is displayed, modify the statement or click **Cancel** to cancel the modifications.
 
 Verifying Federated User Permissions
 ------------------------------------

@@ -7,7 +7,7 @@ Fine-Grained Policy Management
 
 -  :ref:`Fine-Grained Policies <iam_01_019>`
 -  :ref:`Policy Syntax <iam_01_0017>`
--  :ref:`Creating a Custom Policy <en-us_topic_0274187246>`
+-  :ref:`Creating a Custom Policy <iam_01_0016>`
 -  :ref:`Custom Policy Use Cases <iam_01_0600>`
 
 .. toctree::

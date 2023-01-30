@@ -40,7 +40,7 @@ Creating an Identity Provider
 Create an identity provider and configure the metadata file in IAM.
 
 #. Log in to the IAM console, and choose **Identity Providers** from the navigation pane. Then click **Create Identity Provider**.
-#. Specify the name, protocol, status, and description of the identity provider.
+#. On the displayed page, enter an identity provider name, select **SAML** for **Protocol** and **Enabled** for **Status**. Then, click **OK**.
 
    .. note::
 

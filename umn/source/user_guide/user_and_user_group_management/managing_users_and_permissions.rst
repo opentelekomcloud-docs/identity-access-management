@@ -10,7 +10,7 @@ As a security administrator, you can grant permissions to a user group and add u
 #. Create projects in a region to isolate resources.
 
 
-   .. figure:: /_static/images/en-us_image_0000001419956113.png
+   .. figure:: /_static/images/en-us_image_0274187237.png
       :alt: **Figure 1** Project isolating model
 
       **Figure 1** Project isolating model
@@ -18,7 +18,7 @@ As a security administrator, you can grant permissions to a user group and add u
 #. Plan user groups according to user responsibilities and grant the required permissions to the user groups.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369554798.png
+   .. figure:: /_static/images/en-us_image_0274186858.png
       :alt: **Figure 2** User group authorization model
 
       **Figure 2** User group authorization model
@@ -26,7 +26,7 @@ As a security administrator, you can grant permissions to a user group and add u
 #. Create users and add them to the corresponding user groups.
 
 
-   .. figure:: /_static/images/en-us_image_0000001420034721.png
+   .. figure:: /_static/images/en-us_image_0274187229.png
       :alt: **Figure 3** User authorization model
 
       **Figure 3** User authorization model

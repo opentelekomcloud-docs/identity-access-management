@@ -12,7 +12,7 @@ IAM provides the following basic functions:
    You can control user access to different projects and grant different permissions to users for the same project. For example, you can grant some users permissions to manage Object Storage Service (OBS), and grant other users only the permissions to read data from OBS.
 
 
-   .. figure:: /_static/images/en-us_image_0000001420034729.png
+   .. figure:: /_static/images/en-us_image_0274187240.png
       :alt: **Figure 1** Permissions management model
 
       **Figure 1** Permissions management model

@@ -17,7 +17,7 @@ The following is an example of how to use IAM.
 Assume that there are three user groups in your enterprise: security administrators (**admin**), developers, and testers. Each user group can contain multiple users, and a user can belong to multiple user groups.
 
 
-.. figure:: /_static/images/en-us_image_0000001420034737.png
+.. figure:: /_static/images/en-us_image_0000001088564514.png
    :alt: **Figure 1** User management model
 
    **Figure 1** User management model

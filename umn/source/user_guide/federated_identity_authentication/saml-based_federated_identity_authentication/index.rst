@@ -21,7 +21,7 @@ To implement federated identity authentication between an identity provider and 
 
    .. _iam_08_0002__fig7241863151635:
 
-   .. figure:: /_static/images/en-us_image_0000001369394890.png
+   .. figure:: /_static/images/en-us_image_0274187197.png
       :alt: **Figure 1** Metadata file exchange model
 
       **Figure 1** Metadata file exchange model
@@ -30,7 +30,7 @@ To implement federated identity authentication between an identity provider and 
 
    .. _iam_08_0002__fig43579668151728:
 
-   .. figure:: /_static/images/en-us_image_0000001419956133.png
+   .. figure:: /_static/images/en-us_image_0274187171.png
       :alt: **Figure 2** User identity conversion model
 
       **Figure 2** User identity conversion model
@@ -39,7 +39,7 @@ To implement federated identity authentication between an identity provider and 
 
    .. _iam_08_0002__fig54574848151714:
 
-   .. figure:: /_static/images/en-us_image_0000001420034741.png
+   .. figure:: /_static/images/en-us_image_0274187167.png
       :alt: **Figure 3** SSO login model
 
       **Figure 3** SSO login model
@@ -51,7 +51,7 @@ Process of Federated Identity Authentication
 
 .. _iam_08_0002__fig3771174215915:
 
-.. figure:: /_static/images/en-us_image_0000001369554818.png
+.. figure:: /_static/images/en-us_image_0274187226.png
    :alt: **Figure 4** Process of federated identity authentication
 
    **Figure 4** Process of federated identity authentication

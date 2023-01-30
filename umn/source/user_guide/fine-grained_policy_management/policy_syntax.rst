@@ -150,7 +150,7 @@ Authentication Process
 IAM authenticates users according to the permissions granted to the users. The following diagram shows the authentication process.
 
 
-.. figure:: /_static/images/en-us_image_0000001369554814.png
+.. figure:: /_static/images/en-us_image_0274187277.png
    :alt: **Figure 1** Authentication process
 
    **Figure 1** Authentication process
@@ -165,4 +165,4 @@ IAM authenticates users according to the permissions granted to the users. The f
 #. If no explicit Deny is found, the system looks for Allow permissions that would apply to the request. If the system finds an explicit Allow permission that applies, it returns a decision of Allow, and the authentication ends.
 #. If no explicit Allow permission is found, the system returns a decision of Deny, and the authentication ends.
 
-.. |image1| image:: /_static/images/en-us_image_0000001369235158.png
+.. |image1| image:: /_static/images/en-us_image_0000001180570109.png

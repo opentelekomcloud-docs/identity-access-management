@@ -28,7 +28,7 @@ Procedure
 #. Go to the **Bind Virtual MFA Device** page.
 
 
-   .. figure:: /_static/images/en-us_image_0000001420274825.png
+   .. figure:: /_static/images/en-us_image_0000001088289742.png
       :alt: **Figure 1** Binding a virtual MFA device
 
       **Figure 1** Binding a virtual MFA device

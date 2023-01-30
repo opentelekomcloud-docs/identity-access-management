@@ -1,6 +1,6 @@
-:original_name: en-us_topic_0274187246.html
+:original_name: iam_01_0016.html
 
-.. _en-us_topic_0274187246:
+.. _iam_01_0016:
 
 Creating a Custom Policy
 ========================

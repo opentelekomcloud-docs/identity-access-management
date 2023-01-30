@@ -11,7 +11,7 @@ Granting Permissions to Users
 -----------------------------
 
 
-.. figure:: /_static/images/en-us_image_0000001369714802.png
+.. figure:: /_static/images/en-us_image_0274187188.png
    :alt: **Figure 1** Authorization model
 
    **Figure 1** Authorization model
@@ -32,7 +32,7 @@ Granting Permissions to Federated Users
 You can federate external users to IAM and grant permissions to the users to access cloud resources by creating an identity provider and identity conversion rules.
 
 
-.. figure:: /_static/images/en-us_image_0000001420274845.png
+.. figure:: /_static/images/en-us_image_0274186856.png
    :alt: **Figure 2** Identity conversion of federated users
 
    **Figure 2** Identity conversion of federated users
