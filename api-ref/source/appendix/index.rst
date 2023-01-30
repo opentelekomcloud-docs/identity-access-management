@@ -15,4 +15,4 @@ Appendix
 
    status_codes
    error_codes
-   obtaining_user,_account,_user_group,_project,_and_agency_information
+   obtaining_user_account_user_group_project_and_agency_information
