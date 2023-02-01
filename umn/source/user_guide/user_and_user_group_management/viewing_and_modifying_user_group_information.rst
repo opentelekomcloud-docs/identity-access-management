@@ -49,4 +49,4 @@ Procedure
       b. In the **Available Users** area, select users you want to add to the user group.
       c. In the **Selected Users** area, remove users from the user group.
 
-.. |image1| image:: /_static/images/en-us_image_0000001369235154.png
+.. |image1| image:: /_static/images/en-us_image_0291358588.png

@@ -23,7 +23,7 @@ Without Federated Identity Authentication
    Users authenticated by the identity provider of an enterprise management system cannot access the cloud system.
 
 
-   .. figure:: /_static/images/en-us_image_0000001419956121.png
+   .. figure:: /_static/images/en-us_image_0274187218.png
       :alt: **Figure 1** User authentication model (1)
 
       **Figure 1** User authentication model (1)
@@ -37,7 +37,7 @@ Without Federated Identity Authentication
    Users have to use different accounts to log in to the enterprise management system and cloud system.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369554806.png
+   .. figure:: /_static/images/en-us_image_0274187275.png
       :alt: **Figure 2** User login model (1)
 
       **Figure 2** User login model (1)
@@ -50,7 +50,7 @@ With Federated Identity Authentication
    Users authenticated by the identity provider can access the cloud system through SSO.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369714794.png
+   .. figure:: /_static/images/en-us_image_0274186850.png
       :alt: **Figure 3** User authentication model (2)
 
       **Figure 3** User authentication model (2)
@@ -64,7 +64,7 @@ With Federated Identity Authentication
    Users can access the cloud system through the enterprise management system.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369235150.png
+   .. figure:: /_static/images/en-us_image_0274187239.png
       :alt: **Figure 4** User login model (2)
 
       **Figure 4** User login model (2)

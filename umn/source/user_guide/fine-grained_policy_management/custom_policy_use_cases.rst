@@ -37,9 +37,9 @@ Example policy denying access to CTS:
 Using a Custom Policy Along with a System-Defined Policy
 --------------------------------------------------------
 
--  Use the following method to assign permissions of the **BMS FullAccess** policy to a user but also forbid the user from creating BMSs. Create a custom policy containing the **bms:servers:create** action, for denying BMS creation, and attach both policies to the group to which the user belongs. Then, the user will be able to perform all operations on BMS except creating BMSs.
+-  Use the following method to assign permissions of the **ECS FullAccess** policy to a user but also forbid the user from deleting ECSs. Create a custom policy denying the **ecs:cloudServers:delete** action, and attach this custom policy together with the system-defined **ECS FullAccess** policy to the group to which the user belongs. Then, the user will be able to perform all operations on ECS except deleting ECSs.
 
-   Example policy denying BMS creation:
+   Example policy denying ECS deletion:
 
    .. code-block::
 
@@ -49,7 +49,7 @@ Using a Custom Policy Along with a System-Defined Policy
               {
                   "Effect": "Deny",
                   "Action": [
-                          "bms:servers:create"
+                          "ecs:cloudServers:delete"
                   ]
               }
           ]
