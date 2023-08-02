@@ -118,9 +118,6 @@ The request is successful.
 .. code-block::
 
    {
-     "id" : "",
-     "xuser_type" : "",
-     "email" : "",
      "user" : {
        "pwd_strength" : "Strong",
        "create_time" : "2020-07-08 02:19:03.0",

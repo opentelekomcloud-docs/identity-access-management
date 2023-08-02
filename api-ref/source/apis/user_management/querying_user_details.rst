@@ -97,8 +97,6 @@ Response Parameters
               "domain_id": "88b16b6440684467b8825d7xxx",
               "enabled": false,
               "id": "6d8b04e3bf99445b8f763009xxx",
-              "email" : ""
-              "default_project_id": "263fd9",
               "password_expires_at": "2016-12-07T00:00:00.000000Z",
               "pwd_status": true,
               "pwd_strength": "high",

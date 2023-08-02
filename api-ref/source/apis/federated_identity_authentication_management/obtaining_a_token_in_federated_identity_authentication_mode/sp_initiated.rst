@@ -13,7 +13,7 @@ Flowchart
 The following figure shows the SP-initiated federation authentication process.
 
 
-.. figure:: /_static/images/en-us_image_0000001419956277.png
+.. figure:: /_static/images/en-us_image_0147658886.png
    :alt: **Figure 1** Flowchart (SP-initiated)
 
    **Figure 1** Flowchart (SP-initiated)
@@ -21,14 +21,14 @@ The following figure shows the SP-initiated federation authentication process.
 Description
 -----------
 
-#. The client calls the API (federated token obtained in the SP-initiated mode) provided by the public cloud system.
-#. The public cloud system searches for the metadata file based on the user and IdP information in the URL and sends the SAML request to the client.
+#. The client calls the API (federated token obtained in the SP-initiated mode) provided by the cloud system.
+#. The cloud system searches for the metadata file based on the user and IdP information in the URL and sends the SAML request to the client.
 #. The client encapsulates the SAML request and forwards the SAML request to the IdP.
 #. A user enters a username and password on the IdP server for identity authentication.
 #. After the user passes the authentication, IdP constructs an assertion carrying the user identity information and sends the SAML response. The response passes through the client.
-#. The client encapsulates the SAML response and forwards the SAML response to the public cloud.
-#. The public cloud verifies and authenticates the assertion, and generates a temporary access credential according to the identity conversion rule configured by users in the identity provider.
-#. Users can access public cloud resources according to their permissions.
+#. The client encapsulates the SAML response and forwards the SAML response to the cloud platform.
+#. The cloud platform verifies and authenticates the assertion, and generates a temporary access credential according to the identity conversion rule configured by users in the identity provider.
+#. Users can access cloud resources according to their permissions.
 
 OpenStackClient
 ---------------

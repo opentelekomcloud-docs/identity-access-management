@@ -30,29 +30,41 @@ Request Parameters
 
 -  Parameters in the request body
 
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter          | Mandatory       | Type            | Description                                                                                                                                                                        |
-   +====================+=================+=================+====================================================================================================================================================================================+
-   | name               | Yes             | String          | A username with 5 to 32 characters. The username can contain special characters, but only hyphens (-), underscores (_), and periods (.) are allowed. It cannot start with a digit. |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | domain_id          | No              | String          | ID of the domain where a user is located.                                                                                                                                          |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | enabled            | No              | Boolean         | Whether a user is enabled.                                                                                                                                                         |
-   |                    |                 |                 |                                                                                                                                                                                    |
-   |                    |                 |                 | The value can be **true** or **false**. **true** indicates the user is enabled and **false** indicates the user is not enabled. The default value is **true**.                     |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | password           | No              | String          | Password of the user. The password must meet the following requirements:                                                                                                           |
-   |                    |                 |                 |                                                                                                                                                                                    |
-   |                    |                 |                 | -  Can contain 6 to 32 characters. The system default minimum password length is 6 characters, and you can change the minimum password length.                                     |
-   |                    |                 |                 | -  Must contain at least two of the following character types: uppercase letters, lowercase letters, digits, and special characters.                                               |
-   |                    |                 |                 | -  Cannot be the username or the username spelled backwards.                                                                                                                       |
-   |                    |                 |                 | -  Cannot contain the user's mobile phone number or email address.                                                                                                                 |
-   |                    |                 |                 | -  Must comply with the password policies under **Account Settings**.                                                                                                              |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | default_project_id | No              | String          | Default project ID of a user.                                                                                                                                                      |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | description        | No              | String          | Description of the user.                                                                                                                                                           |
-   +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   .. table:: **Table 1** Description for the user format
+
+      +---------------------------------------------------------+-----------+--------+-------------------+
+      | Parameter                                               | Mandatory | Type   | Description       |
+      +=========================================================+===========+========+===================+
+      | :ref:`user <en-us_topic_0057845637__table470015453550>` | Yes       | Object | User information. |
+      +---------------------------------------------------------+-----------+--------+-------------------+
+
+   .. _en-us_topic_0057845637__table470015453550:
+
+   .. table:: **Table 2** user
+
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter          | Mandatory       | Type            | Description                                                                                                                                                                        |
+      +====================+=================+=================+====================================================================================================================================================================================+
+      | name               | Yes             | String          | A username with 5 to 32 characters. The username can contain special characters, but only hyphens (-), underscores (_), and periods (.) are allowed. It cannot start with a digit. |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | domain_id          | No              | String          | ID of the domain where a user is located.                                                                                                                                          |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | enabled            | No              | Boolean         | Whether a user is enabled.                                                                                                                                                         |
+      |                    |                 |                 |                                                                                                                                                                                    |
+      |                    |                 |                 | The value can be **true** or **false**. **true** indicates the user is enabled and **false** indicates the user is not enabled. The default value is **true**.                     |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | password           | No              | String          | Password of the user. The password must meet the following requirements:                                                                                                           |
+      |                    |                 |                 |                                                                                                                                                                                    |
+      |                    |                 |                 | -  Can contain 6 to 32 characters. The system default minimum password length is 6 characters, and you can change the minimum password length.                                     |
+      |                    |                 |                 | -  Must contain at least two of the following character types: uppercase letters, lowercase letters, digits, and special characters.                                               |
+      |                    |                 |                 | -  Cannot be the username or the username spelled backwards.                                                                                                                       |
+      |                    |                 |                 | -  Cannot contain the user's mobile phone number or email address.                                                                                                                 |
+      |                    |                 |                 | -  Must comply with the password policies under **Account Settings**.                                                                                                              |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | default_project_id | No              | String          | Default project ID of a user.                                                                                                                                                      |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | description        | No              | String          | Description of the user.                                                                                                                                                           |
+      +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Example request
 

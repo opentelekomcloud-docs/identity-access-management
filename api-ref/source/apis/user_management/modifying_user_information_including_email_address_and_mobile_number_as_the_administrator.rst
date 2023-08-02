@@ -2,8 +2,8 @@
 
 .. _iam_08_0011:
 
-Modifying User Information (Including Email Address and Mobile Number)
-======================================================================
+Modifying User Information (Including Email Address and Mobile Number) as the Administrator
+===========================================================================================
 
 Function
 --------
@@ -81,6 +81,12 @@ Request Parameters
    |                 |                 |                 | .. note::                                                                                                                                                                                                                                                                                           |
    |                 |                 |                 |                                                                                                                                                                                                                                                                                                     |
    |                 |                 |                 |    An external system refers to an enterprise management system connected to cloud system. Parameters **xaccount_type**, **xaccount_id**, **xdomain_type**, **xdomain_id**, **xuser_type**, and **xuser_id** cannot be obtained from the cloud system. Please contact the enterprise administrator. |
+   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | access_mode     | No              | String          | Access type of the IAM user.                                                                                                                                                                                                                                                                        |
+   |                 |                 |                 |                                                                                                                                                                                                                                                                                                     |
+   |                 |                 |                 | -  **default**: programmatic access and management console access. This option is the default access type.                                                                                                                                                                                          |
+   |                 |                 |                 | -  **programmatic**: programmatic access                                                                                                                                                                                                                                                            |
+   |                 |                 |                 | -  **console**: management console access                                                                                                                                                                                                                                                           |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | description     | No              | String          | Description of the IAM user.                                                                                                                                                                                                                                                                        |
    +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -1,21 +1,21 @@
-:original_name: en-us_topic_0057845612.html
+:original_name: en-us_topic_0057845606.html
 
-.. _en-us_topic_0057845612:
+.. _en-us_topic_0057845606:
 
-Updating a SAML Identity Provider
-=================================
+Creating an Identity Provider
+=============================
 
 Function
 --------
 
-This API is used to update the information about a SAML identity provider.
+This API is provided for the administrator to create an identity provider.
 
 URI
 ---
 
 -  URI format
 
-   PATCH /v3/OS-FEDERATION/identity_providers/{id}
+   PUT /v3/OS-FEDERATION/identity_providers/{id}
 
 -  URI parameters
 
@@ -45,26 +45,42 @@ Request Parameters
       +----------------------------------------------------------------------------------------------------------+-----------+--------+--------------------------------+
       | Parameter                                                                                                | Mandatory | Type   | Description                    |
       +==========================================================================================================+===========+========+================================+
-      | :ref:`identity_provider <en-us_topic_0057845612__en-us_topic_0224276933_request_rq1323identityprovider>` | Yes       | Object | Identity provider information. |
+      | :ref:`identity_provider <en-us_topic_0057845606__en-us_topic_0224276933_request_rq1323identityprovider>` | Yes       | Object | Identity provider information. |
       +----------------------------------------------------------------------------------------------------------+-----------+--------+--------------------------------+
 
-   .. _en-us_topic_0057845612__en-us_topic_0224276933_request_rq1323identityprovider:
+   .. _en-us_topic_0057845606__en-us_topic_0224276933_request_rq1323identityprovider:
 
    .. table:: **Table 2** identity_provider
 
-      +-------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter   | Mandatory | Type    | Description                                                                                                                                                                                    |
-      +=============+===========+=========+================================================================================================================================================================================================+
-      | description | No        | String  | Description of the identity provider.                                                                                                                                                          |
-      +-------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | enabled     | No        | Boolean | Whether an identity provider is enabled. **true** indicates that the identity provider is enabled. **false** indicates that the identity provider is disabled. The default value is **false**. |
-      +-------------+-----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                    |
+      +=================+=================+=================+================================================================================================================================================================================================+
+      | sso_type        | No              | string          | Identity provider type. The following two types are supported:                                                                                                                                 |
+      |                 |                 |                 |                                                                                                                                                                                                |
+      |                 |                 |                 | -  **virtual_user_sso**: The federated user is mapped to a virtual user after the login is redirected.                                                                                         |
+      |                 |                 |                 | -  **iam_user_sso**: The federated user is mapped to an IAM user after the login is redirected. If you select this type, ensure that you have created an IAM user.                             |
+      |                 |                 |                 |                                                                                                                                                                                                |
+      |                 |                 |                 | The default value is **virtual_user_sso**.                                                                                                                                                     |
+      +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | description     | No              | String          | Description of the identity provider.                                                                                                                                                          |
+      +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | enabled         | No              | Boolean         | Whether an identity provider is enabled. **true** indicates that the identity provider is enabled. **false** indicates that the identity provider is disabled. The default value is **false**. |
+      +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 -  Example request
 
+   .. code-block:: text
+
+      PUT https://sample.domain.com/v3/OS-FEDERATION/identity_providers/{id}
+
    .. code-block::
 
-      curl -i -k -H 'Accept:application/json' -H 'Content-Type:application/json;charset=utf8' -H "X-Auth-Token:$token" -X PATCH -d'{"identity_provider":{"enabled":false}}' https://sample.domain.com/v3/OS-FEDERATION/identity_providers/ACME
+      {
+          "identity_provider": {
+              "description": "Stores ACME identities.",
+              "enabled": true
+          }
+      }
 
 Response Parameters
 -------------------
@@ -76,10 +92,10 @@ Response Parameters
       +-------------------------------------------------------------------------------------------------------------------+--------+--------------------------------+
       | Parameter                                                                                                         | Type   | Description                    |
       +===================================================================================================================+========+================================+
-      | :ref:`identity_provider <en-us_topic_0057845612__en-us_topic_0224276697_response_rs1321identityprovidersarritem>` | Object | Identity provider information. |
+      | :ref:`identity_provider <en-us_topic_0057845606__en-us_topic_0224276933_response_rs1321identityprovidersarritem>` | Object | Identity provider information. |
       +-------------------------------------------------------------------------------------------------------------------+--------+--------------------------------+
 
-   .. _en-us_topic_0057845612__en-us_topic_0224276697_response_rs1321identityprovidersarritem:
+   .. _en-us_topic_0057845606__en-us_topic_0224276933_response_rs1321identityprovidersarritem:
 
    .. table:: **Table 4** identity_provider
 
@@ -96,10 +112,10 @@ Response Parameters
       +------------------------------------------------------------------------------------------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | remote_ids                                                                                                 | Array of strings | Federated user ID list of an identity provider.                                                                                                                                                |
       +------------------------------------------------------------------------------------------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | :ref:`links <en-us_topic_0057845612__en-us_topic_0224276697_response_rs1321identityprovidersarritemlinks>` | Object           | Identity provider resource link.                                                                                                                                                               |
+      | :ref:`links <en-us_topic_0057845606__en-us_topic_0224276933_response_rs1321identityprovidersarritemlinks>` | Object           | Identity provider resource link.                                                                                                                                                               |
       +------------------------------------------------------------------------------------------------------------+------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. _en-us_topic_0057845612__en-us_topic_0224276697_response_rs1321identityprovidersarritemlinks:
+   .. _en-us_topic_0057845606__en-us_topic_0224276933_response_rs1321identityprovidersarritemlinks:
 
    .. table:: **Table 5** identity_provider.links
 
@@ -117,7 +133,7 @@ Response Parameters
       {
           "identity_provider": {
               "description": "Stores ACME identities",
-              "enabled": false,
+              "enabled": true,
               "id": "ACME",
               "sso_type": "iam_user_sso",
               "remote_ids": [],
@@ -134,7 +150,7 @@ Status Codes
 +-------------+--------------------------------------------------------------------------------+
 | Status Code | Description                                                                    |
 +=============+================================================================================+
-| 200         | The request is successful.                                                     |
+| 201         | The request is successful.                                                     |
 +-------------+--------------------------------------------------------------------------------+
 | 400         | The server failed to process the request.                                      |
 +-------------+--------------------------------------------------------------------------------+
@@ -146,7 +162,7 @@ Status Codes
 +-------------+--------------------------------------------------------------------------------+
 | 405         | The method specified in the request is not allowed for the requested resource. |
 +-------------+--------------------------------------------------------------------------------+
-| 409         | A resource conflict occurs.                                                    |
+| 409         | Duplicate identity provider ID.                                                |
 +-------------+--------------------------------------------------------------------------------+
 | 413         | The request entity is too large.                                               |
 +-------------+--------------------------------------------------------------------------------+
