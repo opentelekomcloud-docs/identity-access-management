@@ -22,7 +22,7 @@ Procedure
 
    .. note::
 
-      To enable users to directly view their permissions, set a description for the user group. For example, if you assign the **Security Administrator** role to a user group, you can set any description in the **Description** text box. For example: **Security Administrator: Permissions for creating, deleting, and modifying users as well as granting permissions to users.** For details about the permissions for all cloud services, see `Permissions <https://docs.otc.t-systems.com/permissions/index.html>`__
+      To enable users to directly view their permissions, set a description for the user group. For example, if you assign the **Security Administrator** role to a user group, you can set any description in the **Description** text box. For example: **Security Administrator: Permissions for creating, deleting, and modifying users as well as granting permissions to users.** For details about the permissions for all cloud services, see `Permission Description <https://docs.otc.t-systems.com/permissions/index.html>`__.
 
 #. Click **OK**.
 

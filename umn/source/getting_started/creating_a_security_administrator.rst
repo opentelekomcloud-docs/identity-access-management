@@ -15,17 +15,21 @@ Procedure
 #. On the **Users** page, click **Create User**.
 #. Specify the user information on the **Create User** page.
 
-   +---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter     | Description                                                                                                                                                                                                |
-   +===============+============================================================================================================================================================================================================+
-   | Username      | Username that will be used to log in to the cloud system, for example, **Franklin**. This field is required.                                                                                               |
-   +---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Email Address | Email address of the user that can be used as a login credential. Users can bind an email address after they are created. This field is required if you have specified **Set by user** as the access type. |
-   +---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Mobile Number | Mobile phone number of the user that can be used as a login credential. Users can bind a mobile number after they are created. This field is optional.                                                     |
-   +---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Description   | Additional information about the user. This field is optional.                                                                                                                                             |
-   +---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter                         | Description                                                                                                                                                                                                |
+   +===================================+============================================================================================================================================================================================================+
+   | Username                          | Username that will be used to log in to the cloud platform, for example, **Franklin**. This field is required.                                                                                             |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Email Address                     | Email address of the user that can be used as a login credential. Users can bind an email address after they are created. This field is required if you have specified **Set by user** as the access type. |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Mobile Number                     | Mobile phone number of the user that can be used as a login credential. Users can bind a mobile number after they are created. This field is optional.                                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Description                       | Additional information about the user. This field is optional.                                                                                                                                             |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | External Identity ID              | Identity of an enterprise user in IAM user SSO.                                                                                                                                                            |
+   |                                   |                                                                                                                                                                                                            |
+   |                                   | This parameter (no more than 128 characters) is mandatory for IAM user SSO. For details, see :ref:`IAM User SSO via SAML <iam_08_0253>`                                                                    |
+   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Specify the access type as **Management console access** and click **Next**.
 
@@ -49,5 +53,6 @@ Procedure
 
       Programmatic access: Users can access cloud services using development tools (including APIs, CLI, and SDKs) that support key authentication. This access type is recommended for developers.
 
-#. Click **Next** to add the user to the **admin** user group.
+#. Click **Next**. A page is displayed for you to select a user group.
+#. Select the **admin** user group.
 #. Click **Create**.
