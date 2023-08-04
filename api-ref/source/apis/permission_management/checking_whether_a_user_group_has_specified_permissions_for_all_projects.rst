@@ -46,6 +46,8 @@ None
 Example Request
 ---------------
 
+Request for checking whether a user group has specified permissions for all projects
+
 .. code-block::
 
    HEAD https://sample.domain.com/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects

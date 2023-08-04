@@ -6,6 +6,8 @@ Identity and Access Management - API Reference
    :maxdepth: 1
 
    api_usage_guidelines
+   before_you_start/index
+   api_overview
    calling_apis/index
    apis/index
    permissions_policies_and_supported_actions/index

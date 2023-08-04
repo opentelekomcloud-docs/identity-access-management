@@ -15,10 +15,25 @@ URI
 
 GET /v3/roles
 
+.. table:: **Table 1** Query parameters
+
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                                                      |
+   +=================+=================+=================+==================================================================================================================================+
+   | domain_id       | No              | String          | Domain ID.                                                                                                                       |
+   |                 |                 |                 |                                                                                                                                  |
+   |                 |                 |                 | .. note::                                                                                                                        |
+   |                 |                 |                 |                                                                                                                                  |
+   |                 |                 |                 |    -  If this parameter is specified, only custom policies of the account will be returned.                                      |
+   |                 |                 |                 |    -  If this parameter is not specified, all system permissions (including system-defined policies and roles) will be returned. |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+
+   | name            | No              | String          | Permission name for internal use. It may be different from the **display_name** displayed on the console.                        |
+   +-----------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+
+
 Request Parameters
 ------------------
 
-.. table:: **Table 1** Parameters in the request header
+.. table:: **Table 2** Parameters in the request header
 
    +--------------+-----------+--------+-------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                           |
@@ -31,7 +46,7 @@ Request Parameters
 Response Parameters
 -------------------
 
-.. table:: **Table 2** Parameters in the response body
+.. table:: **Table 3** Parameters in the response body
 
    +------------------------------------------------------------------------------------------+------------------+------------------------------+
    | Parameter                                                                                | Type             | Description                  |
@@ -45,7 +60,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101links:
 
-.. table:: **Table 3** links
+.. table:: **Table 4** links
 
    ========= ====== =======================
    Parameter Type   Description
@@ -57,7 +72,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101rolesarritem:
 
-.. table:: **Table 4** roles
+.. table:: **Table 5** roles
 
    +-------------------------------------------------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                                                                                       | Type                  | Description                                                                                                                                                        |
@@ -99,7 +114,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101rolesarritemlinks:
 
-.. table:: **Table 5** roles.links
+.. table:: **Table 6** roles.links
 
    ========= ====== =======================
    Parameter Type   Description
@@ -111,7 +126,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101rolesarritempolicy:
 
-.. table:: **Table 6** roles.policy
+.. table:: **Table 7** roles.policy
 
    +--------------------------------------------------------------------------------------------------------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                                                                                                          | Type                  | Description                                                                                                                                   |
@@ -130,7 +145,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101rolesarritempolicydependsarritem:
 
-.. table:: **Table 7** roles.policy.Depends
+.. table:: **Table 8** roles.policy.Depends
 
    ============ ====== ==================================
    Parameter    Type   Description
@@ -141,7 +156,7 @@ Response Parameters
 
 .. _en-us_topic_0057845591__en-us_topic_0222037529_response_rs101rolesarritempolicystatementarritem:
 
-.. table:: **Table 8** roles.policy.Statement
+.. table:: **Table 9** roles.policy.Statement
 
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                                                                                                                                |
@@ -172,7 +187,7 @@ Response Parameters
    |                       |                       |    -  In the case of a custom policy for agencies, the type of this parameter is object, and the value should be set to *"Resource": {"uri": ["/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c"]}*.                                         |
    +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. table:: **Table 9** roles.policy.Statement.Condition.operator
+.. table:: **Table 10** roles.policy.Statement.Condition.operator
 
    +-----------------------+-----------------------+-------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                             |

@@ -51,6 +51,9 @@ After a token is obtained, the **X-Auth-Token** header field must be added to re
 
 .. code-block::
 
+
+   POST https://www.example.com/v3/auth/tokens
+
 AK/SK-based Authentication
 --------------------------
 

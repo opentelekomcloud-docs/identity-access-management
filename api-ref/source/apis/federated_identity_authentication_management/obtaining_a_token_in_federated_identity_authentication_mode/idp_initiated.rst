@@ -19,7 +19,7 @@ Flowchart
 The following figure shows the IdP-initiated federation authentication process.
 
 
-.. figure:: /_static/images/en-us_image_0000001369714946.png
+.. figure:: /_static/images/en-us_image_0152520823.png
    :alt: **Figure 1** Flowchart (IdP-initiated)
 
    **Figure 1** Flowchart (IdP-initiated)
@@ -27,12 +27,12 @@ The following figure shows the IdP-initiated federation authentication process.
 Description
 -----------
 
-#. The client calls the login link provided by IdP based on the IdP-initiated mode and sets the public cloud address in the login link, that is, **entityID** in the metadata file of the public cloud.
+#. The client calls the login link provided by IdP based on the IdP-initiated mode and sets the cloud platform address in the login link, that is, **entityID** in the metadata file of the cloud platform.
 #. The client obtains the login page of the IdP. Users submit identity information to IdP for authentication through the client.
 #. After users pass the authentication, IdP constructs an assertion carrying the user identity information and sends the SAML response. The response passes through the client.
-#. The client encapsulates the SAML response, forwards the SAML response, and calls the API (federated token obtained in the IdP-initiated mode) provided by the public cloud system.
-#. The public cloud verifies and authenticates the assertion, and generates a temporary access credential according to the identity conversion rule configured by users in the identity provider.
-#. Users can access public cloud resources according to their permissions.
+#. The client encapsulates the SAML response, forwards the SAML response, and calls the API (federated token obtained in the IdP-initiated mode) provided by the cloud platform.
+#. The cloud platform verifies and authenticates the assertion, and generates a temporary access credential according to the identity conversion rule configured by users in the identity provider.
+#. Users can access cloud resources according to their permissions.
 
 Implementation on the Client
 ----------------------------
@@ -58,7 +58,7 @@ https://obs-iam-download.obs.eu-de.otc.t-systems.com/non-ecp-script/Client4Shibb
    After the configuration, enter the login URL in the browser address box. The following page is displayed.
 
 
-   .. figure:: /_static/images/en-us_image_0000001420034881.jpg
+   .. figure:: /_static/images/en-us_image_0147658878.jpg
       :alt: **Figure 2** Login Page
 
       **Figure 2** Login Page
@@ -99,7 +99,7 @@ https://obs-iam-download.obs.eu-de.otc.t-systems.com/non-ecp-script/Client4Shibb
    Obtain all form data submitted for the login page from the browser.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369235298.png
+   .. figure:: /_static/images/en-us_image_0151316952.png
       :alt: **Figure 3** Authentication information (1)
 
       **Figure 3** Authentication information (1)
@@ -139,7 +139,7 @@ https://obs-iam-download.obs.eu-de.otc.t-systems.com/non-ecp-script/Client4Shibb
    Obtain all form data submitted for the login page from the browser.
 
 
-   .. figure:: /_static/images/en-us_image_0000001369395034.jpg
+   .. figure:: /_static/images/en-us_image_0147658838.jpg
       :alt: **Figure 4** Authentication information (2)
 
       **Figure 4** Authentication information (2)

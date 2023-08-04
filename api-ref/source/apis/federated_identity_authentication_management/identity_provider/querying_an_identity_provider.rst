@@ -49,24 +49,31 @@ Response Parameters
 
 -  Parameters in the response body
 
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                    |
-   +=================+=================+=================+================================================================+
-   | id              | Yes             | String          | ID of an identity provider.                                    |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
-   | description     | Yes             | String          | Identity provider description.                                 |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
-   | enabled         | Yes             | Boolean         | Whether an identity provider is enabled.                       |
-   |                 |                 |                 |                                                                |
-   |                 |                 |                 | -  **true** indicates that the identity provider is enabled.   |
-   |                 |                 |                 | -  **false** indicates that the identity provider is disabled. |
-   |                 |                 |                 |                                                                |
-   |                 |                 |                 | The default value is **false**.                                |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
-   | remote_ids      | Yes             | Array           | Federated user ID list of an identity provider.                |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
-   | links           | Yes             | Object          | Identity provider resource link.                               |
-   +-----------------+-----------------+-----------------+----------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                            |
+   +=================+=================+=================+========================================================================================================+
+   | sso_type        | Yes             | string          | Identity provider type. The following two types are supported:                                         |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | -  **virtual_user_sso**: The federated user is mapped to a virtual user after the login is redirected. |
+   |                 |                 |                 | -  **iam_user_sso**: The federated user is mapped to an IAM user after the login is redirected.        |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | The default value is **virtual_user_sso**.                                                             |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | id              | Yes             | String          | ID of an identity provider.                                                                            |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | description     | Yes             | String          | Identity provider description.                                                                         |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | enabled         | Yes             | Boolean         | Whether an identity provider is enabled.                                                               |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | -  **true** indicates that the identity provider is enabled.                                           |
+   |                 |                 |                 | -  **false** indicates that the identity provider is disabled.                                         |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | The default value is **false**.                                                                        |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | remote_ids      | Yes             | Array           | Federated user ID list of an identity provider.                                                        |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | links           | Yes             | Object          | Identity provider resource link.                                                                       |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
 
 -  Example response
 
@@ -77,7 +84,7 @@ Response Parameters
               "description": "Stores ACME identities",
               "enabled": false,
               "id": "ACME",
-
+              "sso_type": "iam_user_sso",
               "remote_ids": [],
               "links": {
                   "protocols": "https://sample.domain.com/v3/OS-FEDERATION/identity_providers/ACME/protocols",
