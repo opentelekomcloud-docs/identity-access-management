@@ -8,7 +8,9 @@ Identity and Access Management (IAM) provides a public cloud system (Open Teleko
    :class: container-sbv
 
    .. service_card::
+      :environment: internal
       :service_type: iam
       :umn: This document describes Identity and Access Management service, helping you quickly and properly use the service.
       :api-ref: This document describes application programming interfaces (APIs) of Identity and Access Management (IAM) and provides API parameter.
       :mycredential: This document describes My Credential page. My Credential page centrally manages user authentication information, including verified email addresses, verified mobile numbers, and passwords.
+      :permissions: This document described Permissions in management area and cloud service management area.
