@@ -9,7 +9,7 @@ Getting Started
 -  :ref:`Creating a Security Administrator <iam_01_0029>`
 -  :ref:`Creating a User Group and Assigning Permissions <iam_01_0030>`
 -  :ref:`Creating a User and Adding the User to a User Group <iam_01_0031>`
--  :ref:`Logging In as a User <iam_01_0032>`
+-  :ref:`Logging In as an IAM User <iam_01_0032>`
 
 .. toctree::
    :maxdepth: 1
@@ -19,4 +19,4 @@ Getting Started
    creating_a_security_administrator
    creating_a_user_group_and_assigning_permissions
    creating_a_user_and_adding_the_user_to_a_user_group
-   logging_in_as_a_user
+   logging_in_as_an_iam_user
