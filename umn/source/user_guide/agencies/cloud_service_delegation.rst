@@ -27,7 +27,7 @@ IAM provides two methods to create a cloud service agency:
 Creating a Cloud Service Agency on the IAM Console
 --------------------------------------------------
 
-#. Log in to the .
+#. Log in to the IAM console.
 
 #. On the IAM console, choose **Agencies** from the navigation pane, and click **Create Agency**.
 

@@ -6,7 +6,7 @@ Getting Started
 ===============
 
 -  :ref:`Getting Started with IAM <iam_01_0034>`
--  :ref:`Creating a Security Administrator <iam_01_0029>`
+-  :ref:`Creating a Security Administrator <iam_07_0002>`
 -  :ref:`Creating a User Group and Assigning Permissions <iam_01_0030>`
 -  :ref:`Creating a User and Adding the User to a User Group <iam_01_0031>`
 -  :ref:`Logging In as an IAM User <iam_01_0032>`

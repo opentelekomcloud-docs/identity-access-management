@@ -13,8 +13,8 @@ Configuring Identity Federation
 The following describes how to configure your enterprise IdP and the cloud platform to trust each other.
 
 #. :ref:`Create an IdP entity and establish a trust relationship <iam_08_0009>`: Create OAuth 2.0 credentials in the enterprise IdP. In the cloud platform, create an IdP entity and establish a trust relationship between the two systems.
-#. :ref:`Configure identity conversion rules <iam_08_0008>`: Configure identity conversion rules in the cloud platform to the users, user groups, and permissions in the enterprise IdP to the cloud platform.
-#. :ref:`Configure a login link <iam_08_0007>`: Configure a login link to allow enterprise users to be redirected to the cloud platform from your enterprise management system.
+#. :ref:`Configure identity conversion rules <iam_08_0008>`: Configure identity conversion rules in the cloud platform to map the users, user groups, and permissions in the enterprise IdP to the cloud platform.
+#. :ref:`Configure a federated login entry <iam_08_0007>`: Configure the login link in the enterprise IdP to allow enterprise users to be redirected to the cloud platform from your enterprise management system.
 
 How Identity Federation Works
 -----------------------------
@@ -36,4 +36,4 @@ The process of identity federation is as follows:
 #. The user enters their username and password on the login page displayed in the enterprise IdP. After the enterprise IdP authenticates the user's identity, it constructs an ID token containing the user information, and sends the ID token to the browser as an OpenID Connect authorization response.
 #. The browser responds and forwards the OpenID Connect response to the cloud platform.
 #. The cloud platform parses the ID token in the OpenID Connect response, identifies the IAM user group mapping to the user based on the identity conversion rules, and issues a token to the user.
-#. The user logs in to the cloud platform through SSO.
+#. The SSO login is successful.

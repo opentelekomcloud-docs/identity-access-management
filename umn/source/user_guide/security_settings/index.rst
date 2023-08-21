@@ -7,7 +7,7 @@ Security Settings
 
 -  :ref:`Security Settings Overview <iam_07_0001>`
 -  :ref:`Basic Information <iam_01_0703>`
--  :ref:`Critical Operation Protection <iam_07_0002>`
+-  :ref:`Critical Operation Protection <iam_01_0029>`
 -  :ref:`Login Authentication Policy <iam_01_0704>`
 -  :ref:`Password Policy <iam_01_0607>`
 -  :ref:`ACL <iam_07_0003>`

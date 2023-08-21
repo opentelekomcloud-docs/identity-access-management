@@ -11,7 +11,7 @@ Prerequisites
 -------------
 
 -  The enterprise administrator has created an account in the cloud platform, and has created user groups and assigned them permissions in IAM. For details, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>`. The user groups created in IAM will be mapped to federated users so that the federated users can obtain the permissions of the user groups to use cloud resources.
--  The enterprise administrator has read the help documentation of the enterprise IdP or has understood how to use the enterprise IdP. Configurations of different enterprise IdPs differ greatly, so they are not described in this document. For details about how to obtain the enterprise IdP's OAuth 2.0 credentials, see the IdP help documentation.
+-  The enterprise administrator has read the help documentation of the enterprise IdP or has understood how to use the enterprise IdP. Configurations of different enterprise IdPs differ greatly, so they are not described in this document. For details about how to obtain an enterprise IdP's OAuth 2.0 credentials, see the IdP help documentation.
 
 .. _iam_08_0009__en-us_topic_0272448422_section81252015115012:
 
@@ -44,7 +44,7 @@ Create an IdP entity and configure authorization information in IAM to establish
 
    .. note::
 
-      The IdP name must be unique under your account.
+      The IdP name must be unique under your account. You are advised to use the domain name.
 
 Configuring Authorization Information in the Cloud Platform
 -----------------------------------------------------------
@@ -61,9 +61,9 @@ Configuring Authorization Information in the Cloud Platform
 
 
    .. figure:: /_static/images/en-us_image_0000001606945160.png
-      :alt: **Figure 4** Access type description
+      :alt: **Figure 4** Access type
 
-      **Figure 4** Access type description
+      **Figure 4** Access type
 
    .. table:: **Table 1** Access type description
 
@@ -88,7 +88,7 @@ Configuring Authorization Information in the Cloud Platform
       +===================================+=========================================================================================================================================================================================================================================================================================================================================================================================+
       | Identity Provider URL             | URL of the OpenID Connect IdP.                                                                                                                                                                                                                                                                                                                                                          |
       |                                   |                                                                                                                                                                                                                                                                                                                                                                                         |
-      |                                   | Specify this parameter as the value of **issuer** in the **Openid-configuration**.                                                                                                                                                                                                                                                                                                      |
+      |                                   | Set it to the value of **issuer** in the **Openid-configuration**.                                                                                                                                                                                                                                                                                                                      |
       |                                   |                                                                                                                                                                                                                                                                                                                                                                                         |
       |                                   | .. note::                                                                                                                                                                                                                                                                                                                                                                               |
       |                                   |                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -96,7 +96,7 @@ Configuring Authorization Information in the Cloud Platform
       +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Client ID                         | ID of a client registered with the OpenID Connect IdP. The client ID is :ref:`an OAuth 2.0 credential created in the enterprise IdP <iam_08_0009__en-us_topic_0272448422_section81252015115012>`.                                                                                                                                                                                       |
       +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Authorization Endpoint            | Authorization endpoint of the OpenID Connect IdP. Specify this parameter as the value of **authorization_endpoint** in **Openid-configuration**.                                                                                                                                                                                                                                        |
+      | Authorization Endpoint            | Authorization endpoint of the OpenID Connect IdP. Set it to the value of **authorization_endpoint** in **Openid-configuration**.                                                                                                                                                                                                                                                        |
       |                                   |                                                                                                                                                                                                                                                                                                                                                                                         |
       |                                   | This parameter is required only if you set **Access Type** to **Programmatic access and management console access**.                                                                                                                                                                                                                                                                    |
       +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -147,7 +147,7 @@ Verifying the Federated Login
 
    .. note::
 
-      Federated users only have read permissions for the cloud platform by default. To assign permissions to federated users, configure identity conversion rules for the IdP. For details, see :ref:`Step 2: Configure Identity Conversion Rules <iam_08_0008>`.
+      Federated users can only access the cloud platform by default. To assign permissions to federated users, configure identity conversion rules for the IdP. For details, see :ref:`Step 2: Configure Identity Conversion Rules <iam_08_0008>`.
 
 Related Operations
 ------------------

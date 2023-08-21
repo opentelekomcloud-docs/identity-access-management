@@ -1,6 +1,6 @@
-:original_name: iam_01_0029.html
+:original_name: iam_07_0002.html
 
-.. _iam_01_0029:
+.. _iam_07_0002:
 
 Creating a Security Administrator
 =================================
