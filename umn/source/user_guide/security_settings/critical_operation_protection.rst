@@ -1,6 +1,6 @@
-:original_name: iam_07_0002.html
+:original_name: iam_01_0029.html
 
-.. _iam_07_0002:
+.. _iam_01_0029:
 
 Critical Operation Protection
 =============================
@@ -144,7 +144,7 @@ Critical Operations
 
 The following tables list the critical operations defined by each cloud service.
 
-.. _iam_07_0002__en-us_topic_0177717039_table1143213281227:
+.. _iam_01_0029__en-us_topic_0177717039_table1143213281227:
 
 .. table:: **Table 1** Critical operations defined by cloud services
 

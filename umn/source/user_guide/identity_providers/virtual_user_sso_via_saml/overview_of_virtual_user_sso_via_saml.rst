@@ -42,7 +42,7 @@ The following describes how to configure your enterprise IdP and the cloud platf
 
 #. :ref:`Verify the federated login <iam_08_0025>`: Check whether the enterprise user can log in to the cloud platform through SSO.
 
-#. :ref:`(Optional) Configure a login link <iam_08_0005>`: Configure a login link (see :ref:`Figure 4 <iam_08_0021__en-us_topic_0177310146_fig183392056164512>`) to allow enterprise users to be redirected to the cloud platform from your enterprise management system.
+#. :ref:`(Optional) Configure a federated login entry <iam_08_0005>`: Configure the login link (see :ref:`Figure 4 <iam_08_0021__en-us_topic_0177310146_fig183392056164512>`) in the enterprise IdP to allow enterprise users to be redirected to the cloud platform from your enterprise management system.
 
    .. _iam_08_0021__en-us_topic_0177310146_fig183392056164512:
 
@@ -75,7 +75,7 @@ As shown in :ref:`Figure 5 <iam_08_0021__en-us_topic_0177310146_fig286918566460>
 #. The user enters their username and password on the login page. After the enterprise IdP authenticates the user's identity, it constructs a SAML assertion containing the user details and sends the assertion to the browser as a SAML response.
 #. The browser responds and forwards the SAML response to the cloud platform.
 #. The cloud platform parses the assertion in the SAML response, identifies the IAM user group mapping to the user based on the identity conversion rules, and issues a token to the user.
-#. The user logs in to the cloud platform through SSO.
+#. The SSO login is successful.
 
    .. note::
 

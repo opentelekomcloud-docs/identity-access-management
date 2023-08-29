@@ -11,15 +11,15 @@ You can configure parameters in the enterprise IdP to determine what information
 
    If the SSO type is IAM user, the enterprise IdP must have the **IAM_SAML_Attributes_xUserId** assertion configured.
 
-Common Parameters in Enterprise IdP
------------------------------------
+Common Parameters in an Enterprise IdP
+--------------------------------------
 
-.. table:: **Table 1** Common parameters in enterprise IdP
+.. table:: **Table 1** Common parameters in an enterprise IdP
 
    +----------------------------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter                        | Description                                                              | Scenario                                                                                                                                                                       |
    +==================================+==========================================================================+================================================================================================================================================================================+
-   | IAM_SAML_Attributes_xUserId      | ID of an enterprise IdP user (federated user).                           | This parameter is mandatory when the SSO type is IAM user.                                                                                                                     |
+   | IAM_SAML_Attributes_xUserId      | ID of an enterprise IdP user (federated user)                            | This parameter is mandatory when the SSO type is IAM user.                                                                                                                     |
    |                                  |                                                                          |                                                                                                                                                                                |
    |                                  |                                                                          | Each federated user is mapped to an IAM user. The **IAM_SAML_Attributes_xUserId** of the federated user is the same as the external identity ID of the corresponding IAM user. |
    +----------------------------------+--------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

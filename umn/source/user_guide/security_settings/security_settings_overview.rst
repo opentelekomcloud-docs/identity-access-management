@@ -5,7 +5,7 @@
 Security Settings Overview
 ==========================
 
-You can configure the account settings, critical operation protection, login authentication policy, password policy, and access control list (ACL) on the **Security Settings** page. For details, see :ref:`Basic Information <iam_01_0703>`, :ref:`Critical Operation Protection <iam_07_0002>`, :ref:`Login Authentication Policy <iam_01_0704>`, :ref:`Password Policy <iam_01_0607>`, and :ref:`ACL <iam_07_0003>`. This chapter describes how to access the **Security Settings** page and who is the intended audience.
+You can configure the account settings, critical operation protection, login authentication policy, password policy, and access control list (ACL) on the **Security Settings** page. For details, see :ref:`Basic Information <iam_01_0703>`, :ref:`Critical Operation Protection <iam_01_0029>`, :ref:`Login Authentication Policy <iam_01_0704>`, :ref:`Password Policy <iam_01_0607>`, and :ref:`ACL <iam_07_0003>`. This chapter describes how to access the **Security Settings** page and who is the intended audience.
 
 Intended Audience
 -----------------
@@ -21,7 +21,7 @@ Intended Audience
    +==================================================+==========================================================================+
    | :ref:`Basic Information <iam_01_0703>`           | IAM users: Full access                                                   |
    +--------------------------------------------------+--------------------------------------------------------------------------+
-   | :ref:`Critical Operations <iam_07_0002>`         | -  :ref:`Administrator <iam_01_0023__section1475194083513>`: Full access |
+   | :ref:`Critical Operations <iam_01_0029>`         | -  :ref:`Administrator <iam_01_0023__section1475194083513>`: Full access |
    |                                                  | -  IAM users: No access                                                  |
    +--------------------------------------------------+--------------------------------------------------------------------------+
    | :ref:`Login Authentication Policy <iam_01_0704>` | -  :ref:`Administrator <iam_01_0023__section1475194083513>`: Full access |

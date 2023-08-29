@@ -5,7 +5,7 @@
 Step 3: Configure Identity Conversion Rules
 ===========================================
 
-After an enterprise IdP user logs in to the cloud platform, the cloud platform authenticates the identity and assigns permissions to the user based on the identity conversion rules. You can customize identity conversion rules based on your service requirements. If you do not configure identity conversion rules, the username of the federated user in the cloud platform is **FederationUser** by default, and the federated user can only access the cloud platform by default.
+After an enterprise IdP user logs in to the cloud platform, the cloud platform authenticates the identity and assigns permissions to the user based on the identity conversion rules. You can customize identity conversion rules based on your service requirements. If you do not configure identity conversion rules, the username of the federated user on the cloud platform is **FederationUser** by default, and the federated user can only access the cloud platform by default.
 
 You can configure the following parameters for federated users:
 
@@ -26,7 +26,7 @@ Prerequisites
 Procedure
 ---------
 
-If you configure identity conversion rules by clicking **Create Rule**, IAM will convert your specified parameters to the JSON format. Alternatively, you can click **Edit Rule** to directly configure rules in the JSON format. For details, see :ref:`Syntax of Identity Conversion Rules <en-us_topic_0079620340>`.
+If you configure identity conversion rules by clicking **Create Rule**, IAM will convert your specified parameters to the JSON format. Alternatively, you can click **Edit Rule** to directly configure rules in JSON format. For details, see :ref:`Syntax of Identity Conversion Rules <en-us_topic_0079620340>`.
 
 -  **Creating Rules**
 
@@ -41,7 +41,7 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM will
          +-----------------------+-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | Parameter             | Description                                                                                     | Remarks                                                                                                                                                                                                                                                                                                                                                     |
          +=======================+=================================================================================================+=============================================================================================================================================================================================================================================================================================================================================================+
-         | Username              | Username of federated users in the cloud platform.                                              | To distinguish federated users from users in the cloud platform, it is recommended that you set the username to **FederationUser-IdP\ \_\ XXX**. *IdP* indicates an IdP name, for example, AD FS and Shibboleth. *XXX* indicates a custom name.                                                                                                             |
+         | Username              | Username of federated users in the cloud platform.                                              | To distinguish federated users from users in the cloud platform, it is recommended that you set the username to **FederationUser-**\ *IdP*\ **\_**\ *XXX*. *IdP* indicates an IdP name, for example, AD FS or Shibboleth. *XXX* indicates a custom name.                                                                                                    |
          |                       |                                                                                                 |                                                                                                                                                                                                                                                                                                                                                             |
          |                       |                                                                                                 | .. important::                                                                                                                                                                                                                                                                                                                                              |
          |                       |                                                                                                 |                                                                                                                                                                                                                                                                                                                                                             |
@@ -82,7 +82,7 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM will
 
    #. In the IdP list, click **Modify** in the row containing the IdP.
 
-   #. In the **Identity Conversion Rules** area, click **Edit Rule**. Then configure the rules in the **Edit Rule** dialog box.
+   #. In the **Identity Conversion Rules** area, click **Edit Rule**.
 
    #. Edit the identity conversion rules in JSON format. For details, see :ref:`Syntax of Identity Conversion Rules <en-us_topic_0079620340>`.
 
@@ -95,4 +95,4 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM will
 Related Operations
 ------------------
 
-Viewing identity conversion rules: Click **View Rule** on the **Modify Identity Provider** page. The identity conversion rules are displayed in the JSON format. For details about the JSON format, see :ref:`Syntax of Identity Conversion Rules <en-us_topic_0079620340>`.
+Viewing identity conversion rules: Click **View Rule** on the **Modify Identity Provider** page. The identity conversion rules are displayed in JSON format. For details about the JSON format, see :ref:`Syntax of Identity Conversion Rules <en-us_topic_0079620340>`.

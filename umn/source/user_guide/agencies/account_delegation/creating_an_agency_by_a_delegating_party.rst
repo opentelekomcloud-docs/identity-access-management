@@ -18,7 +18,7 @@ Before creating an agency, complete the following operations:
 Procedure
 ---------
 
-#. Log in to the .
+#. Log in to the IAM console.
 
 #. On the IAM console, choose **Agencies** from the navigation pane, and click **Create Agency** in the upper right corner.
 

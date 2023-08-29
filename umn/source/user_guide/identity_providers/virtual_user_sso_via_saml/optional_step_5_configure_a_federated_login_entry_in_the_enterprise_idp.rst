@@ -5,7 +5,7 @@
 (Optional) Step 5: Configure a Federated Login Entry in the Enterprise IdP
 ==========================================================================
 
-Configure a federated login entry in the enterprise IdP to enable enterprise users use the login link to access the cloud platform.
+Configure a federated login entry in the enterprise IdP so that enterprise users can use the login link to access the cloud platform.
 
 Prerequisites
 -------------
@@ -40,6 +40,6 @@ Procedure
 
       <a href="<Login link>"> Cloud platform login entry </a>
 
-#. Log in to the enterprise management system as an enterprise user, and click the configured login link to access the cloud platform.
+#. Log in to the enterprise management system using your enterprise account, and click the configured login link to access the cloud platform.
 
 .. |image1| image:: /_static/images/en-us_image_0000001646367745.png

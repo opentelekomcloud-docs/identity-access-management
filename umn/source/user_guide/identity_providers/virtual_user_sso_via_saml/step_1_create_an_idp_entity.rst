@@ -19,7 +19,7 @@ The metadata file of the cloud platform needs to be configured in the enterprise
 
 #. Download the metadata file of the cloud platform.
 
-   -  Web SSO: Visit https://auth.otc.t-systems.com/authui/saml/metadata.xml. Right-click on the page, choose **Save As**, and set a file name, for example, **websso-metadata.xml**.
+   -  Web SSO: Visit https://auth.otc.t-systems.com/authui/saml/metadata.xml, right-click on the page, choose **Save As**, and set a file name, for example, **websso-metadata.xml**.
 
    -  SSO via API calling: Visit https://iam.eu-de.otc.t-systems.com/v3-ext/auth/OS-FEDERATION/SSO/metadata or https://iam.eu-nl.otc.t-systems.com/v3-ext/auth/OS-FEDERATION/SSO/metadata, right-click on the page, choose **Save As**, and set a file name, for example, **api-metadata-region.xml**.
 
@@ -70,11 +70,11 @@ To create an IdP entity on the IAM console, do as follows:
 Configuring the Metadata File of the Enterprise IdP on the Cloud Platform
 -------------------------------------------------------------------------
 
-Configure the metadata file of the enterprise IdP in the cloud platform. You can upload or manually edit metadata configurations in IAM. For a metadata file larger than 500 KB, manually configure the metadata. If the metadata has been changed, upload the latest metadata file or edit the existing metadata to ensure that the federated users can log in to the cloud platform successfully.
+To configure the metadata file of the enterprise IdP in the cloud platform, you can upload the metadata file or manually edit metadata on the IAM console. For a metadata file larger than 500 KB, manually configure the metadata. If the metadata has been changed, upload the latest metadata file or edit the existing metadata to ensure that the federated users can log in to the cloud platform successfully.
 
 .. note::
 
-   For details about how to obtain the metadata file, see the help documentation of the enterprise IdP.
+   For details about how to obtain the metadata file of an enterprise IdP, see the help documentation of the enterprise IdP.
 
 -  **Upload a metadata file.**
 
@@ -174,6 +174,6 @@ Related Operations
 Follow-Up Procedure
 -------------------
 
--  Configure the enterprise IdP: Configure enterprise IdP parameters to determine what information can be sent to the cloud platform
--  Configuring identity conversion rules: In the **Identity Conversion Rules** area, configure identity conversion rules to establish a mapping between enterprise users and IAM user groups. In this way, enterprise users can obtain the corresponding permissions in the cloud platform. For details, see :ref:`Step 3: Configure Identity Conversion Rules <iam_08_0004>`.
+-  Configure the enterprise IdP: Configure enterprise IdP parameters to determine what information can be sent to the cloud platform.
+-  Configure identity conversion rules: In the **Identity Conversion Rules** area, configure identity conversion rules to establish a mapping between enterprise users and IAM user groups. In this way, enterprise users can obtain the corresponding permissions in the cloud platform. For details, see :ref:`Step 3: Configure Identity Conversion Rules <iam_08_0004>`.
 -  Verify the federated login: Check whether the enterprise user can log in to the cloud platform through SSO. For details, see :ref:`Step 4: Verify the Federated Login <iam_08_0025>`.
