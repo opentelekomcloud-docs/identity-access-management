@@ -12,7 +12,7 @@ This API is used to obtain a token through username/password authentication. A t
 
 .. note::
 
-   The validity period of a token is **24 hours**. Cache the token to prevent frequent API calling. Ensure that the token is valid while you use it. Using a token that will soon expire may cause API calling failures. Obtaining a new token does not affect the validity of the existing token. The following operations will invalidate the existing token. After these operations are performed, obtain a new token.
+   Tokens are valid for 24 hours and you can cache them to reduce the number of API calls needed. Ensure that the token is valid while you use it. Using a token that will soon expire may cause API calling failures. Obtaining a new token does not affect the validity of the existing token. The following operations will invalidate the existing token. After these operations are performed, obtain a new token.
 
    -  Changing the password or access key of your account or an IAM user: The token of your account or the user is invalidated.
    -  Deleting or disabling an IAM user: The token of the user is invalidated.

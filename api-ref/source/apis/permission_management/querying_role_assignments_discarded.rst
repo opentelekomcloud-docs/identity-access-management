@@ -2,8 +2,8 @@
 
 .. _iam_11_0003:
 
-Querying Role Assignments
-=========================
+Querying Role Assignments (Discarded)
+=====================================
 
 Function
 --------

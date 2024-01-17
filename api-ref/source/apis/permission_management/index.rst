@@ -7,7 +7,7 @@ Permission Management
 
 -  :ref:`Querying a Role List <en-us_topic_0057845591>`
 -  :ref:`Querying Role Details <en-us_topic_0057845603>`
--  :ref:`Querying Role Assignments <iam_11_0003>`
+-  :ref:`Querying Role Assignments (Discarded) <iam_11_0003>`
 -  :ref:`Querying Permissions of a User Group Under a Domain <en-us_topic_0057845571>`
 -  :ref:`Querying Permissions of a User Group Corresponding to a Project <en-us_topic_0057845640>`
 -  :ref:`Granting Permissions to a User Group of a Domain <en-us_topic_0057845623>`
@@ -27,7 +27,7 @@ Permission Management
 
    querying_a_role_list
    querying_role_details
-   querying_role_assignments
+   querying_role_assignments_discarded
    querying_permissions_of_a_user_group_under_a_domain
    querying_permissions_of_a_user_group_corresponding_to_a_project
    granting_permissions_to_a_user_group_of_a_domain

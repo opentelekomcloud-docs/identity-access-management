@@ -105,7 +105,7 @@ Request Parameters
                      "assume_role": {
                          "domain_id": "411edb4b634144f587ffc88f9bbdxxx",
                          "xrole_name": "testagency",
-                         "duration_seconds": "3600"
+                         "duration_seconds": 3600
                      }
                  }
              }
@@ -123,7 +123,7 @@ Request Parameters
                      ],
                      "token": {
                          "id": "MIIDkgYJKoZIhvcNAQcCoIIDgzCCA38CAQExDTALBglghkgBZQMEAgEwgXXXXX...",
-                         "duration_seconds": "900"
+                         "duration_seconds": 900
                      }
                  }
              }
