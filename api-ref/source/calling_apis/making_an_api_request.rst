@@ -72,7 +72,7 @@ Common request header fields are as follows:
 
       For details, see "AK/SK-based Authentication" in :ref:`Authentication <iam_02_0510>`.
 
-The API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`) does not require authentication. Therefore, only the **Content-Type** field needs to be added to requests for calling the API. An example of such requests is as follows:
+The API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`) does not require authentication. Only the **Content-Type** field needs to be added to requests for calling the API. An example of such requests is as follows:
 
 .. code-block::
 
