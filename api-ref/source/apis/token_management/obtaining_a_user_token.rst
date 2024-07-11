@@ -16,7 +16,7 @@ This API is used to obtain a token through username/password authentication. A t
 
    -  Changing the password or access key of your account or an IAM user: The token of your account or the user is invalidated.
    -  Deleting or disabling an IAM user: The token of the user is invalidated.
-   -  Changing the permissions of an IAM user: The token of the user is invalidated. For example, when the user is added to or removed from a user group, or when permissions of the group which the user belongs to are modified.
+   -  Changing the permissions of an IAM user: The token of the user is invalidated. For example, when the user is added to or removed from a user group, or when permissions of the group to which the user belongs are modified.
 
 URI
 ---
@@ -66,9 +66,7 @@ Request Parameters
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | totp            | No              | JSON object     | Authentication information. This parameter is mandatory only when virtual MFA-based login authentication is enabled.                                                                                                   |
    |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | You can specify either **user.id** or **user.name**.                                                                                                                                                                   |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | Example 1:                                                                                                                                                                                                             |
+   |                 |                 |                 | Example:                                                                                                                                                                                                               |
    |                 |                 |                 |                                                                                                                                                                                                                        |
    |                 |                 |                 | .. code-block::                                                                                                                                                                                                        |
    |                 |                 |                 |                                                                                                                                                                                                                        |
@@ -78,19 +76,7 @@ Request Parameters
    |                 |                 |                 |              "passcode": "******"                                                                                                                                                                                      |
    |                 |                 |                 |                                                                                                                                                                                                                        |
    |                 |                 |                 | -  **user.id**: User ID, which can be obtained on the **My Credentials** page.                                                                                                                                         |
-   |                 |                 |                 | -  **passcode**: MFA verification code, which can be obtained on the MFA App.                                                                                                                                          |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | Example 2:                                                                                                                                                                                                             |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | .. code-block::                                                                                                                                                                                                        |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 |    "totp": {                                                                                                                                                                                                           |
-   |                 |                 |                 |            "user": {                                                                                                                                                                                                   |
-   |                 |                 |                 |              "name": "user A",                                                                                                                                                                                         |
-   |                 |                 |                 |              "passcode": "******"                                                                                                                                                                                      |
-   |                 |                 |                 |                                                                                                                                                                                                                        |
-   |                 |                 |                 | -  **user.name**: Name of the user that wants to obtain the token.                                                                                                                                                     |
-   |                 |                 |                 | -  **passcode**: MFA verification code, which can be obtained on the MFA App.                                                                                                                                          |
+   |                 |                 |                 | -  **passcode**: Virtual MFA device verification code, which can be obtained on the MFA app.                                                                                                                           |
    +-----------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | scope           | No              | JSON object     | Usage scope of the token. The value can be **project** or **domain**.                                                                                                                                                  |
    |                 |                 |                 |                                                                                                                                                                                                                        |
@@ -162,7 +148,7 @@ Request Parameters
                   },
                   "totp" : {
                       "user": {
-                          "name": "user A",
+                          "id": "dfsafdfsaf....",
                           "passcode": "******"
                       }
                   }
@@ -271,7 +257,7 @@ Response Parameters
    |                 |                 |                 |        }]                                                                                                                                         |
    |                 |                 |                 |    }]                                                                                                                                             |
    |                 |                 |                 |                                                                                                                                                   |
-   |                 |                 |                 | -  **type**: Type of the service which the API belongs to.                                                                                        |
+   |                 |                 |                 | -  **type**: Type of the service to which the API belongs.                                                                                        |
    |                 |                 |                 | -  **id**: ID of the service.                                                                                                                     |
    |                 |                 |                 | -  **name**: Name of the service.                                                                                                                 |
    |                 |                 |                 | -  **endpoints**: Endpoints that can be used to call the API.                                                                                     |
