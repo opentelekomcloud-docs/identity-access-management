@@ -11,6 +11,10 @@ Security Settings
 -  :ref:`Modifying the Password Policy <iam_02_0023>`
 -  :ref:`Querying the Login Authentication Policy <iam_02_0026>`
 -  :ref:`Modifying the Login Authentication Policy <iam_02_0025>`
+-  :ref:`Querying the ACL for Console Access <iam_02_0028>`
+-  :ref:`Modifying the ACL for Console Access <iam_02_0027>`
+-  :ref:`Querying the ACL for API Access <iam_02_0030>`
+-  :ref:`Modifying the ACL for API Access <iam_02_0029>`
 -  :ref:`Querying MFA Device Information of Users <iam_08_0012>`
 -  :ref:`Querying the MFA Device Information of a User <iam_08_0013>`
 -  :ref:`Querying Login Protection Configurations of Users <iam_08_0014>`
@@ -31,6 +35,10 @@ Security Settings
    modifying_the_password_policy
    querying_the_login_authentication_policy
    modifying_the_login_authentication_policy
+   querying_the_acl_for_console_access
+   modifying_the_acl_for_console_access
+   querying_the_acl_for_api_access
+   modifying_the_acl_for_api_access
    querying_mfa_device_information_of_users
    querying_the_mfa_device_information_of_a_user
    querying_login_protection_configurations_of_users

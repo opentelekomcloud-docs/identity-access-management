@@ -34,7 +34,7 @@ Common concepts used when you call IAM APIs are described as follows:
    Projects group and isolate resources (including compute, storage, and network resources) across physical regions. A default project is provided for each region, and subprojects can be created under each default project. Users can be granted permissions to access all resources in a specific project. For more refined access control, create subprojects under a project and create resources in the subprojects. Users can then be assigned permissions to access only specific resources in the subprojects.
 
 
-   .. figure:: /_static/images/en-us_image_0283051422.gif
+   .. figure:: /_static/images/en-us_image_0000001782066216.png
       :alt: **Figure 1** Project isolating model
 
       **Figure 1** Project isolating model
