@@ -8,7 +8,7 @@ Obtaining User, Account, User Group, Project, and Agency Information
 Obtaining User, Account, and Project Information
 ------------------------------------------------
 
-Your username, user ID, account name, account ID, project name, and project ID need to be specified in the URI and request body for calling certain APIs. Obtain these parameters on the **My Credentials** page.
+Your username, user ID, account name, account ID, project name, and project ID need to be specified in the URL and request body for calling certain APIs. Obtain these parameters on the **My Credentials** page.
 
 #. Log in to management console.
 #. Click the username in the upper right corner, and choose **My Credentials**.
