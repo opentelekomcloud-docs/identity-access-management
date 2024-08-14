@@ -11,7 +11,7 @@ The agency function enables you to delegate another account to implement O&M on 
 
    You can delegate resource access only to accounts. The accounts can then delegate access to IAM users under them.
 
-The following is the procedure for delegating access to resources in one account to another account. Account A is the delegating party and account B is the delegated party.
+The following is the procedure for delegating resource access to another account. Account A is the delegating party and account B is the delegated party.
 
 #. Account A creates an agency in IAM to delegate resource access to account B.
 
@@ -34,7 +34,7 @@ The following is the procedure for delegating access to resources in one account
 
 #. Account B or the authorized user manages account A's resources.
 
-   a. Log in to account B's account and switch the role to account A.
+   a. Use account B to log in and switch the role to account A.
    b. Switch to region A and manage account A's resources in this region.
 
 

@@ -5,7 +5,7 @@
 Login Authentication Policy
 ===========================
 
-The **Login Authentication Policy** tab of the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page provides the :ref:`Session Timeout <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section10968105732412>`, :ref:`Account Lockout <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section13189358>`, :ref:`Recent Login Information <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section446533912253>`, :ref:`Recent Login Information <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section446533912253>`, and :ref:`Custom Information <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section733474592515>` settings. These settings take effect for both your account and the IAM users created using the account.
+The **Login Authentication Policy** tab of the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page provides the :ref:`Session Timeout <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section10968105732412>`, :ref:`Account Lockout <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section13189358>`, :ref:`Account Disabling <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section1694311288250>`, :ref:`Recent Login Information <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section446533912253>`, and :ref:`Custom Information <iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section733474592515>` settings. These settings take effect for both your account and the IAM users created using the account.
 
 Only the :ref:`administrator <iam_01_0023__section1475194083513>` can configure the login authentication policy, and IAM users can only view the configurations. If an IAM user needs to modify the configurations, the user can request the administrator to perform the modification or grant the required permissions.
 
@@ -43,6 +43,8 @@ The administrator can set the time for resetting the account lockout counter, ma
 -  Maximum number of unsuccessful login attempts: The value ranges from 3 to 10, and the default value is **5**.
 -  Lockout duration: The value ranges from 15 to 30 minutes, and the default value is **15 minutes**.
 
+.. _iam_01_0704__en-us_topic_0177717040_en-us_topic_0176803438_section1694311288250:
+
 Account Disabling
 -----------------
 
@@ -68,6 +70,6 @@ Custom Information
 
 Set custom information that will be displayed upon successful login. For example, enter the word **Welcome**.
 
-No information is displayed by default, and the administrator can set custom information that will be displayed.
+This option is disabled by default and can be enabled by the administrator.
 
 You and all the IAM users created using your account will see the same information upon successful login.

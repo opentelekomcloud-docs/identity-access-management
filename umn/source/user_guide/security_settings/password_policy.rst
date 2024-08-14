@@ -21,7 +21,7 @@ Password Composition & Reuse
 -  (Optional) Enable the **Restrict consecutive identical characters** option and set the maximum number of times that a character is allowed to be consecutively present in a password. For example, value **1** indicates that consecutive identical characters are not allowed in a password.
 -  (Optional) Enable the **Disallow previously used passwords** option and set the number of previously used passwords that are not allowed. For example, value **3** indicates that the user cannot set the last three passwords that the user has previously used when setting a new password.
 
-Changes to the password policy take effect the next time you or your IAM users change passwords. IAM users created later will also adhere to the updated password policy.
+Changes to the password policy take effect the next time you or your IAM users change passwords. The new password policy will also apply to IAM users created later.
 
 .. _iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section104571219917:
 
@@ -45,6 +45,6 @@ Minimum Password Age
 
 To prevent password loss due to frequent password changes, you can set a minimum period after which users are allowed to make a password change.
 
-This option is disabled by default. If you enable this option, you can set a period from 0 to 1440 minutes.
+This option is disabled by default. The validity period ranges from 0 to 1,440 minutes.
 
 The changes will take effect immediately for your account and all IAM users under your account.

@@ -7,7 +7,7 @@ Viewing and Modifying User Information
 
 You can modify the user information, including the status, access type, description, external identity ID, and belonged user group.
 
-If the job responsibilities of a user are changed, you can change the groups to which the user belongs to modify the user permissions. You can also change the virtual MFA device and access keys of the user by choosing **More** > **Security Settings** in the row containing the target user. If a user forgot their password or access keys, you can modify the login credentials of the user.
+If the job responsibilities of a user are changed, you can change the permissions assigned for that user by changing the groups which the user belongs to. You can also change the virtual MFA device and access keys of the user by choosing **More** > **Security Settings** in the row containing the target user. If a user forgot their password or access keys, you can modify the login credentials of the user.
 
 As an administrator, you can modify the basic information about an IAM user, change the security settings of the user and the groups to which the user belongs, and view or delete the assigned permissions. To view or modify user information, click **Security Settings** in the row containing the IAM user.
 
@@ -48,7 +48,7 @@ An IAM user inherits permissions from the groups to which the user belongs. You 
 
 Your account belongs to the default group **admin**, which cannot be changed.
 
--  Click **Add to User Groups**, and select one or more groups to which the user will belong. The user then inherits permissions of these groups.
+-  Click **Add to User Group**, and select one or more groups to which the user will belong. The user then inherits permissions of these groups.
 -  Click **Remove** on the right of a user group and click **Yes**. The user no longer has the permissions assigned to the group.
 
 Security Settings
@@ -64,7 +64,7 @@ As an administrator, you can modify the MFA device, login credential, login prot
 
          The mobile number and email address of the IAM user cannot be the same as those of your account or other IAM users.
 
-   -  Remove the MFA device from the user. For more information about MFA authentication and virtual MFA device, see :ref:`MFA Authentication and Virtual MFA Device <iam_10_0002>`.
+   -  Remove the virtual MFA device from the user. For more information about MFA authentication and virtual MFA device, see :ref:`MFA Authentication and Virtual MFA Device <iam_10_0002>`.
 
 -  **Login Credentials**: You can change the login password of the IAM user. For more information, see :ref:`Changing the Login Password of an IAM User <iam_01_0653>`.
 

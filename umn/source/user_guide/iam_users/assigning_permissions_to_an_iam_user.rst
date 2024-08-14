@@ -5,7 +5,7 @@
 Assigning Permissions to an IAM User
 ====================================
 
-:ref:`IAM users created <en-us_topic_0046611303>` without being added to any groups do not have permissions. You can assign permissions to these IAM users on the IAM console. After authorization, the users can use cloud resources in your account as specified by their permissions.
+:ref:`IAM users created <en-us_topic_0046611303>` without being added to any groups do not have permissions. You can assign permissions to these IAM users on the IAM console. Then the users can use cloud resources based on the assigned permissions.
 
 An IAM user obtains permissions from the user groups to which the user belongs. After you attach policies or roles to a group and add a user to the group, the user inherits the permissions defined by the policies or roles.
 

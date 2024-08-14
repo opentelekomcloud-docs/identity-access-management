@@ -7,7 +7,7 @@ ACL
 
 The **ACL** tab of the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page provides the :ref:`IP Address Ranges <iam_07_0003__en-us_topic_0177717042_en-us_topic_0176803440_section1659055844011>`, :ref:`IPv4 CIDR Blocks <iam_07_0003__en-us_topic_0177717042_en-us_topic_0176803440_section5282253478>`, and :ref:`VPC Endpoints <iam_07_0003__en-us_topic_0177717042_en-us_topic_0176803440_section148601027258>` settings for allowing user access only from specified IP address ranges, IPv4 CIDR blocks, or VPC endpoints.
 
-Only the :ref:`administrator <iam_01_0023__section1475194083513>` can configure the ACL. If an IAM user needs to configure the ACL, the user can request the administrator to perform the configuration or grant the required permissions.
+Only the :ref:`administrator <iam_01_0034>` can configure the ACL. If an IAM user needs to configure the ACL, the user can request the administrator to perform the configuration or grant the required permissions.
 
 **Access type:**
 

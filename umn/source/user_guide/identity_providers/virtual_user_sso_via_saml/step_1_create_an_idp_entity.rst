@@ -162,7 +162,7 @@ To configure the metadata file of the enterprise IdP in the cloud platform, you 
 Related Operations
 ------------------
 
--  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata, and identity conversion rules.
+-  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata configuration, and identity conversion rules.
 
    .. note::
 

@@ -28,13 +28,14 @@ Procedure
 
    The user group is displayed in the user group list.
 
-#. In the row containing the user group, click **Manage Permissions**.
+#. In the row containing the user group, click **Authorize** in the **Operation** column.
 
-#. On the **Permissions** tab page, click **Assign Permissions** above the permission list.
+#. Assign permissions for region-specific projects to the user group.
 
-#. Specify the authorization scope. If you select **Region-specific projects**, select one or more projects in the drop-down list.
+   a. Select desired permissions for project-level services and click **Next**.
+   b. Set **Scope** to **Regional-specific projects**, select the regional project, and click **OK**.
 
-   -  **Global service project**: Services deployed without specifying physical regions are called global services, such as Object Storage Service (OBS), and Tag Management Service (TMS). Permissions for these services must be assigned in the global service project.
-   -  **Region-specific projects**: Services deployed in specific regions are called project-level services. Permissions for these services need to be assigned in region-specific projects and take effect only for the corresponding regions. If you want the permissions to take effect for all regions, grant them in all these regions.
+#. Assign permissions for global services to the user group.
 
-#. Select policies and click **OK**.
+   a. Select permissions for global services, such as **OBS OperateAccess**, and click **Next**.
+   b. Select **All resources** for **Scope** and click **OK**.

@@ -34,7 +34,7 @@ The following describes how to configure your enterprise IdP and the cloud platf
 
 #. :ref:`Configure the enterprise IdP <iam_08_0256>`: Configure enterprise IdP parameters to determine what information can be sent to the cloud platform.
 
-#. :ref:`Configure an external identity ID on IAM <iam_08_0257>`: Establish a mapping between an IAM user and an enterprise user. When your enterprise IdP establishes SSO access to the cloud platform, the enterprise user can log in to the cloud platform as the IAM user with the specified external identity ID. For example, if an enterprise user **IdP_Test_User** is mapped to the IAM user **Alice**, the enterprise user **IdP_Test_User** will log in to the cloud platform as the IAM user **Alice**.
+#. :ref:`Configure an external identity ID <iam_08_0257>`: Establish a mapping between an IAM user and an enterprise user. When your enterprise IdP establishes SSO access to the cloud platform, the enterprise user can log in to the cloud platform as the IAM user with the specified external identity ID. For example, if an enterprise user **IdP_Test_User** is mapped to the IAM user **Alice**, the enterprise user **IdP_Test_User** will log in to the cloud platform as the IAM user **Alice**.
 
 
    .. figure:: /_static/images/en-us_image_0000001607216988.png

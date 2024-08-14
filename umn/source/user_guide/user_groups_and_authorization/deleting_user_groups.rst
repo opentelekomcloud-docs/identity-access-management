@@ -2,8 +2,8 @@
 
 .. _iam_01_0430:
 
-Deleting a User Group
-=====================
+Deleting User Groups
+====================
 
 Procedure
 ---------

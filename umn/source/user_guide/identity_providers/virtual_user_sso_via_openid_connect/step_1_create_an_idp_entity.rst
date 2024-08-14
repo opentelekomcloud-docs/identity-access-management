@@ -10,7 +10,7 @@ To establish a trust relationship between an enterprise IdP and the cloud platfo
 Prerequisites
 -------------
 
--  The enterprise administrator has created an account in the cloud platform, and has created user groups and assigned them permissions in IAM. For details, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>`. The user groups created in IAM will be mapped to federated users so that the federated users can obtain the permissions of the user groups to use cloud resources.
+-  The enterprise administrator has created an account on the cloud platform, and has created user groups and assigned them permissions in IAM. For details, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>`. The user groups created in IAM will be mapped to federated users so that the federated users can obtain the permissions of the user groups to use cloud resources.
 -  The enterprise administrator has read the help documentation of the enterprise IdP or has understood how to use the enterprise IdP. Configurations of different enterprise IdPs differ greatly, so they are not described in this document. For details about how to obtain an enterprise IdP's OAuth 2.0 credentials, see the IdP help documentation.
 
 .. _iam_08_0009__en-us_topic_0272448422_section81252015115012:
@@ -18,13 +18,13 @@ Prerequisites
 Creating OAuth 2.0 Credentials in the Enterprise IdP
 ----------------------------------------------------
 
-#. Set redirect URLs **https:///authui/oidc/redirect** and **https:///authui/oidc/post** in the enterprise IdP so that users can be redirected to the OpenID Connect IdP in the cloud platform.
+#. Set redirect URIs **https:///authui/oidc/redirect** and **https:///authui/oidc/post** in the enterprise IdP so that users can be redirected to the OpenID Connect IdP in the cloud platform.
 #. Obtain OAuth 2.0 credentials of the enterprise IdP.
 
 Creating an IdP Entity on the Cloud Platform
 --------------------------------------------
 
-Create an IdP entity and configure authorization information in IAM to establish a trust relationship between the enterprise IdP and IAM
+Create an IdP entity and configure authorization information in IAM to establish a trust relationship between the enterprise IdP and IAM.
 
 #. Log in to the IAM console, choose **Identity Providers** from the navigation pane, and click **Create Identity Provider** in the upper right corner.
 
@@ -152,7 +152,7 @@ Verifying the Federated Login
 Related Operations
 ------------------
 
--  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata, and identity conversion rules.
+-  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata configuration, and identity conversion rules.
 
    .. note::
 

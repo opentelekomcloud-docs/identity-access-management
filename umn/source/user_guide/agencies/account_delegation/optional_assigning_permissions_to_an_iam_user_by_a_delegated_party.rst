@@ -74,7 +74,7 @@ Procedure
 
       Select the policy created in the previous step or the **Agent Operator** role and click **Next**.
 
-      -  Custom policy: Allows a user to manage resources only for a specific agency.
+      -  Custom policy: Allows a user to manage resources only for an agency identified by a specific ID.
       -  **Agent Operator** role: Allows a user to manage resources for all agencies.
 
    g. Specify the authorization scope.
@@ -87,7 +87,7 @@ Procedure
 
    a. On the **Users** page, click **Create User**.
    b. On the **Create User** page, enter a username.
-   c. For the access type, select **Management console access** and **Set by user**.
+   c. Select **Management console access** for **Access Type** and then select **Set by user** for **Credential Type**.
    d. Enable login protection and click **Next**.
    e. Select the user group created in :ref:`1 <iam_01_0063__en-us_topic_0170090700_li135311310144613>` and click **Create**.
 

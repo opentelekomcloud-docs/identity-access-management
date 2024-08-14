@@ -29,7 +29,7 @@ Differences Between Virtual User SSO and IAM User SSO
 
 The differences between virtual user SSO and IAM user SSO are described as follows:
 
-1. Identity conversion: Virtual user SSO uses :ref:`identity conversion rules <en-us_topic_0079620340>` while IAM user SSO uses external identity IDs for identity conversion. An IdP user will be mapped to an IAM user if the **IAM_SAML_Attributes_xUserId** value of the IdP user is the same as the :ref:`external identity ID <en-us_topic_0046661675__li13713193419317>` of the IAM user. When you use IAM user SSO, make sure that you have set **IAM_SAML_Attributes_xUserId** in the IdP and **External Identity ID** in the SP to the same value.
+1. Identity conversion: Virtual user SSO uses :ref:`identity conversion rules <en-us_topic_0079620340>` while IAM user SSO uses external identity IDs for identity conversion. If the **IAM_SAML_Attributes_xUserId** value of one or more IdP users is the same as the :ref:`external identity ID <en-us_topic_0046661675__li13713193419317>` of an IAM user, these IdP users will be mapped to the IAM user. When you use IAM user SSO, make sure that you have set **IAM_SAML_Attributes_xUserId** in the IdP and **External Identity ID** in the SP to the same value.
 
 2. User identity in IAM: In virtual user SSO, the IdP user does not have a corresponding IAM user in the IAM user list. After the IdP user logs in, the system automatically creates a virtual user for it. In IAM user SSO, the IdP user has a IAM user mapped by external identity ID on the IAM console.
 
