@@ -15,7 +15,7 @@ You can configure the following parameters for federated users:
 .. note::
 
    -  Modifications to identity conversion rules will take effect the next time federated users log in.
-   -  To modify the permissions of a user, modify the permissions of the user group to which the user belongs. Then restart the enterprise IdP for the modifications to take effect.
+   -  To modify the permissions of a user, modify the permissions of the user group which the user belongs to. Then restart the enterprise IdP for the modifications to take effect.
 
 Prerequisites
 -------------

@@ -26,7 +26,7 @@ Procedure
 
       **Figure 1** Viewing IdP details
 
-#. Copy the login link by clicking |image1| in the **Login link** row.
+#. Copy the login link by clicking |image1| in the **Login Link** row.
 
 
    .. figure:: /_static/images/en-us_image_0000001606783928.png

@@ -12,8 +12,8 @@ Configuring Identity Federation
 
 The following describes how to configure your enterprise IdP and the cloud platform to trust each other.
 
-#. :ref:`Create an IdP entity and establish a trust relationship <iam_08_0009>`: Create OAuth 2.0 credentials in the enterprise IdP. In the cloud platform, create an IdP entity and establish a trust relationship between the two systems.
-#. :ref:`Configure identity conversion rules <iam_08_0008>`: Configure identity conversion rules in the cloud platform to map the users, user groups, and permissions in the enterprise IdP to the cloud platform.
+#. :ref:`Create an IdP entity and establish a trust relationship <iam_08_0009>`: Create OAuth 2.0 credentials in the enterprise IdP. On the cloud platform, create an IdP entity and establish a trust relationship between the two systems.
+#. :ref:`Configure identity conversion rules <iam_08_0008>`: Configure identity conversion rules on the cloud platform to map the users, user groups, and permissions in the enterprise IdP to the cloud platform.
 #. :ref:`Configure a federated login entry <iam_08_0007>`: Configure the login link in the enterprise IdP to allow enterprise users to be redirected to the cloud platform from your enterprise management system.
 
 How Identity Federation Works

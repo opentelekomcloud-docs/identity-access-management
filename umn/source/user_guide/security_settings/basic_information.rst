@@ -10,7 +10,7 @@ As an account administrator, both you and your IAM users can manage basic inform
 .. note::
 
    -  A mobile number or an email address can be bound only to one account or IAM user.
-   -  Only one mobile number, email address, and virtual MFA can be bound to an account or IAM user.
+   -  Only one mobile number, email address, and virtual MFA device can be bound to an account or IAM user.
 
 Changing the Login Password, Mobile Number, Virtual MFA Device, or Email Address
 --------------------------------------------------------------------------------

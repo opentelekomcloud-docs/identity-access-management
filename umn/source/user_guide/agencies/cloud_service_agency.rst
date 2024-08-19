@@ -2,8 +2,8 @@
 
 .. _iam_06_0004:
 
-Cloud Service Delegation
-========================
+Cloud Service Agency
+====================
 
 Services on the cloud platform interwork with each other, and some cloud services are dependent on other services. To delegate a cloud service to access other services and perform resource O&M, create an agency for the service.
 
@@ -11,7 +11,7 @@ IAM provides two methods to create a cloud service agency:
 
 #. :ref:`Creating a cloud service agency on the IAM console <iam_06_0004__en-us_topic_0175653574_section930952513442>`
 
-   Take an OBS agency as an example. The agency allows OBS to call cloud services, for example, to read monitoring data from AOM.
+   For example, create an agency for OBS and grant it permissions to read monitoring data from AOM.
 
 #. Automatically creating a cloud service agency to use certain resources
 

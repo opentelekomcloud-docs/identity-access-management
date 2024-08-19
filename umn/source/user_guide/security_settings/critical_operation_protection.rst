@@ -40,7 +40,7 @@ This section describes how to bind a virtual MFA device. If you have installed a
 
       .. note::
 
-         Your account is manually added using the time-based algorithm. Ensure that automatic time setting has been enabled on your mobile phone.
+         The user can be manually added only using time-based one-time passwords (TOTP). You are advised to enable automatic time setting on your mobile phone.
 
 #. View the verification codes on the MFA application. The code is automatically updated every 30 seconds.
 
@@ -59,7 +59,7 @@ For the account, only the account administrator can enable login protection for 
 
 -  **Enabling login protection for your account**
 
-   To enable login protection, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, click **Enable** next to **Login Protection**, select a verification method, enter the verification codes, and click **OK**.
+   To enable login protection, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, click **Enable** next to **Login Protection**, select a verification method, enter the verification code, and click **OK**.
 
 Operation Protection
 --------------------
@@ -104,7 +104,7 @@ If operation protection is disabled, you and IAM users created using your accoun
 
       -  If a user is only associated with a mobile number, only SMS verification is available.
       -  If a user is only associated with an email address, only email verification is available.
-      -  If a user is not associated with an email address, mobile number, or virtual MFA device, the user will need to associate at least one of them before the user can perform any critical operations.
+      -  If a user is not associated with an email address, mobile number, or virtual MFA device, the user will need to associate at least one of them before they can perform any critical operations.
 
    -  You may not be able to receive email or SMS verification codes due to communication errors. In this case, you are advised to use a virtual MFA device for verification.
    -  If operation protection is enabled, IAM users need to enter verification codes when performing a critical operation. The verification codes are sent to the mobile number or email address bound to the IAM users.
@@ -131,7 +131,7 @@ Information Self-Management
 
    By default, information self-management is enabled, indicating that all IAM users can manage their own :ref:`basic information <iam_01_0703>` (login password, mobile number, and email address). Determine whether to allow IAM users to manage their own information and what information they can modify.
 
-   To enable information self-management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click **Enable** next to **Information Self-Management**. Select **Enable**, select the information types that IAM users can modify, and click **OK**.
+   To enable information self-management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click **Enable** in the **Information Self-Management** row. Select **Enable**, select the information types that IAM users can modify, and click **OK**.
 
 -  **Disabling information self-management**
 
@@ -149,7 +149,7 @@ The following tables list the critical operations defined by each cloud service.
 .. table:: **Table 1** Critical operations defined by cloud services
 
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Service Type            | Service                              | Critical Operation                                            |
+   | Service Category        | Service                              | Critical Operation                                            |
    +=========================+======================================+===============================================================+
    | Compute                 | Elastic Cloud Server (ECS)           | -  Stopping, restarting, or deleting an ECS                   |
    |                         |                                      | -  Resetting the password for logging in to an ECS            |
@@ -180,7 +180,7 @@ The following tables list the critical operations defined by each cloud service.
    |                         |                                      | -  Dissociating a resource                                    |
    |                         |                                      | -  Accepting a backup                                         |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Network                 | Domain Name Service (DNS)            | -  Modifying, disabling, or deleting a record set             |
+   | Networking              | Domain Name Service (DNS)            | -  Modifying, disabling, or deleting a record set             |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
    |                         | Virtual Private Cloud (VPC)          | -  Releasing or unbinding an EIP                              |
    |                         |                                      | -  Deleting a VPC peering connection                          |
@@ -188,16 +188,18 @@ The following tables list the critical operations defined by each cloud service.
    |                         |                                      |                                                               |
    |                         |                                      |    -  Deleting an inbound or outbound rule                    |
    |                         |                                      |    -  Modifying an inbound or outbound rule                   |
-   |                         |                                      |    -  Deleting inbound or outbound rules                      |
+   |                         |                                      |    -  Batch deleting inbound or outbound rules                |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Elastic Load Balance (ELB)           | -  Classic load balancers                                     |
+   |                         | Elastic Load Balance (ELB)           | -  Shared load balancers                                      |
    |                         |                                      |                                                               |
    |                         |                                      |    -  Deleting a load balancer                                |
    |                         |                                      |    -  Deleting a listener                                     |
    |                         |                                      |    -  Deleting a certificate                                  |
-   |                         |                                      |    -  Disabling a load balancer                               |
+   |                         |                                      |    -  Removing a backend server                               |
+   |                         |                                      |    -  Unbinding an EIP                                        |
+   |                         |                                      |    -  Unbind a public or private IPv4 address                 |
    |                         |                                      |                                                               |
-   |                         |                                      | -  Shared load balancers                                      |
+   |                         |                                      | -  Dedicated load balancers                                   |
    |                         |                                      |                                                               |
    |                         |                                      |    -  Deleting a load balancer                                |
    |                         |                                      |    -  Deleting a listener                                     |
@@ -210,7 +212,7 @@ The following tables list the critical operations defined by each cloud service.
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
    |                         | Elastic IP (EIP)                     | -  Deleting a shared bandwidth                                |
    |                         |                                      | -  Releasing or unbinding an EIP                              |
-   |                         |                                      | -  Releasing or unbinding EIPs                                |
+   |                         |                                      | -  Batch releasing or unbinding EIPs                          |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
    | Management & Deployment | Identity and Access Management (IAM) | -  Disabling operation protection                             |
    |                         |                                      | -  Disabling login protection                                 |
@@ -227,7 +229,7 @@ The following tables list the critical operations defined by each cloud service.
    |                         |                                      | -  Creating an access key                                     |
    |                         |                                      | -  Deleting an access key                                     |
    |                         |                                      | -  Disabling an access key                                    |
-   |                         |                                      | -  Deleting the project                                       |
+   |                         |                                      | -  Deleting a project                                         |
    |                         |                                      | -  Modifying the status of access key management              |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
    | Application             | Distributed Cache Service (DCS)      | -  Resetting the password of a DCS instance                   |
@@ -244,7 +246,7 @@ The following tables list the critical operations defined by each cloud service.
    |                         |                                      | -  Unbinding an EIP                                           |
    |                         |                                      | -  Downloading a full backup                                  |
    +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Databases               | Document Database Service (DDS)      | -  Resetting the password                                     |
+   | Database                | Document Database Service (DDS)      | -  Resetting the password                                     |
    |                         |                                      | -  Restarting or deleting a DB instance                       |
    |                         |                                      | -  Restarting a node                                          |
    |                         |                                      | -  Switching the primary and secondary nodes of a replica set |

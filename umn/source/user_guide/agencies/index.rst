@@ -6,7 +6,7 @@ Agencies
 ========
 
 -  :ref:`Account Delegation <iam_01_0054>`
--  :ref:`Cloud Service Delegation <iam_06_0004>`
+-  :ref:`Cloud Service Agency <iam_06_0004>`
 -  :ref:`Deleting or Modifying Agencies <iam_01_0730>`
 
 .. toctree::
@@ -14,5 +14,5 @@ Agencies
    :hidden: 
 
    account_delegation/index
-   cloud_service_delegation
+   cloud_service_agency
    deleting_or_modifying_agencies

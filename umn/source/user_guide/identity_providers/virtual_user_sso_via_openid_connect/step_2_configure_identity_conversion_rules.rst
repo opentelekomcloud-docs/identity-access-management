@@ -12,8 +12,8 @@ Federated users are named **FederationUser** by default in the cloud platform. T
 
 .. note::
 
-   -  Modifications to identity conversion rules will take effect only after the federated users log in again.
-   -  To modify the permissions of a user, modify the permissions of the user group to which the user belongs. Then restart the enterprise IdP for the modifications to take effect.
+   -  Modifications to identity conversion rules will take effect the next time federated users log in.
+   -  To modify the permissions of a user, modify the permissions of the user group which the user belongs to. Then restart the enterprise IdP for the modifications to take effect.
 
 Prerequisites
 -------------
@@ -32,12 +32,6 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM conv
    #. In the IdP list, click **Modify** in the row containing the IdP.
 
    #. In the **Identity Conversion Rules** area, click **Create Rule**. Then, configure the rules in the **Create Rule** dialog box.
-
-
-      .. figure:: /_static/images/en-us_image_0289500726.png
-         :alt: **Figure 1** Setting parameters
-
-         **Figure 1** Setting parameters
 
       .. table:: **Table 1** Parameter description
 

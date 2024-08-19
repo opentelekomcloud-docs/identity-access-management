@@ -5,7 +5,7 @@
 Creating an Agency (by a Delegating Party)
 ==========================================
 
-By creating an agency, you can share your resources with another account, or delegate an individual or team to manage your resources. You do not need to share your security credentials (the password and access keys) with the delegated party. Instead, the delegated party can log in with its own account credentials and then switches the role to your account and manage your resources.
+By creating an agency, you can share your resources with another account, or delegate an individual or team to manage your resources. You do not need to share your security credentials (the password or access keys) with the delegated party. Instead, the delegated party can log in with its own account credentials and then switches the role to your account and manage your resources.
 
 Prerequisites
 -------------
@@ -20,7 +20,7 @@ Procedure
 
 #. Log in to the IAM console.
 
-#. On the IAM console, choose **Agencies** from the navigation pane, and click **Create Agency** in the upper right corner.
+#. On the IAM console, choose **Agencies** from the left navigation pane, and click **Create Agency** in the upper right corner.
 
 
    .. figure:: /_static/images/en-us_image_0000001511524692.png
@@ -41,7 +41,7 @@ Procedure
    .. note::
 
       -  **Account**: Share resources with another account or delegate an individual or team to manage your resources. The delegated account can only be an account, rather than an IAM user or a federated user.
-      -  **Cloud service**: Delegate a specific service to access other services. For more information, see :ref:`Cloud Service Delegation <iam_06_0004>`.
+      -  **Cloud service**: Delegate a specific service to access other services. For more information, see :ref:`Cloud Service Agency <iam_06_0004>`.
 
 #. Set the validity period and enter a description for the agency.
 
@@ -52,7 +52,7 @@ Procedure
    .. note::
 
       -  Assigning permissions to an agency is similar to assigning permissions to a user group. The two operations differ only in the number of available permissions. For details about how to assign permissions to a user group, see :ref:`Assigning Permissions to an IAM User <en-us_topic_0079496985>`.
-      -  Agencies cannot be assigned the **Security Administrator** role. For account security, grant permissions required to agencies based on the principle of least privilege.
+      -  Agencies cannot be assigned the **Security Administrator** role. For account security purposes, only grant the required permissions to the agency based on the principle of least privilege (PoLP).
 
 #. Click **OK**.
 

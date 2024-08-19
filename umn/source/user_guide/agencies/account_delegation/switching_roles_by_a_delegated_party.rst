@@ -5,7 +5,7 @@
 Switching Roles (by a Delegated Party)
 ======================================
 
-When an account establishes a trust relationship with your account, you become a delegated party. You and all the users you have authorized can switch to the delegating account and manage resources under the account based on assigned permissions.
+When an account establishes a trust relationship with your account, you become a delegated party. The IAM users that are granted agency permissions can switch to the delegating account and manage resources under the account based on the granted permissions.
 
 Prerequisites
 -------------
@@ -20,7 +20,7 @@ Procedure
 
    .. note::
 
-      The IAM user created in :ref:`2 <iam_01_0063__en-us_topic_0170090700_li695863494610>` of :ref:`(Optional) Assigning Permissions to an IAM User (by a Delegated Party) <iam_01_0063>` can switch roles to manage resources for the delegating party.
+      The IAM user created in :ref:`2 <iam_01_0063__en-us_topic_0170090700_li695863494610>` can switch roles to manage resources for the delegating party.
 
 #. Hover the mouse pointer over the username in the upper right corner and choose **Switch Role**.
 #. On the **Switch Role** page, enter the domain name of the delegating party.

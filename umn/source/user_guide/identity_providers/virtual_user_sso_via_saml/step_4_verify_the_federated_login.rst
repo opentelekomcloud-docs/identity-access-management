@@ -11,7 +11,7 @@ Verifying the Federated Login
 Federated users can initiate a login from the IdP or SP.
 
 -  Initiating a login from an IdP, for example, Microsoft Active Directory Federation Services (AD FS) or Shibboleth.
--  Initiating a login from the SP. You can obtain the login link from the IdP details page on the IAM console.
+-  Initiating a login from the SP (the cloud platform). You can obtain the login link from the IdP details page on the IAM console.
 
 The IdP-initiated login method depends on the IdP. For details, see the IdP help documentation. This section describes how to initiate a login from the SP.
 
