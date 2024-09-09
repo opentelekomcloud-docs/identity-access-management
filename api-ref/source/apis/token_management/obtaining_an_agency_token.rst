@@ -137,8 +137,8 @@ Response Parameters
    |                 |                 |                 |                                                                                                                                                   |
    |                 |                 |                 | -  **user.name**: Username of the delegating party.                                                                                               |
    |                 |                 |                 | -  **user.id**: User ID of the delegating party.                                                                                                  |
-   |                 |                 |                 | -  **domain.name**: Name of the domain which the delegating party belongs to.                                                                     |
-   |                 |                 |                 | -  **domain.id**: ID of the domain which the delegating party belongs to.                                                                         |
+   |                 |                 |                 | -  **domain.name**: Name of the domain to which the delegating party belongs.                                                                     |
+   |                 |                 |                 | -  **domain.id**: ID of the domain.                                                                                                               |
    |                 |                 |                 | -  **password_expires_at**: Time when the password will expire. **null** indicates that the password will not expire. This parameter is optional. |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
    | domain          | No              | JSON object     | This parameter is returned only when the **scope** parameter in the request body has been set to **domain**.                                      |
@@ -152,8 +152,8 @@ Response Parameters
    |                 |                 |                 |          "id" : "domainid"                                                                                                                        |
    |                 |                 |                 |    }                                                                                                                                              |
    |                 |                 |                 |                                                                                                                                                   |
-   |                 |                 |                 | -  **domain.name**: Name of the domain which the delegating party belongs to.                                                                     |
-   |                 |                 |                 | -  **domain.id**: ID of the domain which the delegating party belongs to.                                                                         |
+   |                 |                 |                 | -  **domain.name**: Name of the domain to which the delegating party belongs.                                                                     |
+   |                 |                 |                 | -  **domain.id**: ID of the domain.                                                                                                               |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
    | project         | No              | JSON object     | This parameter is returned only when the **scope** parameter in the request body has been set to **project**.                                     |
    |                 |                 |                 |                                                                                                                                                   |
@@ -220,7 +220,7 @@ Response Parameters
    |                 |                 |                 |          }                                                                                                                                        |
    |                 |                 |                 |        }                                                                                                                                          |
    |                 |                 |                 |                                                                                                                                                   |
-   |                 |                 |                 | -  **domain.name**: Name of the domain which the delegated party belongs to.                                                                      |
+   |                 |                 |                 | -  **domain.name**: Name of the domain to which the delegated party belongs.                                                                      |
    |                 |                 |                 | -  **user.name**: Username of the delegated party.                                                                                                |
    +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
 
