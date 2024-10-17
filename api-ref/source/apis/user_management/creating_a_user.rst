@@ -51,11 +51,11 @@ Request Parameters
       +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | enabled            | No              | Boolean         | Whether a user is enabled.                                                                                                                                                         |
       |                    |                 |                 |                                                                                                                                                                                    |
-      |                    |                 |                 | The value can be **true** or **false**. **true** indicates the user is enabled and **false** indicates the user is not enabled. The default value is **true**.                     |
+      |                    |                 |                 | **true** (default value) indicates that the user is enabled. **false** indicates that the user is disabled.                                                                        |
       +--------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | password           | No              | String          | Password of the user. The password must meet the following requirements:                                                                                                           |
       |                    |                 |                 |                                                                                                                                                                                    |
-      |                    |                 |                 | -  Can contain 6 to 32 characters. The system default minimum password length is 6 characters, and you can change the minimum password length.                                     |
+      |                    |                 |                 | -  Can contain 6 to 32 characters. The default minimum password length is 6 characters.                                                                                            |
       |                    |                 |                 | -  Must contain at least two of the following character types: uppercase letters, lowercase letters, digits, and special characters.                                               |
       |                    |                 |                 | -  Cannot be the username or the username spelled backwards.                                                                                                                       |
       |                    |                 |                 | -  Cannot contain the user's mobile phone number or email address.                                                                                                                 |
@@ -70,20 +70,28 @@ Request Parameters
 
    .. code-block::
 
-      1. Create the temporary file ${filename}.json based on the following template. ${filename} indicates the temporary file name, which is user-defined.
+
+
+
+
+
+
+
+
+
+
+
+
+      POST https://sample.domain.com/v3/users
       {
           "user": {
-              "default_project_id": "acf2ffabba974fae8f30378ffde2cfa6",
-              "domain_id": "88b16b6440684467b8825d7d96e154d8",
+              "name": "IAMUser",
+              "domain_id": "d78cbac186b744899480f25bd02...",
               "enabled": true,
-              "name": "jamesdoe",
-              "password": "********"
+              "password": "IAMPassword@",
+              "description": "IAMDescription"
           }
       }
-      2. Run the following command under the directory storing the ${filename}.json file.
-      curl -i -k -H 'Accept:application/json' -H 'Content-Type:application/json;charset=utf8' -H "X-Auth-Token:$token" -X POST -d @${filename}.json https://sample.domain.com/v3/users
-      3. Run the following command under the directory of the ${filename}.json file to delete the ${filename}.json file.
-      rm ${filename}.json
 
 Response Parameters
 -------------------
@@ -98,25 +106,25 @@ Response Parameters
 
 -  Description for the user format
 
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter           | Mandatory       | Type            | Description                                                                                                                                                    |
-   +=====================+=================+=================+================================================================================================================================================================+
-   | enabled             | Yes             | Boolean         | Whether a user is enabled.                                                                                                                                     |
-   |                     |                 |                 |                                                                                                                                                                |
-   |                     |                 |                 | The value can be **true** or **false**. **true** indicates the user is enabled and **false** indicates the user is not enabled. The default value is **true**. |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | id                  | Yes             | String          | User ID.                                                                                                                                                       |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | domain_id           | Yes             | String          | ID of the domain where a user is located.                                                                                                                      |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | name                | Yes             | String          | Username.                                                                                                                                                      |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | links               | Yes             | JSON object     | User resource link.                                                                                                                                            |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | default_project_id  | No              | String          | Default project ID of a user.                                                                                                                                  |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | password_expires_at | Yes             | String          | UTC when the password will expire. **null** indicates that the password will not expire.                                                                       |
-   +---------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | Parameter           | Mandatory       | Type            | Description                                                                                                 |
+   +=====================+=================+=================+=============================================================================================================+
+   | enabled             | Yes             | Boolean         | Whether a user is enabled.                                                                                  |
+   |                     |                 |                 |                                                                                                             |
+   |                     |                 |                 | **true** (default value) indicates that the user is enabled. **false** indicates that the user is disabled. |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | id                  | Yes             | String          | User ID.                                                                                                    |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | domain_id           | Yes             | String          | ID of the domain where a user is located.                                                                   |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | name                | Yes             | String          | Username.                                                                                                   |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | links               | Yes             | JSON object     | User resource link.                                                                                         |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | default_project_id  | No              | String          | Default project ID of a user.                                                                               |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
+   | password_expires_at | Yes             | String          | UTC when the password will expire. **null** indicates that the password has unlimited validity.             |
+   +---------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+
 
 -  Example response
 

@@ -96,11 +96,9 @@ Response Parameters
    +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
    | name                | Yes       | String      | Username.                                                                                                               |
    +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
-   | password_expires_at | Yes       | String      | UTC time when the password will expire. **null** indicates that the password will not expire.                           |
+   | password_expires_at | Yes       | String      | UTC time when the password will expire. **null** indicates that the password has unlimited validity.                    |
    +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
    | pwd_status          | No        | Boolean     | Password status. **true** means that the password needs to be changed, and **false** means that the password is normal. |
-   +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
-   | pwd_strength        | No        | String      | Password strength. The value can be **high**, **mid**, or **low**.                                                      |
    +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
    | default_project_id  | No        | String      | ID of the project that is displayed by default when the user logs in to the console.                                    |
    +---------------------+-----------+-------------+-------------------------------------------------------------------------------------------------------------------------+
@@ -127,7 +125,7 @@ Response Parameters
               "default_project_id": "263fd9",
               "password_expires_at": "2016-12-07T00:00:00.000000Z",
               "pwd_status": true,
-              "pwd_strength": "high",
+
               "last_project_id": ""
           }],
           "links": {

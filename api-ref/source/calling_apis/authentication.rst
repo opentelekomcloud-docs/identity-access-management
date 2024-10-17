@@ -52,7 +52,9 @@ After a token is obtained, the **X-Auth-Token** header field must be added to re
 .. code-block::
 
 
-   POST https://www.example.com/v3/auth/tokens
+   GET https://iam.region1.example.com/v3/auth/projects
+   Content-Type: application/json
+   X-Auth-Token: ABCDEFJ....
 
 AK/SK-based Authentication
 --------------------------
