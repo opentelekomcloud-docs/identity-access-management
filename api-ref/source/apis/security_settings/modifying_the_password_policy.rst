@@ -61,6 +61,8 @@ Request Parameters
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
    | password_validity_period              | No        | Integer | Password validity period (days). Value range: 0-180. Value **0** indicates that this requirement does not apply. |
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
+   | password_char_combination             | No        | Integer | Minimum number of character types that a password must contain. Value range: 2-4.                                |
+   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -111,7 +113,8 @@ Example Request
        "minimum_password_age" : 20,
        "password_validity_period" : 60,
        "maximum_consecutive_identical_chars" : 3,
-       "password_not_username_or_invert" : false
+       "password_not_username_or_invert" : false ,
+       "password_char_combination" : 3
      }
    }
 
@@ -133,7 +136,8 @@ The request is successful.
        "number_of_recent_passwords_disallowed" : 2,
        "password_validity_period" : 60,
        "maximum_consecutive_identical_chars" : 3,
-       "password_not_username_or_invert" : true
+       "password_not_username_or_invert" : true,
+       "password_char_combination" : 3
      }
    }
 
