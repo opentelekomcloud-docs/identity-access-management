@@ -57,7 +57,7 @@ Request Parameters
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
    | number_of_recent_passwords_disallowed | No        | Integer | Number of previously used passwords that are not allowed. Value range: 0-10.                                     |
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | password_not_username_or_invert       | No        | Boolean | Indicates whether the password can be the username or the username spelled backwards.                            |
+   | password_not_username_or_invert       | No        | Boolean | Whether the password can be the username or the username spelled backwards.                                      |
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
    | password_validity_period              | No        | Integer | Password validity period (days). Value range: 0-180. Value **0** indicates that this requirement does not apply. |
    +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+

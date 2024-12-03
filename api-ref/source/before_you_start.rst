@@ -1,9 +1,21 @@
-:original_name: iam_01_0007.html
+:original_name: en-us_topic_0057845582.html
 
-.. _iam_01_0007:
+.. _en-us_topic_0057845582:
+
+Before You Start
+================
+
+Welcome to Identity and Access Management (IAM). IAM provides identity authentication, permissions management, and access control. With IAM, you can create and manage users and grant them permissions to allow or deny their access to cloud resources.
+
+You can use IAM through the console or application programming interfaces (APIs). This document describes how to use APIs to perform operations on IAM, such as creating users and user groups and obtaining tokens.
+
+Endpoints
+---------
+
+An endpoint is the **request address** for calling an API. Endpoints vary depending on services and regions. For the endpoints of all services, see `Regions and Endpoints <https://docs.otc.t-systems.com/regions-and-endpoints/index.html>`__.
 
 Concepts
-========
+--------
 
 Common concepts used when you call IAM APIs are described as follows:
 
@@ -11,15 +23,11 @@ Common concepts used when you call IAM APIs are described as follows:
 
    An account is created upon successful registration with the cloud platform. The account has full access permissions for all of its cloud services and resources. It can be used to reset user passwords and grant user permissions.
 
--  Domain
-
-   A domain, also called an "account", is created upon successful registration. The domain has full access permissions for all of its cloud services and resources. It can be used to reset user passwords and grant user permissions.
-
 -  User
 
-   A user is created using a domain to use cloud services. Each user has their own identity credentials (password and access keys).
+   A user is created by a domain to use cloud services. Each user has its own identity credentials (password or access keys).
 
-   An IAM user can view the domain ID and user ID on the **My Credentials** page of the console. The account name, username, and password will be required for API authentication.
+   An IAM user can view the domain ID and user ID on the **My Credentials** page of the console. The domain name, username, and password will be required for API authentication.
 
 -  Region
 
@@ -34,7 +42,7 @@ Common concepts used when you call IAM APIs are described as follows:
    Projects group and isolate resources (including compute, storage, and network resources) across physical regions. A default project is provided for each region, and subprojects can be created under each default project. Users can be granted permissions to access all resources in a specific project. For more refined access control, create subprojects under a project and create resources in the subprojects. Users can then be assigned permissions to access only specific resources in the subprojects.
 
 
-   .. figure:: /_static/images/en-us_image_0000001782066216.png
+   .. figure:: /_static/images/en-us_image_0000002089066209.png
       :alt: **Figure 1** Project isolating model
 
       **Figure 1** Project isolating model
