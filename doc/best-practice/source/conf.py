@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'iam-best-practice.tex',
-     u'Identity and Access Management - Best Practice',
+    u'Identity and Access Management - Best Practice',
      u'OpenTelekomCloud', 'manual'),
 ]
 

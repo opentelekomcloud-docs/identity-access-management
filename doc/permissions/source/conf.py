@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'iam-permissions.tex',
-     u'Identity and Access Management - Permissions',
+    u'Identity and Access Management - Permissions',
      u'OpenTelekomCloud', 'manual'),
 ]
 
