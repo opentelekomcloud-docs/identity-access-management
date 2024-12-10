@@ -109,8 +109,8 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'iam-mycredential-guide.tex',
-     u'Identity and Access Management - My Credential',
+     'iam-mycredential.tex',
+    u'Identity and Access Management - My Credential',
      u'OpenTelekomCloud', 'manual'),
 ]
 
