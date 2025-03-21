@@ -43,6 +43,6 @@ Common concepts used when you call IAM APIs are described as follows:
 
 
    .. figure:: /_static/images/en-us_image_0000002089066209.png
-      :alt: **Figure 1** Project isolating model
+      :alt: **Figure 1** Project isolation model
 
-      **Figure 1** Project isolating model
+      **Figure 1** Project isolation model
