@@ -8,7 +8,7 @@ Obtaining an Agency Token
 Function
 --------
 
-This API is used to obtain an agency token. For example, after a trust relationship is established between A (delegating party) and B (delegated party), the delegated party B can use this API to obtain an agency token to manage A's resources that B is delegated to manage. However, B cannot use this agency token to manage its own resources. To do so, B needs to obtain a user token by referring to :ref:`Obtaining a User Token <en-us_topic_0057845583>`.
+This API is used to obtain an agency token. For example, after a trust relationship is established between account A (delegating party) and account B (delegated party), the delegated party B can use this API to obtain an agency token to manage A's resources that B is delegated to manage. However, B cannot use this agency token to manage its own resources. To do so, B needs to obtain a token by referring to :ref:`Obtaining a User Token <en-us_topic_0057845583>`.
 
 .. note::
 
