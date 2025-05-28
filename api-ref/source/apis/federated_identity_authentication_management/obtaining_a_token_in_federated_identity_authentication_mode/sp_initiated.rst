@@ -37,7 +37,7 @@ You must have permissions of user **root** to install the unified command-line c
 
 .. important::
 
-   The API calling operation must be performed in a secure network environment (in a VPN or a cloud server of a domain). Otherwise, this operation may be under the man-in-the-middle (MITM) attack.
+   The API calling operation must be performed in a secure network environment (in a VPN or a cloud server of a domain). Otherwise, this operation may be under man-in-the-middle (MITM) attacks.
 
 #. Create an environment variable file under the installation directory of OpenStackClient. Modify the environment variable file in a text editor. Add parameters, such as the username, password, region, SAML protocol version, and the IP address and port number of IAM, to the file. :ref:`Table 1 <iam_02_0001__table2616118811159>` describes the parameters.
 
@@ -166,7 +166,7 @@ Shibboleth ECP Client
 
    .. code-block::
 
-      # mapping from user friendly names or tags to IdP ECP enpoints
+      # mapping from user friendly names or tags to IdP ECP endpoints
       IDP_ENDPOINTS = {
           "idp1": "https://idp.example.com/idp/profile/SAML2/SOAP/ECP"
       }
