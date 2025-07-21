@@ -6,11 +6,10 @@
       - helpcenter-base-jobs
     vars:
       sphinx_pdf_files:
-        - iam-umn.pdf
-        - iam-best-practice.pdf
-        - iam-api-ref.pdf
         - iam-mycredential.pdf
+        - iam-umn.pdf
         - iam-permissions.pdf
+        - iam-api-ref.pdf
     check:
       jobs:
         - noop
