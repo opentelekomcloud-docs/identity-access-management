@@ -13,3 +13,8 @@ Identity and Access Management (IAM) provides a public cloud system (Open Teleko
       :api-ref: This document describes application programming interfaces (APIs) of Identity and Access Management (IAM) and provides API parameter.
       :mycredential: This document describes My Credential page. My Credential page centrally manages user authentication information, including verified email addresses, verified mobile numbers, and passwords.
       :permissions: This document described Permissions in management area and cloud service management area.
+
+   .. service_card_link::
+      :title: Best Practices
+      :url: https://arch.otc-service.com/docs/best-practices/security-services/iam
+      :description: Discover our best practices for optimizing cloud-based solutions, focusing on architectural principles that ensure reliability, scalability, security, high availability, and fault tolerance in the Open Telekom Cloud Architecture Center.
