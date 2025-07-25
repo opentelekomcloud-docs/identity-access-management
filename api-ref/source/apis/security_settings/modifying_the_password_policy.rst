@@ -46,23 +46,23 @@ Request Parameters
 
 .. table:: **Table 4** password_policy
 
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | Parameter                             | Mandatory | Type    | Description                                                                                                      |
-   +=======================================+===========+=========+==================================================================================================================+
-   | maximum_consecutive_identical_chars   | No        | Integer | Maximum number of times that a character is allowed to consecutively present in a password. Value range: 0-32.   |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | minimum_password_age                  | No        | Integer | Minimum period (minutes) after which users are allowed to make a password change. Value range: 0-1440.           |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | minimum_password_length               | No        | Integer | Minimum number of characters that a password must contain. Value range: 6-32.                                    |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | number_of_recent_passwords_disallowed | No        | Integer | Number of previously used passwords that are not allowed. Value range: 0-10.                                     |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | password_not_username_or_invert       | No        | Boolean | Whether the password can be the username or the username spelled backwards.                                      |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | password_validity_period              | No        | Integer | Password validity period (days). Value range: 0-180. Value **0** indicates that this requirement does not apply. |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
-   | password_char_combination             | No        | Integer | Minimum number of character types that a password must contain. Value range: 2-4.                                |
-   +---------------------------------------+-----------+---------+------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | Parameter                             | Mandatory | Type    | Description                                                                                                       |
+   +=======================================+===========+=========+===================================================================================================================+
+   | maximum_consecutive_identical_chars   | No        | Integer | The maximum number of times that a character is allowed to consecutively present in a password. Value range: 0-32 |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | minimum_password_age                  | No        | Integer | The minimum period (minutes) after which users are allowed to make a password change. Value range: 0-1440         |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | minimum_password_length               | No        | Integer | The minimum number of characters that a password must contain. Value range: 6-32                                  |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | number_of_recent_passwords_disallowed | No        | Integer | The number of previously used passwords that are not allowed. Value range: 0-10                                   |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | password_not_username_or_invert       | No        | Boolean | Whether the password can be the username or the username spelled backwards.                                       |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | password_validity_period              | No        | Integer | Password validity period (days). Value range: 0-180. Value **0** indicates that this requirement does not apply.  |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
+   | password_char_combination             | No        | Integer | The minimum number of character types that a password must contain. Value range: 2-4                              |
+   +---------------------------------------+-----------+---------+-------------------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -79,25 +79,25 @@ Response Parameters
 
 .. table:: **Table 6** password_policy
 
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | Parameter                             | Type    | Description                                                                                 |
-   +=======================================+=========+=============================================================================================+
-   | maximum_consecutive_identical_chars   | Integer | Maximum number of times that a character is allowed to consecutively present in a password. |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | maximum_password_length               | Integer | Maximum number of characters that a password can contain.                                   |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | minimum_password_age                  | Integer | Minimum period (minutes) after which users are allowed to make a password change.           |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | minimum_password_length               | Integer | Minimum number of characters that a password must contain.                                  |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | number_of_recent_passwords_disallowed | Integer | Number of previously used passwords that are not allowed.                                   |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | password_not_username_or_invert       | Boolean | Indicates whether the password can be the username or the username spelled backwards.       |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | password_requirements                 | String  | Characters that a password must contain.                                                    |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | password_validity_period              | Integer | Password validity period (days).                                                            |
-   +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | Parameter                             | Type    | Description                                                                                     |
+   +=======================================+=========+=================================================================================================+
+   | maximum_consecutive_identical_chars   | Integer | The maximum number of times that a character is allowed to consecutively present in a password. |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | maximum_password_length               | Integer | The maximum number of characters that a password can contain.                                   |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | minimum_password_age                  | Integer | The minimum period (minutes) after which users are allowed to make a password change.           |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | minimum_password_length               | Integer | The minimum number of characters that a password must contain.                                  |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | number_of_recent_passwords_disallowed | Integer | The number of previously used passwords that are not allowed.                                   |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | password_not_username_or_invert       | Boolean | Whether the password can be the username or the username spelled backwards.                     |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | password_requirements                 | String  | Characters that a password must contain.                                                        |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
+   | password_validity_period              | Integer | Password validity period (days).                                                                |
+   +---------------------------------------+---------+-------------------------------------------------------------------------------------------------+
 
 Example Request
 ---------------
