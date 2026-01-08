@@ -33,9 +33,9 @@ Request Parameters
    +--------------+-----------+--------+-------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                           |
    +==============+===========+========+=======================================================+
-   | X-Auth-Token | Yes       | String | Authenticated token.                                  |
+   | Accept       | Yes       | String | Fill **application/json;charset=utf8** in this field. |
    +--------------+-----------+--------+-------------------------------------------------------+
-   | Content-Type | Yes       | String | Fill **application/json;charset=utf8** in this field. |
+   | X-Auth-Token | Yes       | String | Authenticated token.                                  |
    +--------------+-----------+--------+-------------------------------------------------------+
 
 -  Example request
@@ -44,7 +44,7 @@ Request Parameters
 
    .. code-block::
 
-      curl -i -k -H 'Accept:application/json' -H 'Content-Type:application/json;charset=utf8' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/projects/619d3e78f61b4be68bc5aa0b59edcf7b
+      curl -i -k -H 'Accept:application/json' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/projects/619d3e78f61b4be68bc5aa0b59edcf7b
 
 Response Parameters
 -------------------
