@@ -33,7 +33,7 @@ Request Parameters
    +--------------+-----------+--------+-------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                           |
    +==============+===========+========+=======================================================+
-   | Accept       | Yes       | String | Fill **application/json;charset=utf8** in this field. |
+   | Accept       | Yes       | String | Fill **application/json** in this field.              |
    +--------------+-----------+--------+-------------------------------------------------------+
    | X-Auth-Token | Yes       | String | Authenticated token.                                  |
    +--------------+-----------+--------+-------------------------------------------------------+
