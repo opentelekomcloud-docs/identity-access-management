@@ -51,7 +51,7 @@ Request Parameters
    +--------------+-----------+--------+-------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                           |
    +==============+===========+========+=======================================================+
-   | Content-Type | Yes       | String | Fill **application/json;charset=utf8** in this field. |
+   | Accept       | Yes       | String | Fill **application/json;charset=utf8** in this field. |
    +--------------+-----------+--------+-------------------------------------------------------+
    | X-Auth-Token | Yes       | String | Authenticated token of the target tenant.             |
    +--------------+-----------+--------+-------------------------------------------------------+
