@@ -5,7 +5,7 @@
 Making an API Request
 =====================
 
-This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token (see :ref:`Obtaining a User Token <en-us_topic_0057845583>`) as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
+This section describes the structure of a REST API request, and uses the IAM API for obtaining a user token (see :ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`) as an example to demonstrate how to call an API. The obtained token can then be used to authenticate the calling of other APIs.
 
 Request URI
 -----------
@@ -49,7 +49,7 @@ The HTTP protocol defines the following request methods that can be used to send
 -  **HEAD**: same as GET except that the server must return only the response header.
 -  **PATCH**: requests the server to update partial content of a specified resource. If the resource does not exist, a new resource will be created.
 
-For example, in the case of the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`), the request method is POST. The request is as follows:
+For example, in the case of the API used to obtain a user token (:ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`), the request method is POST. The request is as follows:
 
 .. code-block::
 
@@ -64,7 +64,7 @@ You can also add additional header fields to a request, such as the fields requi
 Common request header fields are as follows:
 
 -  **Content-Type**: specifies the request body type or format. This field is mandatory and its default value is **application/json**.
--  **X-Auth-Token**: specifies a user token only for token-based API authentication. **X-Auth-Token** is a response to the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`). This API is the only one that does not require authentication.
+-  **X-Auth-Token**: specifies a user token only for token-based API authentication. **X-Auth-Token** is a response to the API used to obtain a user token (:ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`). This API is the only one that does not require authentication.
 
    .. note::
 
@@ -72,7 +72,7 @@ Common request header fields are as follows:
 
       For details, see "AK/SK-based Authentication" in :ref:`Authentication <iam_02_0510>`.
 
-The API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`) does not require authentication. Only the **Content-Type** field needs to be added to requests for calling the API. An example of such requests is as follows:
+The API used to obtain a user token (:ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`) does not require authentication. Only the **Content-Type** field needs to be added to requests for calling the API. An example of such requests is as follows:
 
 .. code-block::
 
@@ -87,11 +87,11 @@ The body of a request is often sent in a structured format as specified in the *
 
 The request body varies between APIs. Some APIs do not require the request body, such as the APIs requested using the GET and DELETE methods.
 
-In the case of the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *username*, *domainname*, ``********`` (login password), and *xxxxxxxxxxxxxxxxxx* (project ID) with the actual values. If you obtain a token using an account, ensure that you set *username* and *domainname* to the same value.
+In the case of the API used to obtain a user token (:ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`), the request parameters and parameter description can be obtained from the API request. The following provides an example request with a body included. Replace *username*, *domainname*, ``********`` (login password), and *xxxxxxxxxxxxxxxxxx* (project ID) with the actual values. If you obtain a token using an account, ensure that you set *username* and *domainname* to the same value.
 
 .. note::
 
-   The **scope** parameter specifies where a token takes effect. You can set **scope** to an account or a project under the account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see :ref:`Obtaining a User Token <en-us_topic_0057845583>`.
+   The **scope** parameter specifies where a token takes effect. You can set **scope** to an account or a project under the account. In the following example, the token takes effect only for the resources in a specified project. For more information about this API, see :ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`.
 
 .. code-block::
 
@@ -123,4 +123,4 @@ In the case of the API used to obtain a user token (:ref:`Obtaining a User Token
        }
    }
 
-If all data required for the API request is available, you can send the request to call the API through `curl <https://curl.haxx.se/>`__, `Postman <https://www.getpostman.com/>`__, or coding. In the response to the API used to obtain a user token (:ref:`Obtaining a User Token <en-us_topic_0057845583>`), **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.
+If all data required for the API request is available, you can send the request to call the API through `curl <https://curl.haxx.se/>`__, `Postman <https://www.getpostman.com/>`__, or coding. In the response to the API used to obtain a user token (:ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`), **x-subject-token** is the desired user token. This token can then be used to authenticate the calling of other APIs.

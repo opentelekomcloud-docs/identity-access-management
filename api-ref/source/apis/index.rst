@@ -16,6 +16,7 @@ APIs
 -  :ref:`Custom Policy Management <iam_02_0010>`
 -  :ref:`Agency Management <en-us_topic_0079467612>`
 -  :ref:`Security Settings <iam_02_0020>`
+-  :ref:`Enterprise Project Management <iam_12_0513>`
 -  :ref:`Federated Identity Authentication Management <en-us_topic_0057845573>`
 -  :ref:`Version Information Management <en-us_topic_0057845631>`
 -  :ref:`Services and Endpoints <en-us_topic_0057845604>`
@@ -35,6 +36,7 @@ APIs
    custom_policy_management/index
    agency_management/index
    security_settings/index
+   enterprise_project_management/index
    federated_identity_authentication_management/index
    version_information_management/index
    services_and_endpoints/index

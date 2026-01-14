@@ -15,7 +15,7 @@ URI
 
 -  URI format
 
-   GET /v3.0/OS-AGENCY/agencies{?domain_id,name,trust_domain_id}
+   GET /v3.0/OS-AGENCY/agencies
 
 -  Query parameters
 
@@ -51,13 +51,15 @@ Response Parameters
 
 -  Parameters in the response body
 
-   ========= ========= ========= =================
-   Parameter Mandatory Type      Description
-   ========= ========= ========= =================
-   agencies  Yes       JSONArray List of agencies.
-   ========= ========= ========= =================
+   +----------------------------------------------------------+-----------+-----------+-------------------+
+   | Parameter                                                | Mandatory | Type      | Description       |
+   +==========================================================+===========+===========+===================+
+   | :ref:`agencies <en-us_topic_0079467614__li195373151589>` | Yes       | JSONArray | List of agencies. |
+   +----------------------------------------------------------+-----------+-----------+-------------------+
 
--  Description for the agency format
+-  .. _en-us_topic_0079467614__li195373151589:
+
+   agencies
 
    +-------------------+-----------+--------+---------------------------------------------------------------------------------------------------------------+
    | Parameter         | Mandatory | Type   | Description                                                                                                   |

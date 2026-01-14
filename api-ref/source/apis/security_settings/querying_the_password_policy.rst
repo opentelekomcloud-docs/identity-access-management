@@ -62,7 +62,7 @@ Response Parameters
    +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
    | number_of_recent_passwords_disallowed | Integer | Number of previously used passwords that are not allowed.                                   |
    +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
-   | password_not_username_or_invert       | Boolean | Indicates whether the password can be the username or the username spelled backwards.       |
+   | password_not_username_or_invert       | Boolean | Whether the password can be the username or the username spelled backwards.                 |
    +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
    | password_requirements                 | String  | Characters that a password must contain.                                                    |
    +---------------------------------------+---------+---------------------------------------------------------------------------------------------+
@@ -89,12 +89,13 @@ The request is successful.
      "password_policy" : {
        "password_requirements" : "A password must contain at least two of the following: uppercase letters, lowercase letters, digits, and special characters.",
        "minimum_password_age" : 20,
-       "minimum_password_length" : 8,
+       "minimum_password_length" : 6,
        "maximum_password_length" : 32,
        "number_of_recent_passwords_disallowed" : 2,
        "password_validity_period" : 60,
        "maximum_consecutive_identical_chars" : 3,
-       "password_not_username_or_invert" : true
+       "password_not_username_or_invert" : true ,
+
      }
    }
 

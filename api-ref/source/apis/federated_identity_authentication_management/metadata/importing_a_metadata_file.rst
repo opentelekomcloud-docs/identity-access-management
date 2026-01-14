@@ -60,6 +60,14 @@ Request Parameters
 Response Parameters
 -------------------
 
+-  Parameters in the response body
+
+   ========= ====== ==============
+   Parameter Type   Description
+   ========= ====== ==============
+   message   String Import result.
+   ========= ====== ==============
+
 Example response
 
 .. code-block::
