@@ -17,10 +17,9 @@ IAM provides system-defined policies that can be directly used. You can also cre
 -  Permission: Defined by actions in a custom policy.
 -  APIs: REST APIs that can be called in a custom policy.
 -  Actions: Added to a custom policy to control permissions for specific operations.
--  IAM or enterprise projects: A custom policy can be applied to IAM projects or enterprise projects or both. Policies that contain actions supporting both IAM and enterprise projects can be assigned to user groups and take effect in both IAM and Enterprise Management. Policies that only contain actions supporting IAM projects can be assigned to user groups and only take effect for IAM. Such policies will not take effect if they are assigned to user groups in Enterprise Management. For details about the differences between IAM and enterprise projects, see "Differences Between IAM Projects and Enterprise Projects".
 
 .. note::
 
    -  The check mark (Y) and cross symbol (x) indicate that an action takes effect or does not take effect for the corresponding type of projects. A hyphen (-) indicates that an action is irrelevant to the corresponding type of projects.
    -  IAM is a global service which does not involve project-based authorization.
-   -  Some permissions support only actions and do not support APIs\ :ref:`, such as permissions for virtual MFA device management <iam_02_0046__section901342135518>`.
+   -  Some permissions only support actions and do not support APIssuch as permissions for :ref:`virtual MFA device management <iam_02_0046__section901342135518>`.
