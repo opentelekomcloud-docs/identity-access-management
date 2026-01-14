@@ -131,7 +131,7 @@ The request is successful.
      "password_policy" : {
        "password_requirements" : "A password must contain at least two of the following: uppercase letters, lowercase letters, digits, and special characters.",
        "minimum_password_age" : 20,
-       "minimum_password_length" : 8,
+       "minimum_password_length" : 6,
        "maximum_password_length" : 32,
        "number_of_recent_passwords_disallowed" : 2,
        "password_validity_period" : 60,

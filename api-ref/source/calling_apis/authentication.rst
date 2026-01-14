@@ -19,7 +19,7 @@ Token-based Authentication
 
 A token specifies temporary permissions in a computer system. During API authentication using a token, the token is added to request headers to get permissions for calling the API.
 
-You can obtain a token by calling the API described in :ref:`Obtaining a User Token <en-us_topic_0057845583>`. IAM APIs can be called only by using a global service token. To call the API described in :ref:`Obtaining a User Token <en-us_topic_0057845583>`, set **auth.scope** to **domain** in the request body as follows:
+You can obtain a token by calling the API described in :ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`. IAM APIs can be called only by using a global service token. To call the API described in :ref:`Obtaining a User Token Through Password Authentication <en-us_topic_0057845583>`, set **auth.scope** to **domain** in the request body. In the following example, **DomainName** indicates the account name:
 
 .. code-block::
 
@@ -32,16 +32,16 @@ You can obtain a token by calling the API described in :ref:`Obtaining a User To
                "password": {
                    "user": {
                        "domain": {
-                           "name": "IAMDomain"
+                           "name": "DomainName"
                        },
-                       "name": "IAMUser",
-                       "password": "IAMPassword"
+                       "name": "IAMUserName",
+                       "password": "IAMUserPassWord"
                    }
                }
            },
            "scope": {
                "domain": {
-                   "name": "IAMDomain"
+                   "name": "DomainName"
                }
            }
        }

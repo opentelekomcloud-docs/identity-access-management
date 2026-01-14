@@ -19,12 +19,12 @@ URI
 
 -  URI parameters
 
-   ============= ========= ====== ===========================
-   Parameter     Mandatory Type   Description
-   ============= ========= ====== ===========================
-   idp_id        Yes       String ID of an identity provider.
-   protocol \_id Yes       String ID of a protocol.
-   ============= ========= ====== ===========================
+   =========== ========= ====== ===========================
+   Parameter   Mandatory Type   Description
+   =========== ========= ====== ===========================
+   idp_id      Yes       String ID of an identity provider.
+   protocol_id Yes       String ID of a protocol.
+   =========== ========= ====== ===========================
 
 Request Parameters
 ------------------
@@ -41,10 +41,20 @@ Request Parameters
 
 -  Parameters in the request body
 
+   +-----------------------------------------------------------+-----------+--------+-----------------------+
+   | Parameter                                                 | Mandatory | Type   | Description           |
+   +===========================================================+===========+========+=======================+
+   | :ref:`protocol <en-us_topic_0057845575__li3983238110289>` | Yes       | Object | Protocol information. |
+   +-----------------------------------------------------------+-----------+--------+-----------------------+
+
+-  .. _en-us_topic_0057845575__li3983238110289:
+
+   protocol
+
    ========== ========= ====== ===========
    Parameter  Mandatory Type   Description
    ========== ========= ====== ===========
-   mapping_id Yes       String Mapping ID.
+   mapping_id No        String Mapping ID.
    ========== ========= ====== ===========
 
 -  Example request
@@ -58,13 +68,36 @@ Response Parameters
 
 -  Parameters in the response body
 
-   ========== ========= ====== =======================
-   Parameter  Mandatory Type   Description
-   ========== ========= ====== =======================
-   id         Yes       String ID of a protocol.
-   mapping_id Yes       String Mapping ID.
-   links      Yes       Object Protocol resource link.
-   ========== ========= ====== =======================
+   +-------------------------------------------------------------+-----------+--------+-----------------------+
+   | Parameter                                                   | Mandatory | Type   | Description           |
+   +=============================================================+===========+========+=======================+
+   | :ref:`protocol <en-us_topic_0057845575__li171961714172319>` | Yes       | Object | Protocol information. |
+   +-------------------------------------------------------------+-----------+--------+-----------------------+
+
+-  .. _en-us_topic_0057845575__li171961714172319:
+
+   protocol
+
+   +-------------------------------------------------------+--------+-------------------------------------+
+   | Parameter                                             | Type   | Description                         |
+   +=======================================================+========+=====================================+
+   | id                                                    | String | Protocol ID.                        |
+   +-------------------------------------------------------+--------+-------------------------------------+
+   | mapping_id                                            | String | Mapping ID.                         |
+   +-------------------------------------------------------+--------+-------------------------------------+
+   | :ref:`links <en-us_topic_0057845575__li197002194250>` | Object | Protocol resource link information. |
+   +-------------------------------------------------------+--------+-------------------------------------+
+
+-  .. _en-us_topic_0057845575__li197002194250:
+
+   protocol.links
+
+   ================= ====== ================================
+   Parameter         Type   Description
+   ================= ====== ================================
+   identity_provider String Identity provider resource link.
+   self              String Resource link.
+   ================= ====== ================================
 
 -  Example response
 
