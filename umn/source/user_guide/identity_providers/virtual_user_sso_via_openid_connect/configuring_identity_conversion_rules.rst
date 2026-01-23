@@ -2,8 +2,8 @@
 
 .. _iam_08_0008:
 
-Step 2: Configure Identity Conversion Rules
-===========================================
+Configuring Identity Conversion Rules
+=====================================
 
 Federated users are named **FederationUser** by default in the cloud platform. These users can only log in to the cloud platform and they do not have any other permissions. You can configure identity conversion rules on the IAM console to achieve the following:
 
@@ -18,7 +18,7 @@ Federated users are named **FederationUser** by default in the cloud platform. T
 Prerequisites
 -------------
 
-An IdP entity has been created, and the login link of the IdP is accessible. (For details about how to create and verify an IdP entity, see :ref:`Step 1: Create an IdP Entity <iam_08_0009>`.)
+An IdP entity has been created, and the login link of the IdP is accessible. (For details about how to create and verify an IdP entity, see :ref:`Creating an IdP Entity <iam_08_0009>`.)
 
 Procedure
 ---------
@@ -45,7 +45,7 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM conv
          |                       |                                                                                                 |    NOTICE:                                                                                                                                                                                                                                               |
          |                       |                                                                                                 |                                                                                                                                                                                                                                                          |
          |                       |                                                                                                 |    -  The username of each federated user must be unique in the same IdP. Federated users with the same usernames in the same IdP will be mapped to the same IAM user in the cloud platform.                                                             |
-         |                       |                                                                                                 |    -  The username can only contain letters, digits, spaces, hyphens (-), underscores (_), and periods (.). It cannot start with a digit and cannot contain the following special characters: ", \\", \\\\, \\n, \\r                                     |
+         |                       |                                                                                                 |    -  The username can be any string that does not contain <, >, {, or }, or you can use a placeholder **{0..n}**. **{0}** indicates the first attribute of the user information in **remote**, and **{1}** indicates the second attribute.              |
          +-----------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
          | User Groups           | User groups which the federated users belong to in the cloud platform.                          | The federated users will inherit permissions from their user groups. You can select a user group that has already been created.                                                                                                                          |
          +-----------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -54,7 +54,7 @@ If you configure identity conversion rules by clicking **Create Rule**, IAM conv
          |                       |                                                                                                 | .. note::                                                                                                                                                                                                                                                |
          |                       |                                                                                                 |                                                                                                                                                                                                                                                          |
          |                       |                                                                                                 |    -  An identity conversion rule can have multiple conditions. It takes effect only if all of the conditions are met.                                                                                                                                   |
-         |                       |                                                                                                 |    -  An IdP can have multiple identity conversion rules. If a federated user does not meet any of the conditions, the user will be denied to access the cloud platform.                                                                                 |
+         |                       |                                                                                                 |    -  An IdP can have multiple identity conversion rules. If none of the rules apply to a federated user, the federated user is not allowed to access the cloud platform.                                                                                |
          +-----------------------+-------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
       For example, set an identity conversion rule for administrators in the enterprise management system.
@@ -94,7 +94,7 @@ After configuring identity conversion rules, verify the permissions of federated
 
 #. Log in as a federated user.
 
-   On the **Identity Providers** page of the IAM console, click **View** in the row containing the IdP. Click |image1| to copy the login link displayed in the **Basic Information** area, open the link using a browser, and then enter the username and password used in the enterprise management system.
+   On the **Identity Providers** page of the , click **View** in the row containing the IdP. Click |image1| to copy the login link displayed on the IdP details page, open the link using a browser, and then enter the username and password used in the enterprise management system.
 
 #. Check that the federated user has the permissions assigned to their user group.
 

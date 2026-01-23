@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0046613147:
 
-Creating an Agency (by a Delegating Party)
-==========================================
+Creating an Agency and Assigning Permissions
+============================================
 
 By creating an agency, you can share your resources with another account, or delegate an individual or team to manage your resources. You do not need to share your security credentials (the password or access keys) with the delegated party. Instead, the delegated party can log in with its own account credentials and then switches the role to your account and manage your resources.
 
@@ -13,7 +13,7 @@ Prerequisites
 Before creating an agency, complete the following operations:
 
 -  Understand the :ref:`basic concepts <en-us_topic_0046611276>` of permissions.
--  Determine the `permissions <https://docs.otc.t-systems.com/additional/permissions.html>`__ to be assigned to the agency, and check whether the permissions have dependencies. For more details, see :ref:`Assigning Dependency Roles <iam_01_0657>`.
+-  Determine the `permissions <https://docs.otc.t-systems.com/additional/permissions.html>`__ to be assigned to the agency, and check whether the permissions have dependencies. If yes, assign dependent permissions by referring to :ref:`Assigning Dependency Roles <iam_01_0657>`.
 
 Procedure
 ---------
@@ -41,7 +41,7 @@ Procedure
    .. note::
 
       -  **Account**: Share resources with another account or delegate an individual or team to manage your resources. The delegated account can only be an account, rather than an IAM user or a federated user.
-      -  **Cloud service**: Delegate a specific service to access other services. For more information, see :ref:`Cloud Service Agency <iam_06_0004>`.
+      -  **Cloud service**: Delegate a specific service to access other services. For more information, see :ref:`Delegating Another Service for Resource Management <iam_06_0004>`.
 
 #. Set the validity period and enter a description for the agency.
 
