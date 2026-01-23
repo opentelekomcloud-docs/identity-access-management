@@ -7,9 +7,9 @@ Password Policy
 
 The **Password Policy** tab of the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page provides the :ref:`Password Composition & Reuse <iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section222481512916>`, :ref:`Password Expiration <iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section104571219917>`, and :ref:`Minimum Password Age <iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section86671628898>` settings.
 
-Only the :ref:`administrator <iam_01_0023__section1475194083513>` can configure the password policy, and IAM users can only view the configurations. If an IAM user needs to modify the configurations, the user can request the administrator to perform the modification or grant the required permissions.
+Only the administrator and an entrusted identity can configure the password policy, and IAM users can only view the configurations. If an IAM user needs to modify the configurations, the user can request the administrator to perform the modification or grant the required permissions.
 
-You can configure the password policy to ensure that IAM users create strong passwords and rotate them periodically. In the password policy, you can define password requirements, such as minimum password length, whether to allow consecutive identical characters in a password, and whether to allow previously used passwords.
+The administrator or an entrusted identity should configure the password policy to ensure that IAM users create strong passwords and rotate them periodically. In the password policy, you can define password requirements, such as minimum password length, whether to allow consecutive identical characters in a password, and whether to allow previously used passwords.
 
 .. _iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section222481512916:
 
@@ -30,13 +30,14 @@ Password Expiration
 
 Set a validity period for passwords so that users need to change their passwords periodically. The users will be prompted to change their passwords 15 days before password expiration. Expired passwords cannot be used to log in to the cloud platform.
 
-This option is disabled by default. The validity period ranges from 1 to 180 days.
+This option is disabled by default. It can be enabled by the administrator or an entrusted identity. The validity period range is from 1 day to 180 days.
 
 The changes will take effect immediately for your account and all IAM users under your account.
 
 .. note::
 
-   After the password expires, users need to set a new password through the URL sent by email. The new password must be different from the old password.
+   -  After the password expires, users need to set a new password through the URL sent by email. The new password must be different from the old one.
+   -  The password validity period policy applies only to console login. The operations of obtaining a user token through password authentication are not restricted by this policy.
 
 .. _iam_01_0607__en-us_topic_0177717041_en-us_topic_0176803439_section86671628898:
 

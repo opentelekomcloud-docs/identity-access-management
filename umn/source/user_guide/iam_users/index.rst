@@ -10,7 +10,7 @@ IAM Users
 -  :ref:`Logging In as an IAM User <iam_01_0552>`
 -  :ref:`Viewing and Modifying User Information <en-us_topic_0046661675>`
 -  :ref:`Deleting an IAM User <iam_02_0004>`
--  :ref:`Changing the Login Password of an IAM User <iam_01_0653>`
+-  :ref:`Modifying Security Settings for an IAM User <iam_01_0653>`
 -  :ref:`Modifying User Permissions <en-us_topic_0080335069>`
 -  :ref:`Switching Projects or Regions <en-us_topic_0079497018>`
 
@@ -23,6 +23,6 @@ IAM Users
    logging_in_as_an_iam_user
    viewing_and_modifying_user_information
    deleting_an_iam_user
-   changing_the_login_password_of_an_iam_user
+   modifying_security_settings_for_an_iam_user
    modifying_user_permissions
    switching_projects_or_regions

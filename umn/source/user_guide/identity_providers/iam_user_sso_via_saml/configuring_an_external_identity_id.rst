@@ -2,8 +2,8 @@
 
 .. _iam_08_0257:
 
-Step 3: Configure an External Identity ID
-=========================================
+Configuring an External Identity ID
+===================================
 
 For the IAM user SSO type, you must configure an external identity ID for the IAM user which the federated user maps to on the cloud platform. The external identity ID must be the same as the **IAM_SAML_Attributes_xUserId** value of the enterprise IdP user (federated user). You can create an IAM user and configure an external identity ID for it, or change the external identity ID of an existing IAM user.
 
@@ -15,7 +15,7 @@ For the IAM user SSO type, you must configure an external identity ID for the IA
 Creating an IAM User and Configuring an External Identity ID
 ------------------------------------------------------------
 
-#. Log in to the IAM console as an administrator.
+#. Log in to the as the administrator.
 
 #. On the IAM console, choose **Users** from the navigation pane, and click **Create User** in the upper right corner.
 

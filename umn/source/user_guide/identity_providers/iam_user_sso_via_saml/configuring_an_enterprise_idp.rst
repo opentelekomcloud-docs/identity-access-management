@@ -2,8 +2,8 @@
 
 .. _iam_08_0256:
 
-Step 2: Configure the Enterprise IdP
-====================================
+Configuring an Enterprise IdP
+=============================
 
 You can configure parameters in the enterprise IdP to determine what information will be sent to the cloud platform. The cloud platform authenticates the federated identity and assigns permissions based on the received information.
 

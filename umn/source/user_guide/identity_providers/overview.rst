@@ -2,8 +2,8 @@
 
 .. _en-us_topic_0079620341:
 
-Introduction
-============
+Overview
+========
 
 The cloud platform provides identity federation based on Security Assertion Markup Language (SAML) or OpenID Connect. This function allows users in your enterprise management system to access the cloud platform through single sign-on (SSO).
 
@@ -63,7 +63,7 @@ IAM supports two SSO types: virtual user SSO and IAM user SSO. For details about
 Currently, IAM supports two federated login methods: browser-based SSO (web SSO) and SSO via API calling.
 
 -  Web SSO: Browsers are used as the communication media. This authentication type enables common users to access the cloud platform using browsers.
--  SSO via API calling: Enterprise employees call APIs using development tools (such as OpenStack Client and ShibbolethECP Client) to access the cloud platform.
+-  API calling: Development tools (such as OpenStackClient and Shibboleth ECP Client) are used as the communication media. This authentication type enables enterprise users and common users to access the cloud platform by calling APIs.
 
 .. table:: **Table 2** Federated logins
 
@@ -79,7 +79,7 @@ Precautions
 -----------
 
 -  Ensure that your enterprise IdP server and the cloud platform use Greenwich Mean Time (GMT) time in the same time zone.
--  The identity information (such as email address or mobile number) of federated users is stored in the enterprise IdP. Federated users are mapped to the cloud platform as virtual identities, so their access to the cloud platform has the following restrictions:
+-  The identity information (such as email address or mobile number) of federated users is stored in the enterprise IdP. Federated users are mapped to the cloud platform as virtual identities, so their access to the cloud platform has the following constraints:
 
    -  Federated users do not need to perform a 2-step verification when performing critical operations even though :ref:`critical operation protection <iam_01_0029>` (login protection or operation protection) is enabled.
 

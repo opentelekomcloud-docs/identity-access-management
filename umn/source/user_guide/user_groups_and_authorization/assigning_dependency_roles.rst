@@ -5,7 +5,7 @@
 Assigning Dependency Roles
 ==========================
 
-Cloud services interwork with each other. Roles of some services take effect only if they are assigned along with roles of other services.
+Cloud services interwork with each other. Therefore, the administrator needs to assign both the required roles and their dependent roles for the authorization to take effect. Policies, however, do not require dependencies.
 
 Procedure
 ---------

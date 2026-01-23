@@ -5,7 +5,7 @@
 Critical Operation Protection
 =============================
 
-Only an :ref:`administrator <iam_01_0023__section1475194083513>` can configure critical operation protection, and IAM users can only view the configurations. If an IAM user needs to modify the configurations, the user can request the administrator to perform the modification or grant the required permissions.
+Only an administrator can configure critical operation protection, and IAM users can only view the configurations. If an IAM user needs to modify the configurations, the user can request the administrator to perform the modification or grant the required permissions.
 
 .. note::
 
@@ -14,7 +14,7 @@ Only an :ref:`administrator <iam_01_0023__section1475194083513>` can configure c
 Virtual MFA Device
 ------------------
 
-An MFA device generates 6-digit verification codes in compliance with the Time-based One-time Password Algorithm (TOTP). MFA devices can be hardware- or software-based. Currently, only software-based virtual MFA devices are supported, and they are application programs running on smart devices such as mobile phones.
+An MFA device generates 6-digit verification codes in compliance with the Time-based One-time Password Algorithm (TOTP). MFA devices can be hardware- or software-based. Currently, only software-based virtual MFA devices are supported. They are application programs running on smart devices such as mobile phones.
 
 This section describes how to bind a virtual MFA device. If you have installed another MFA application, add a user by following the on-screen prompts. For details about how to bind or remove a virtual MFA device, see :ref:`MFA Authentication and Virtual MFA Device <iam_10_0002>`.
 
@@ -23,27 +23,25 @@ This section describes how to bind a virtual MFA device. If you have installed a
    Before binding a virtual MFA device, ensure that you have installed an MFA application on your mobile device.
 
 #. Go to the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page.
-
 #. Click the **Critical Operations** tab, and click **Bind** in the **Virtual MFA Device** row.
-
-#. Set up the MFA application by scanning the QR code or manually entering the secret key.
-
-   You can bind a virtual MFA device to your account by scanning the QR code or entering the secret key.
+#. On the displayed page, enter a device name. Only letters, digits, hyphens (-), and underscores (_) are allowed.
+#. Select an MFA device. For this example, select **Virtual MFA Device** and click **Next**.
+#. Add a virtual MFA device to your MFA application.
+#. You can bind a virtual MFA device to your account by scanning the QR code or entering the secret key.
 
    -  Scanning the QR code
 
-      Open the MFA application on your mobile phone, and use the application to scan the QR code displayed on the **Bind Virtual MFA Device** page. Your account or IAM user is then added to the application.
+      Open the MFA application on your mobile phone, and use the application to scan the QR code displayed on the **Add MFA Device** page. Then, the MFA application automatically adds the virtual MFA device.
 
-   -  Manually entering the secret key
+   -  Entering the secret key
 
       Open the MFA application on your mobile phone, and enter the secret key.
 
       .. note::
 
-         The user can be manually added only using time-based one-time passwords (TOTP). You are advised to enable automatic time setting on your mobile phone.
+         TOTP-based virtual MFA devices can only be manually added. You are advised to enable automatic time setting on your mobile device.
 
-#. View the verification codes on the MFA application. The code is automatically updated every 30 seconds.
-
+#. View the dynamic verification codes on the home page of the MFA application. The code is automatically updated every 30 seconds.
 #. On the **Bind Virtual MFA Device** page, enter two consecutive verification codes and click **OK**.
 
 Login Protection
@@ -51,11 +49,11 @@ Login Protection
 
 After login protection is enabled, you and IAM users created using your account will need to enter a verification code in addition to the username and password during login. Enable this function for account security.
 
-For the account, only the account administrator can enable login protection for it. For IAM users, both the account administrator and other administrators can enable this feature for the users.
+For an account, only the account administrator can enable login protection for it. For IAM users, both the account administrator and other administrators can enable this feature for the users.
 
 -  **(Administrator) Enabling login protection for an IAM user**
 
-   To enable login protection for an IAM user, go to the **Users** page and choose **More** > **Security Settings** in the row that contains the IAM user. In the **Login Protection** area on the displayed **Security Settings** tab, click |image1| next to **Verification Method**, and select a verification method from SMS, email, or virtual MFA device.
+   To enable login protection for an IAM user, go to the **Users** page and choose **Security Settings** in the row that contains the IAM user. In the **Login Protection** area in the displayed **Security Settings** tab, click |image1| next to **Verification Method**, and select a verification method from SMS, email, or virtual MFA device or security key. You can enable or disable API login protection as needed when you select **Virtual MFA device**. The option is disabled by default. API login protection asks you for both a password and a virtual MFA device to obtain an IAM user token. Without API login protection, you can obtain the token with only a password. To obtain an IAM user token, see .
 
 -  **Enabling login protection for your account**
 
@@ -79,7 +77,7 @@ Operation Protection
    If you select **Verification by another person**, an identity verification is required to ensure that this verification method is available.
 
    -  **Self-verification**: You or IAM users themselves perform verification when performing a critical operation.
-   -  **Verification by another person**: The specified person completes verification when you or IAM users perform a critical operation. Only SMS and email verification are supported.
+   -  **Verification by another person**: The specified person completes verification when you or IAM users perform a critical operation. Only SMS and email verification is supported. Virtual MFA devices are not supported.
 
 #. Click **OK**.
 
@@ -92,8 +90,8 @@ If operation protection is disabled, you and IAM users created using your accoun
 #. Select **Disable** and click **OK**.
 #. Enter a verification code.
 
-   -  **Self-verification**: The administrator who wants to disable operation protection completes the verification. SMS, email, and virtual MFA verification are supported.
-   -  **Verification by another person**: The specified person completes the verification. Only SMS and email verification are supported.
+   -  **Self-verification**: The administrator who wants to disable operation protection completes the verification. Email, SMS, and virtual MFA verification are supported.
+   -  **Verification by another person**: The specified person completes the verification. Only SMS and email verification is supported. Virtual MFA devices are not supported.
 
 #. Click **OK**.
 
@@ -122,7 +120,7 @@ Access Key Management
 
    After access key management is disabled, all IAM users can create, enable, disable, or delete their own access keys.
 
-   To enable access key management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click |image3| in the **Access Key Management** row.
+   To disable access key management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click |image3| in the **Access Key Management** row.
 
 Information Self-Management
 ---------------------------
@@ -135,7 +133,7 @@ Information Self-Management
 
 -  **Disabling information self-management**
 
-   After you disable information self-management, only administrators can manage their own :ref:`basic information <iam_01_0703>`. If IAM users need to modify their login password, mobile number, or email address, they can contact the administrator. For details, see :ref:`Viewing and Modifying User Group Information <en-us_topic_0085605493>`.
+   After you disable information self-management, only administrators can manage their own :ref:`basic information <iam_01_0703>`. If you are an IAM user and want to change your login password, mobile number, or email address, contact the administrator. The administrator can modify the information by referring to :ref:`Viewing and Modifying User Group Information <en-us_topic_0085605493>`.
 
    To disable information self-management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click **Change** in the **Information Self-Management** row. In the displayed pane, select **Disable** and click **OK**.
 
@@ -148,113 +146,175 @@ The following tables list the critical operations defined by each cloud service.
 
 .. table:: **Table 1** Critical operations defined by cloud services
 
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Service Category        | Service                              | Critical Operation                                            |
-   +=========================+======================================+===============================================================+
-   | Compute                 | Elastic Cloud Server (ECS)           | -  Stopping, restarting, or deleting an ECS                   |
-   |                         |                                      | -  Resetting the password for logging in to an ECS            |
-   |                         |                                      | -  Detaching a disk                                           |
-   |                         |                                      | -  Unbinding an EIP                                           |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Bare Metal Server (BMS)              | -  Stopping or restarting a BMS                               |
-   |                         |                                      | -  Resetting the BMS password                                 |
-   |                         |                                      | -  Detaching a disk                                           |
-   |                         |                                      | -  Unbinding an EIP                                           |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Auto Scaling (AS)                    | Deleting an AS group                                          |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Storage                 | Object Storage Service (OBS)         | -  Deleting a bucket                                          |
-   |                         |                                      | -  Creating, editing, or deleting a bucket policy             |
-   |                         |                                      | -  Configuring an object policy                               |
-   |                         |                                      | -  Creating, editing, or deleting a bucket ACL                |
-   |                         |                                      | -  Configuring access logging                                 |
-   |                         |                                      | -  Configuring URL validation                                 |
-   |                         |                                      | -  Creating or editing a bucket inventory                     |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Elastic Volume Service (EVS)         | Deleting an EVS disk                                          |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Cloud Backup and Recovery (CBR)      | -  Deleting a vault                                           |
-   |                         |                                      | -  Deleting a backup                                          |
-   |                         |                                      | -  Restoring a backup                                         |
-   |                         |                                      | -  Deleting a policy                                          |
-   |                         |                                      | -  Dissociating a resource                                    |
-   |                         |                                      | -  Accepting a backup                                         |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Networking              | Domain Name Service (DNS)            | -  Modifying, disabling, or deleting a record set             |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Virtual Private Cloud (VPC)          | -  Releasing or unbinding an EIP                              |
-   |                         |                                      | -  Deleting a VPC peering connection                          |
-   |                         |                                      | -  Security group operations                                  |
-   |                         |                                      |                                                               |
-   |                         |                                      |    -  Deleting an inbound or outbound rule                    |
-   |                         |                                      |    -  Modifying an inbound or outbound rule                   |
-   |                         |                                      |    -  Batch deleting inbound or outbound rules                |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Elastic Load Balance (ELB)           | -  Shared load balancers                                      |
-   |                         |                                      |                                                               |
-   |                         |                                      |    -  Deleting a load balancer                                |
-   |                         |                                      |    -  Deleting a listener                                     |
-   |                         |                                      |    -  Deleting a certificate                                  |
-   |                         |                                      |    -  Removing a backend server                               |
-   |                         |                                      |    -  Unbinding an EIP                                        |
-   |                         |                                      |    -  Unbind a public or private IPv4 address                 |
-   |                         |                                      |                                                               |
-   |                         |                                      | -  Dedicated load balancers                                   |
-   |                         |                                      |                                                               |
-   |                         |                                      |    -  Deleting a load balancer                                |
-   |                         |                                      |    -  Deleting a listener                                     |
-   |                         |                                      |    -  Deleting a certificate                                  |
-   |                         |                                      |    -  Removing a backend server                               |
-   |                         |                                      |    -  Unbinding an EIP                                        |
-   |                         |                                      |    -  Unbind a public or private IPv4 address                 |
-   |                         |                                      |    -  Unbinding an IPv6 address                               |
-   |                         |                                      |    -  Removing from IPv6 shared bandwidth                     |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   |                         | Elastic IP (EIP)                     | -  Deleting a shared bandwidth                                |
-   |                         |                                      | -  Releasing or unbinding an EIP                              |
-   |                         |                                      | -  Batch releasing or unbinding EIPs                          |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Management & Deployment | Identity and Access Management (IAM) | -  Disabling operation protection                             |
-   |                         |                                      | -  Disabling login protection                                 |
-   |                         |                                      | -  Changing the mobile number                                 |
-   |                         |                                      | -  Changing the email address                                 |
-   |                         |                                      | -  Changing the login password                                |
-   |                         |                                      | -  Changing the login authentication method                   |
-   |                         |                                      | -  Deleting an IAM user                                       |
-   |                         |                                      | -  Disabling an IAM user                                      |
-   |                         |                                      | -  Deleting an agency                                         |
-   |                         |                                      | -  Deleting a user group                                      |
-   |                         |                                      | -  Deleting a policy                                          |
-   |                         |                                      | -  Deleting permissions                                       |
-   |                         |                                      | -  Creating an access key                                     |
-   |                         |                                      | -  Deleting an access key                                     |
-   |                         |                                      | -  Disabling an access key                                    |
-   |                         |                                      | -  Deleting a project                                         |
-   |                         |                                      | -  Modifying the status of access key management              |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Application             | Distributed Cache Service (DCS)      | -  Resetting the password of a DCS instance                   |
-   |                         |                                      | -  Deleting a DCS instance                                    |
-   |                         |                                      | -  Clearing DCS instance data                                 |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Database                | RDS for MySQL                        | -  Resetting the administrator password                       |
-   |                         |                                      | -  Deleting a DB instance                                     |
-   |                         |                                      | -  Deleting a database backup                                 |
-   |                         |                                      | -  Switching between primary and standby DB instances         |
-   |                         |                                      | -  Changing the database port                                 |
-   |                         |                                      | -  Deleting a database account                                |
-   |                         |                                      | -  Deleting a database                                        |
-   |                         |                                      | -  Unbinding an EIP                                           |
-   |                         |                                      | -  Downloading a full backup                                  |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
-   | Database                | Document Database Service (DDS)      | -  Resetting the password                                     |
-   |                         |                                      | -  Restarting or deleting a DB instance                       |
-   |                         |                                      | -  Restarting a node                                          |
-   |                         |                                      | -  Switching the primary and secondary nodes of a replica set |
-   |                         |                                      | -  Deleting a security group rule                             |
-   |                         |                                      | -  Enabling IP addresses of shard and config nodes            |
-   |                         |                                      | -  Restoring the current DB instance from a backup            |
-   |                         |                                      | -  Restoring an existing DB instance from a backup            |
-   +-------------------------+--------------------------------------+---------------------------------------------------------------+
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Service Category        | Service                                        | Critical Operation                                            |
+   +=========================+================================================+===============================================================+
+   | Compute                 | Elastic Cloud Server (ECS)                     | -  Stopping, restarting, or deleting an ECS                   |
+   |                         |                                                | -  Resetting the password for logging in to an ECS            |
+   |                         |                                                | -  Detaching a disk                                           |
+   |                         |                                                | -  Unbinding an EIP                                           |
+   |                         |                                                | -  Changing specifications without stopping an ECS            |
+   |                         |                                                | -  Changing the OS without stopping an ECS                    |
+   |                         |                                                | -  Reinstalling the OS without stopping an ECS                |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Compute                 | Bare Metal Server (BMS)                        | -  Stopping or restarting a BMS                               |
+   |                         |                                                | -  Resetting the BMS password                                 |
+   |                         |                                                | -  Detaching a disk                                           |
+   |                         |                                                | -  Unbinding an EIP                                           |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Compute                 | Auto Scaling                                   | Deleting an auto scaling group                                |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Storage                 | Object Storage Service (OBS)                   | -  Deleting a bucket                                          |
+   |                         |                                                | -  Creating, editing, or deleting a bucket policy             |
+   |                         |                                                | -  Configuring an object policy                               |
+   |                         |                                                | -  Creating, editing, or deleting a bucket ACL                |
+   |                         |                                                | -  Configuring access logging                                 |
+   |                         |                                                | -  Configuring URL validation                                 |
+   |                         |                                                | -  Creating or editing a bucket inventory                     |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Storage                 | Elastic Volume Service (EVS)                   | -  Deleting an EVS disk                                       |
+   |                         |                                                | -  Deleting a snapshot                                        |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Storage                 | Cloud Backup and Recovery (CBR)                | -  Deleting a vault                                           |
+   |                         |                                                | -  Deleting a backup                                          |
+   |                         |                                                | -  Restoring a backup                                         |
+   |                         |                                                | -  Deleting a policy                                          |
+   |                         |                                                | -  Dissociating a resource                                    |
+   |                         |                                                | -  Accepting a backup                                         |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Storage                 | Scalable File Service (SFS)                    | Deleting an SFS Turbo file system                             |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Containers              | Application Orchestration Service (AOS)        | -  Deleting a stack                                           |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Network                 | Virtual Private Cloud (VPC)                    | -  Releasing or unbinding an EIP                              |
+   |                         |                                                | -  Deleting a VPC peering connection                          |
+   |                         |                                                | -  Security group operations                                  |
+   |                         |                                                |                                                               |
+   |                         |                                                |    -  Deleting an inbound or outbound rule                    |
+   |                         |                                                |    -  Modifying an inbound or outbound rule                   |
+   |                         |                                                |    -  Batch deleting inbound or outbound rules                |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Network                 | Elastic Load Balance (ELB)                     | -  Shared load balancers                                      |
+   |                         |                                                |                                                               |
+   |                         |                                                |    -  Deleting a load balancer                                |
+   |                         |                                                |    -  Deleting a listener                                     |
+   |                         |                                                |    -  Deleting a certificate                                  |
+   |                         |                                                |    -  Removing a backend server                               |
+   |                         |                                                |    -  Unbinding an EIP                                        |
+   |                         |                                                |    -  Unbinding a public or private IPv4 address              |
+   |                         |                                                |                                                               |
+   |                         |                                                | -  Dedicated load balancers                                   |
+   |                         |                                                |                                                               |
+   |                         |                                                |    -  Deleting a load balancer                                |
+   |                         |                                                |    -  Deleting a listener                                     |
+   |                         |                                                |    -  Deleting a certificate                                  |
+   |                         |                                                |    -  Removing a backend server                               |
+   |                         |                                                |    -  Unbinding an EIP                                        |
+   |                         |                                                |    -  Unbinding a public or private IPv4 address              |
+   |                         |                                                |    -  Unbinding an IPv6 address                               |
+   |                         |                                                |    -  Removing from IPv6 shared bandwidth                     |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Network                 | Elastic IP (EIP)                               | -  Deleting a shared bandwidth                                |
+   |                         |                                                | -  Releasing or unbinding an EIP                              |
+   |                         |                                                | -  Batch releasing or unbinding EIPs                          |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Network                 | NAT Gateway (NAT)                              | -  Private NAT gateways                                       |
+   |                         |                                                |                                                               |
+   |                         |                                                |    -  Deleting an SNAT rule                                   |
+   |                         |                                                |    -  Deleting a DNAT rule                                    |
+   |                         |                                                |    -  Releasing a transit IP address                          |
+   |                         |                                                |                                                               |
+   |                         |                                                | -  Public NAT gateways                                        |
+   |                         |                                                |                                                               |
+   |                         |                                                |    -  Deleting an SNAT rule                                   |
+   |                         |                                                |    -  Deleting a DNAT rule                                    |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Management & Deployment | Identity and Access Management (IAM)           | -  Disabling operation protection                             |
+   |                         |                                                | -  Disabling login protection                                 |
+   |                         |                                                | -  Changing the mobile number                                 |
+   |                         |                                                | -  Changing the email address                                 |
+   |                         |                                                | -  Changing the login password                                |
+   |                         |                                                | -  Changing the login authentication method                   |
+   |                         |                                                | -  Deleting an IAM user                                       |
+   |                         |                                                | -  Disabling an IAM user                                      |
+   |                         |                                                | -  Deleting an agency                                         |
+   |                         |                                                | -  Deleting a user group                                      |
+   |                         |                                                | -  Deleting a policy                                          |
+   |                         |                                                | -  Deleting permissions                                       |
+   |                         |                                                | -  Creating an access key                                     |
+   |                         |                                                | -  Deleting an access key                                     |
+   |                         |                                                | -  Disabling an access key                                    |
+   |                         |                                                | -  Deleting a project                                         |
+   |                         |                                                | -  Modifying the status of access key management              |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Management & Deployment | Simple Message Notification (SMN)              | -  Deleting a topic                                           |
+   |                         |                                                | -  Deleting a subscription                                    |
+   |                         |                                                | -  Deleting a message template                                |
+   |                         |                                                | -  Deleting a subscriber                                      |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   |                         | Distributed Cache Service (DCS)                | -  Resetting the password                                     |
+   |                         |                                                | -  Deleting a DCS instance                                    |
+   |                         |                                                | -  Clearing DCS instance data                                 |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   |                         | Distributed Message Service (DMS) for Kafka    | Deleting an instance                                          |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   |                         | Distributed Message Service (DMS) for RabbitMQ | Deleting an instance                                          |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   |                         | Distributed Message Service (DMS) for RocketMQ | Deleting an instance                                          |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Database                | RDS for MySQL                                  | -  Resetting the administrator password                       |
+   |                         |                                                | -  Deleting a DB instance                                     |
+   |                         |                                                | -  Deleting a database backup                                 |
+   |                         |                                                | -  Switching between primary and standby DB instances         |
+   |                         |                                                | -  Changing the database port                                 |
+   |                         |                                                | -  Deleting a database account                                |
+   |                         |                                                | -  Deleting a database                                        |
+   |                         |                                                | -  Unbinding an EIP                                           |
+   |                         |                                                | -  Downloading a full backup                                  |
+   |                         |                                                | -  Downloading a Binlog backup                                |
+   |                         |                                                | -  Changing a private domain name                             |
+   |                         |                                                | -  Changing a public domain name                              |
+   |                         |                                                | -  Modifying a host IP address                                |
+   |                         |                                                | -  Stopping an instance                                       |
+   |                         |                                                | -  Starting an instance                                       |
+   |                         |                                                | -  Restarting an instance                                     |
+   |                         |                                                | -  Resetting a password for a database account                |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Database                | RDS for SQL Server                             | -  Resetting the administrator password                       |
+   |                         |                                                | -  Deleting a DB instance                                     |
+   |                         |                                                | -  Deleting a database backup                                 |
+   |                         |                                                | -  Switching between primary and standby nodes                |
+   |                         |                                                | -  Changing the database port                                 |
+   |                         |                                                | -  Deleting a database                                        |
+   |                         |                                                | -  Changing a floating IP address                             |
+   |                         |                                                | -  Changing a private domain name                             |
+   |                         |                                                | -  Changing a public domain name                              |
+   |                         |                                                | -  Unbinding an EIP                                           |
+   |                         |                                                | -  Stopping an instance                                       |
+   |                         |                                                | -  Starting an instance                                       |
+   |                         |                                                | -  Restarting an instance                                     |
+   |                         |                                                | -  Downloading a full backup                                  |
+   |                         |                                                | -  Changing a private domain name                             |
+   |                         |                                                | -  Downloading an incremental backup file                     |
+   |                         |                                                | -  Restoring a DB instance from a backup file                 |
+   |                         |                                                | -  Restoring a DB instance to a point in time                 |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
+   | Database                | Document Database Service (DDS)                | -  Resetting the password                                     |
+   |                         |                                                | -  Restarting or deleting a DB instance                       |
+   |                         |                                                | -  Restarting a node                                          |
+   |                         |                                                | -  Switching the primary and secondary nodes of a replica set |
+   |                         |                                                | -  Deleting a security group rule                             |
+   |                         |                                                | -  Enabling IP addresses of shard and config nodes            |
+   |                         |                                                | -  Restoring the current DB instance from a backup            |
+   |                         |                                                | -  Restoring an existing DB instance from a backup            |
+   |                         |                                                | -  Restoring instance- and table-level backups                |
+   |                         |                                                | -  Applying for a private domain name                         |
+   |                         |                                                | -  Upgrading a minor version                                  |
+   |                         |                                                | -  Changing an AZ                                             |
+   |                         |                                                | -  Deleting a backup                                          |
+   |                         |                                                | -  Downloading backups                                        |
+   |                         |                                                | -  Deleting a read replica                                    |
+   +-------------------------+------------------------------------------------+---------------------------------------------------------------+
 
 .. |image1| image:: /_static/images/en-us_image_0000001207368543.png
 .. |image2| image:: /_static/images/en-us_image_0000001162406406.png

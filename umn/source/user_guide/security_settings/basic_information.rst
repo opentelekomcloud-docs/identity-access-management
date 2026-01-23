@@ -23,7 +23,7 @@ The methods for changing the login password, mobile number, virtual MFA device, 
 
    .. note::
 
-      If neither email address nor mobile number is bound, no verification is required.
+      If no email address or mobile number is bound, no verification is required.
 
 #. Enter the old password and new password, and enter the new password again.
 
