@@ -5,7 +5,7 @@
 Identity Providers
 ==================
 
--  :ref:`Introduction <en-us_topic_0079620341>`
+-  :ref:`Overview <en-us_topic_0079620341>`
 -  :ref:`Application Scenarios of Virtual User SSO and IAM User SSO <iam_08_0251>`
 -  :ref:`Virtual User SSO via SAML <iam_08_0002>`
 -  :ref:`IAM User SSO via SAML <iam_08_0253>`
@@ -16,7 +16,7 @@ Identity Providers
    :maxdepth: 1
    :hidden: 
 
-   introduction
+   overview
    application_scenarios_of_virtual_user_sso_and_iam_user_sso
    virtual_user_sso_via_saml/index
    iam_user_sso_via_saml/index

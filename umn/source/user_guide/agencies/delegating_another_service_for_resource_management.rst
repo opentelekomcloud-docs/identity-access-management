@@ -2,8 +2,8 @@
 
 .. _iam_06_0004:
 
-Cloud Service Agency
-====================
+Delegating Another Service for Resource Management
+==================================================
 
 Services on the cloud platform interwork with each other, and some cloud services are dependent on other services. To delegate a cloud service to access other services and perform resource O&M, create an agency for the service.
 
@@ -48,5 +48,7 @@ Creating a Cloud Service Agency on the IAM Console
 #. Click **Next**.
 
 #. Select the permissions to be assigned to the agency, click **Next**, and specify the authorization scope.
+
+#. Set the authorization scope, and select the permissions you want to grant to the agency.
 
 #. Click **OK**.

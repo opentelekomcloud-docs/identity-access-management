@@ -39,25 +39,70 @@ Response Parameters
 
 -  Parameters in the response body
 
-   ========= ========= ==== =====================
-   Parameter Mandatory Type Description
-   ========= ========= ==== =====================
-   links     Yes       Dict Region resource link.
-   regions   Yes       List Region list.
-   ========= ========= ==== =====================
+   +-------------------------------------------------------+-----------+------------------+-----------------------+
+   | Parameter                                             | Mandatory | Type             | Description           |
+   +=======================================================+===========+==================+=======================+
+   | :ref:`links <en-us_topic_0067148043__li13463758160>`  | Yes       | Object           | Region resource link. |
+   +-------------------------------------------------------+-----------+------------------+-----------------------+
+   | :ref:`regions <en-us_topic_0067148043__li2129719204>` | Yes       | Array of objects | Region list.          |
+   +-------------------------------------------------------+-----------+------------------+-----------------------+
 
--  Description for the regions format
+-  .. _en-us_topic_0067148043__li2129719204:
 
-   ================ ========= ====== =============================
-   Parameter        Mandatory Type   Description
-   ================ ========= ====== =============================
-   description      Yes       String Region description.
-   parent_region_id Yes       String Parent region ID of a region.
-   id               Yes       String Region ID.
-   locales          Yes       Dict   Region name.
-   type             No        String Region type.
-   links            Yes       Dict   Region resource link.
-   ================ ========= ====== =============================
+   regions
+
+   +-------------------------------------------------------+--------+-------------------------------+
+   | Parameter                                             | Type   | Description                   |
+   +=======================================================+========+===============================+
+   | description                                           | String | Region description.           |
+   +-------------------------------------------------------+--------+-------------------------------+
+   | parent_region_id                                      | String | Parent region ID of a region. |
+   +-------------------------------------------------------+--------+-------------------------------+
+   | id                                                    | String | Region ID.                    |
+   +-------------------------------------------------------+--------+-------------------------------+
+   | :ref:`locales <en-us_topic_0067148043__li6783209973>` | Object | Region name.                  |
+   +-------------------------------------------------------+--------+-------------------------------+
+   | type                                                  | String | Region type.                  |
+   +-------------------------------------------------------+--------+-------------------------------+
+   | :ref:`links <en-us_topic_0067148043__li11493001976>`  | Object | Region resource link.         |
+   +-------------------------------------------------------+--------+-------------------------------+
+
+-  .. _en-us_topic_0067148043__li13463758160:
+
+   links
+
+   +-----------+--------+----------------------------------------------------------------------------------------------------------+
+   | Parameter | Type   | Description                                                                                              |
+   +===========+========+==========================================================================================================+
+   | self      | String | Resource link.                                                                                           |
+   +-----------+--------+----------------------------------------------------------------------------------------------------------+
+   | previous  | String | Previous resource link. If the previous resource link is unavailable, this parameter is set to **null**. |
+   +-----------+--------+----------------------------------------------------------------------------------------------------------+
+   | next      | String | Next resource link. If the next resource link is unavailable, this parameter is set to **null**.         |
+   +-----------+--------+----------------------------------------------------------------------------------------------------------+
+
+-  .. _en-us_topic_0067148043__li11493001976:
+
+   regions.links
+
+   ========= ====== ==============
+   Parameter Type   Description
+   ========= ====== ==============
+   self      String Resource link.
+   ========= ====== ==============
+
+-  .. _en-us_topic_0067148043__li6783209973:
+
+   regions.locales
+
+   ========= ====== ========================================
+   Parameter Type   Description
+   ========= ====== ========================================
+   en-us     String Region name in English.
+   pt-br     String Region name in Portuguese.
+   es-us     String Region name in Spanish (Latin American).
+   es-es     String Region name in Spanish (Spain).
+   ========= ====== ========================================
 
 -  Example response (successful response)
 

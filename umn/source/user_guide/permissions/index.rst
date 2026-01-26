@@ -6,7 +6,6 @@ Permissions
 ===========
 
 -  :ref:`Basic Concepts <iam_01_019>`
--  :ref:`Roles <iam_01_0601>`
 -  :ref:`Policy Syntax <iam_01_0017>`
 -  :ref:`Creating a Custom Policy <iam_01_0016>`
 -  :ref:`Custom Policy Use Cases <iam_01_0600>`
@@ -16,7 +15,6 @@ Permissions
    :hidden: 
 
    basic_concepts
-   roles
    policy_syntax
    creating_a_custom_policy
    custom_policy_use_cases

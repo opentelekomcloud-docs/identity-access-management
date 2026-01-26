@@ -1,9 +1,9 @@
-:original_name: iam_08_0258.html
+:original_name: iam_08_0025.html
 
-.. _iam_08_0258:
+.. _iam_08_0025:
 
-Step 4: Verify the Federated Login
-==================================
+Verifying the Login
+===================
 
 Verifying the Federated Login
 -----------------------------
@@ -20,12 +20,12 @@ The IdP-initiated login method depends on the IdP. For details, see the IdP help
    On the **Identity Providers** page of the IAM console, click **View** in the row containing the IdP. Click |image1| to copy the login link displayed in the **Basic Information** area, open the link using a browser, and then enter the username and password used in the enterprise management system.
 
 
-   .. figure:: /_static/images/en-us_image_0000001656582221.png
+   .. figure:: /_static/images/en-us_image_0000001656459361.png
       :alt: **Figure 1** Login link
 
       **Figure 1** Login link
 
-#. Check whether the federated user is logging in as an IAM user.
+#. Check that the federated user has the permissions assigned to their user group.
 
 Redirecting to a Specified Region or Service
 --------------------------------------------
@@ -34,10 +34,10 @@ You can specify the target page which the federated user will be redirected to a
 
 -  Configuring the login link on the SP
 
-   Combine the login link obtained from the console with the specified URL using the format **Login link&service=Specified URL**.
+   Combine the login link obtained from the console with the specified URL encoded using **UrlEncode**. The combination format is **Login link\ &service=\ Specified URL encoded using UrlEncode**.
 
 -  Configuring the login link on the IdP
 
    Configure **IAM_SAML_Attributes_redirect_url** (the URL to be redirected to) in the SAML assertion of the enterprise IdP.
 
-.. |image1| image:: /_static/images/en-us_image_0000001646293253.png
+.. |image1| image:: /_static/images/en-us_image_0000001646287137.png

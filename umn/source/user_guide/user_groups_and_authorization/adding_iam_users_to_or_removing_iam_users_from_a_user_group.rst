@@ -2,8 +2,8 @@
 
 .. _iam_03_0002:
 
-Adding Users to or Removing Users from a User Group
-===================================================
+Adding IAM Users to or Removing IAM Users from a User Group
+===========================================================
 
 A user inherits permissions from the groups which the user belongs to. To change the permissions of a user, add the user to a new group or remove the user from an existing group.
 

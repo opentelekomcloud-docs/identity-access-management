@@ -2,15 +2,15 @@
 
 .. _iam_08_0007:
 
-(Optional) Step 3: Configure Login Link in the Enterprise Management System
-===========================================================================
+Configuring a Federated Login Entry in the Enterprise IdP
+=========================================================
 
 Configure a federated login entry in the enterprise IdP so that enterprise users can use the login link to access the cloud platform.
 
 Prerequisites
 -------------
 
--  An IdP entity has been created on the cloud platform. For details about how to create an IdP entity, see :ref:`Step 1: Create an IdP Entity <iam_08_0003>`.
+-  An IdP entity has been created on the cloud platform. For details about how to create an IdP entity, see :ref:`Creating an IdP Entity <iam_08_0003>`.
 -  The login entry for logging in to the cloud platform has been configured in the enterprise management system.
 
 Procedure

@@ -24,7 +24,7 @@ To modify the permissions, validity period, and description of an agency, click 
 Deleting an Agency
 ------------------
 
-To delete an agency, click **Delete** in the row containing the agency to be deleted and click **Yes**.
+To delete an agency, click **Delete** in the row containing the agency to be deleted and click **OK**.
 
 
 .. figure:: /_static/images/en-us_image_0000001511377602.png

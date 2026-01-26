@@ -2,8 +2,8 @@
 
 .. _iam_08_0009:
 
-Step 1: Create an IdP Entity
-============================
+Creating an IdP Entity
+======================
 
 To establish a trust relationship between an enterprise IdP and the cloud platform, set the user redirect URLs and create OAuth 2.0 credentials in the enterprise IdP. On the IAM console, create an IdP entity and configure authorization information.
 
@@ -128,7 +128,7 @@ Verifying the Federated Login
 
 #. Click the login link displayed on the IdP details page and check if the login page of the enterprise IdP server is displayed.
 
-   a. On the **Identity Providers** page, click **Modify** in the **Operation** column of the identity provider.
+   a. On the **Identity Providers** page of the , click **Modify** in the **Operation** column of the identity provider.
 
    b. Copy the login link displayed on the **Modify Identity Provider** page and visit the link using a browser.
 
@@ -147,22 +147,22 @@ Verifying the Federated Login
 
    .. note::
 
-      Federated users can only access the cloud platform by default. To assign permissions to federated users, configure identity conversion rules for the IdP. For details, see :ref:`Step 2: Configure Identity Conversion Rules <iam_08_0008>`.
+      Federated users can only access the cloud platform by default. To assign permissions to federated users, configure identity conversion rules for the IdP. For details, see :ref:`Configuring Identity Conversion Rules <iam_08_0008>`.
 
 Related Operations
 ------------------
 
--  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata configuration, and identity conversion rules.
+-  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata, and identity conversion rules.
 
    .. note::
 
       To modify the configuration of an IdP, click **Modify** at the bottom of the details page.
 
 -  Modifying an IdP: In the IdP list, click **Modify** in the row containing the IdP, and then change its status or modify the description, metadata, or identity conversion rules.
--  Deleting an IdP: In the IdP list, click **Delete** in the row containing the IdP, and click **Yes** in the displayed dialog box.
+-  Deleting an IdP: In the IdP list, click **Delete** in the row containing the IdP, and click **OK** in the displayed dialog box.
 
 Follow-Up Procedure
 -------------------
 
--  Configure identity conversion rules to map enterprise IdP users to IAM user groups and assign permissions to the users. For details, see :ref:`Step 2: Configure Identity Conversion Rules <iam_08_0008>`.
--  Configure the enterprise management system to allow users to access the cloud platform through SSO. For details, see :ref:`(Optional) Step 3: Configure Login Link in the Enterprise Management System <iam_08_0007>`.
+-  Configure identity conversion rules to map enterprise IdP users to IAM user groups and assign permissions to the users. For details, see :ref:`Configuring Identity Conversion Rules <iam_08_0008>`.
+-  Configure the enterprise management system to allow users to access the cloud platform through SSO. For details, see :ref:`Configuring a Federated Login Entry in the Enterprise IdP <iam_08_0007>`.

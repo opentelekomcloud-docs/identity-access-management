@@ -2,8 +2,8 @@
 
 .. _iam_01_0063:
 
-(Optional) Assigning Permissions to an IAM User (by a Delegated Party)
-======================================================================
+Assigning Agency Permissions to an IAM User
+===========================================
 
 When a trust relationship is established between your account and another account, you become a delegated party. By default, only your account and the members of the **admin** group can manage resources for the delegating party. To authorize IAM users to manage these resources, assign permissions to the users.
 
@@ -34,7 +34,7 @@ Procedure
 
       .. note::
 
-         This step is used to create a policy containing permissions required to manage resources for a specific agency. If you want to authorize an IAM user to manage resources for all agencies, go to :ref:`1.f <iam_01_0063__en-us_topic_0170090700_li027318403345>`.
+         This step is used to create a policy containing permissions required to manage resources for a specific agency. If you want to authorize an IAM user to manage resources for all agencies, go to step :ref:`6 <iam_01_0063__en-us_topic_0170090700_li027318403345>`.
 
       #. On the **Select Policy/Role** page, click **Create Policy** in the upper right corner of the permission list.
 
@@ -51,11 +51,11 @@ Procedure
                     "Statement": [
                             {
                                     "Action": [
-                                            "iam:agencies:assume"
+                                            "iam:tokens:assume"
                                     ],
                                     "Resource": {
                                             "uri": [
-                                                    "/iam/agencies/b36b1258b5dc41a4aa8255508xxx..."
+                                                    "/iam/agencies/agencyTest"
                                             ]
                                     },
                                     "Effect": "Allow"
@@ -65,7 +65,7 @@ Procedure
 
          .. note::
 
-            -  Replace *b36b1258b5dc41a4aa8255508xxx...* with the agency ID obtained from a delegating party. Do not make any other changes.
+            -  Replace **agencyTest** with the agency name obtained from a delegating party. Copy the other content without making any changes.
             -  For more information about permissions, see :ref:`Permissions <iam_01_0015>`.
 
       #. Click **Next**.
@@ -81,15 +81,13 @@ Procedure
 
    h. Click **OK**.
 
-#. .. _iam_01_0063__en-us_topic_0170090700_li695863494610:
-
-   Create an IAM user and add the user to the user group.
+#. Create an IAM user and add the user to the user group.
 
    a. On the **Users** page, click **Create User**.
    b. On the **Create User** page, enter a username.
    c. Select **Management console access** for **Access Type** and then select **Set by user** for **Credential Type**.
    d. Enable login protection and click **Next**.
-   e. Select the user group created in :ref:`1 <iam_01_0063__en-us_topic_0170090700_li135311310144613>` and click **Create**.
+   e. Select the user group created in step :ref:`1 <iam_01_0063__en-us_topic_0170090700_li135311310144613>` and click **Create**.
 
       .. note::
 

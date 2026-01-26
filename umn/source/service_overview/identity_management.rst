@@ -7,8 +7,6 @@ Identity Management
 
 You can manage users in your account and their security credentials. In addition, you can configure identity federation so that users in other systems can access the cloud platform through SSO.
 
-.. _iam_01_0023__section1475194083513:
-
 Domain
 ------
 

@@ -1,16 +1,21 @@
-:original_name: iam_08_0255.html
+:original_name: iam_08_0003.html
 
-.. _iam_08_0255:
+.. _iam_08_0003:
 
-Step 1: Create an IdP Entity
-============================
+Creating an IdP Entity
+======================
 
 To establish a trust relationship between an enterprise IdP and the cloud platform, upload the metadata file of the cloud platform to the enterprise IdP, and then create an IdP entity and upload the metadata file of the enterprise IdP on the IAM console.
+
+Prerequisites
+-------------
+
+The enterprise administrator has read the help documentation of the enterprise IdP or has understood how to use the enterprise IdP. Configurations of different enterprise IdPs differ greatly, so they are not described in this document. For details about how to obtain the enterprise IdP's metadata file and how to upload the metadata file of the cloud platform to the enterprise IdP, see the IdP help documentation.
 
 Establishing a Trust Relationship Between the Enterprise IdP and the Cloud Platform
 -----------------------------------------------------------------------------------
 
-Configure the metadata file of the cloud platform on the enterprise IdP to establish a trust.
+The metadata file of the cloud platform needs to be configured in the enterprise IdP to establish a trust relationship between the two systems.
 
 #. Download the metadata file of the cloud platform.
 
@@ -31,7 +36,7 @@ To create an IdP entity on the IAM console, do as follows:
 #. Log in to the IAM console, choose **Identity Providers** from the navigation pane, and click **Create Identity Provider** in the upper right corner.
 
 
-   .. figure:: /_static/images/en-us_image_0000001656300001.png
+   .. figure:: /_static/images/en-us_image_0000001607217960.png
       :alt: **Figure 1** Creating an IdP entity
 
       **Figure 1** Creating an IdP entity
@@ -39,33 +44,33 @@ To create an IdP entity on the IAM console, do as follows:
 #. Specify the name, protocol, SSO type, status, and description of the IdP entity.
 
 
-   .. figure:: /_static/images/en-us_image_0000001656340545.png
+   .. figure:: /_static/images/en-us_image_0000001656578205.png
       :alt: **Figure 2** Setting IdP parameters
 
       **Figure 2** Setting IdP parameters
 
    .. table:: **Table 1** Basic parameters of an IdP
 
-      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-      +===================================+========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
-      | Name                              | IdP name, which must be unique globally. You are advised to use the domain name.                                                                                                                                                                                                                                                                                                                                                                                                                       |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Protocol                          | IdP protocol. The cloud platform supports SAML and OpenID Connect protocols. For details about OpenID Connect-based identity federation, see :ref:`Virtual User SSO via OpenID Connect <iam_08_0022>`.                                                                                                                                                                                                                                                                                                 |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | SSO Type                          | IdP type. An account can have only one type of IdP. The following describes the IAM user type.                                                                                                                                                                                                                                                                                                                                                                                                         |
-      |                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-      |                                   | IAM user SSO: After a federated user logs in to the cloud platform, the system automatically maps the :ref:`external identity ID <en-us_topic_0046661675__li13713193419317>` to an IAM user so that the federated user has the permissions of the mapped IAM user. An account can have only one IdP of the IAM user type. If you select the IAM user SSO, ensure that you have created an IAM user and set the external identity ID. For details, see :ref:`Creating a User <en-us_topic_0046611303>`. |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Status                            | IdP status. The default value is **Enabled**.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                                                                                 |
+      +===================================+=============================================================================================================================================================================================================+
+      | Name                              | IdP name, which must be unique globally. You are advised to use the domain name.                                                                                                                            |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Protocol                          | IdP protocol. The cloud platform supports SAML and OpenID Connect protocols. For details about OpenID Connect-based identity federation, see :ref:`Virtual User SSO via OpenID Connect <iam_08_0022>`.      |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | SSO Type                          | IdP type. An account can have only one type of IdP. The following describes the virtual user type.                                                                                                          |
+      |                                   |                                                                                                                                                                                                             |
+      |                                   | Virtual user SSO: After a federated user logs in to the cloud platform, the system automatically creates a virtual user for the federated user. An account can have multiple IdPs of the virtual user type. |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Status                            | IdP status. The default value is **Enabled**.                                                                                                                                                               |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.
 
 Configuring the Metadata File of the Enterprise IdP on the Cloud Platform
 -------------------------------------------------------------------------
 
-You can upload the metadata file or manually edit metadata on the IAM console. For a metadata file larger than 500 KB, manually configure the metadata. If the metadata has been changed, upload the latest metadata file or edit the existing metadata to ensure that the federated users can log in to the cloud platform successfully.
+To configure the metadata file of the enterprise IdP in the cloud platform, you can upload the metadata file or manually edit metadata on the IAM console. For a metadata file larger than 500 KB, manually configure the metadata. If the metadata has been changed, upload the latest metadata file or edit the existing metadata to ensure that the federated users can log in to the cloud platform successfully.
 
 .. note::
 
@@ -76,7 +81,7 @@ You can upload the metadata file or manually edit metadata on the IAM console. F
    #. Click **Modify** in the row containing the IdP.
 
 
-      .. figure:: /_static/images/en-us_image_0000001606781176.png
+      .. figure:: /_static/images/en-us_image_0000001656458721.png
          :alt: **Figure 3** Modifying an IdP
 
          **Figure 3** Modifying an IdP
@@ -84,7 +89,7 @@ You can upload the metadata file or manually edit metadata on the IAM console. F
    #. Click **Select File** and select the metadata file of the enterprise IdP.
 
 
-      .. figure:: /_static/images/en-us_image_0000001656580725.png
+      .. figure:: /_static/images/en-us_image_0000001606779168.png
          :alt: **Figure 4** Uploading a metadata file
 
          **Figure 4** Uploading a metadata file
@@ -94,14 +99,14 @@ You can upload the metadata file or manually edit metadata on the IAM console. F
       -  If the uploaded metadata file contains multiple IdPs, select the IdP you want to use from the **Entity ID** drop-down list.
       -  If a message is displayed indicating that no entity ID is specified or the signing certificate has expired, check the metadata file and upload it again, or configure the metadata manually.
 
-   #. Click **OK** to save the settings.
+   #. Click **OK**.
 
 -  **Manually configure metadata.**
 
    #. Click **Manually configure**.
 
 
-      .. figure:: /_static/images/en-us_image_0000001656341101.png
+      .. figure:: /_static/images/en-us_image_0000001606939052.png
          :alt: **Figure 5** Manually configuring metadata
 
          **Figure 5** Manually configuring metadata
@@ -147,9 +152,28 @@ You can upload the metadata file or manually edit metadata on the IAM console. F
       The following example shows the metadata file of an enterprise IdP and the manually configured metadata.
 
 
-      .. figure:: /_static/images/en-us_image_0000001646415725.png
+      .. figure:: /_static/images/en-us_image_0272447834.png
          :alt: **Figure 6** Metadata file of an enterprise IdP
 
          **Figure 6** Metadata file of an enterprise IdP
 
-   #. Click **OK** to save the settings.
+   #. Click **OK**.
+
+Related Operations
+------------------
+
+-  Viewing IdP information: In the IdP list, click **View** in the row containing the IdP, and view its basic information, metadata, and identity conversion rules.
+
+   .. note::
+
+      To modify the configuration of an IdP, click **Modify** at the bottom of the details page.
+
+-  Modifying an IdP: In the IdP list, click **Modify** in the row containing the IdP, and then change its status or modify the description, metadata, or identity conversion rules.
+-  Deleting an IdP: In the IdP list, click **Delete** in the row containing the IdP, and click **OK** in the displayed dialog box.
+
+Follow-Up Procedure
+-------------------
+
+-  Configure the enterprise IdP: Configure enterprise IdP parameters to determine what information can be sent to the cloud platform.
+-  Configure identity conversion rules: In the **Identity Conversion Rules** area, configure identity conversion rules to establish a mapping between enterprise users and IAM user groups. In this way, enterprise users can obtain the corresponding permissions in the cloud platform. For details, see :ref:`Configuring Identity Conversion Rules <iam_08_0004>`.
+-  Verify the federated login: Check whether the enterprise user can log in to the cloud platform through SSO. For details, see :ref:`Verifying the Login <iam_08_0025>`.

@@ -9,7 +9,7 @@ Assigning Permissions to an IAM User
 
 An IAM user obtains permissions from the user groups to which the user belongs. After you attach policies or roles to a group and add a user to the group, the user inherits the permissions defined by the policies or roles.
 
--  If you do not add an IAM user to any group, the user will not have permissions for accessing any cloud services. For details on how to assign permissions to an IAM user, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>` and :ref:`Adding Users to or Removing Users from a User Group <iam_03_0002>`.
+-  If you do not add an IAM user to any group, the user will not have permissions for accessing any cloud services. For details on how to assign permissions to an IAM user, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>` and :ref:`Adding IAM Users to or Removing IAM Users from a User Group <iam_03_0002>`.
 -  If you have been added to the default group **admin**, you have administrator permissions and you can perform all operations on all cloud services.
 -  For the system-defined permissions of all cloud services supported by IAM, see "Permissions".
 -  If you add a user to multiple user groups, the user inherits the permissions that are assigned to all the groups.

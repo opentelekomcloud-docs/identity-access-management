@@ -11,7 +11,9 @@ If the job responsibilities of a user are changed, you can change the permission
 
 As an administrator, you can modify the basic information about an IAM user, change the security settings of the user and the groups to which the user belongs, and view or delete the assigned permissions. To view or modify user information, click **Security Settings** in the row containing the IAM user.
 
-To adjust the item columns displayed on the list, click |image1|. The **Username** and **Operation** columns are displayed by default, and the **Status** column cannot be removed. You can also select **Description**, **Last Login**, **Created**, **Access Type**, **Virtual MFA Device**, **Password Age**, and **Access Key (Status, Age, and AK)**.
+To adjust the item columns displayed on the list, click |image1|. The **Username** and **Operation** columns are displayed by default, and the **Status** column cannot be removed. You can also select **Description**, **Last Login**, **Last Activity**, **Created**, **Access Type**, **Virtual MFA Device**, **Password Age**, and **Access Key (Status, Age, and AK)**.
+
+**Last Activity** displays the first login time of your account or all the IAM users who have logged in within a 5-minute span. If you just use the account to obtain a token, **Last Activity** shows last time there was any activity.
 
 .. _en-us_topic_0046661675__section1916211354916:
 
@@ -66,7 +68,7 @@ As an administrator, you can modify the MFA device, login credential, login prot
 
    -  Remove the virtual MFA device from the user. For more information about MFA authentication and virtual MFA device, see :ref:`MFA Authentication and Virtual MFA Device <iam_10_0002>`.
 
--  **Login Credentials**: You can change the login password of the IAM user. For more information, see :ref:`Changing the Login Password of an IAM User <iam_01_0653>`.
+-  **Login Credentials**: You can change the login password of the IAM user. For more information, see :ref:`Modifying Security Settings for an IAM User <iam_01_0653>`.
 
 -  **Login Protection**: You can change the login verification method of the IAM user. Three verification methods are available: virtual MFA device, SMS, and email.
 
