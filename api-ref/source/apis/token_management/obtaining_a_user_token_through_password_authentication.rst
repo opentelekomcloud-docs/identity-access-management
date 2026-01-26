@@ -27,6 +27,14 @@ URI
 
 POST /v3/auth/tokens
 
+.. table:: **Table 1** Query parameters
+
+   +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Parameter | Mandatory | Type   | Description                                                                                                                                                                                               |
+   +===========+===========+========+===========================================================================================================================================================================================================+
+   | nocatalog | No        | String | If this parameter is set, no catalog information will be displayed in the response. Any non-empty string for this parameter will be interpreted as **true** and no catalog information will be displayed. |
+   +-----------+-----------+--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 Request Parameters
 ------------------
 
@@ -207,7 +215,7 @@ Response Parameters
    X-Subject-Token Yes       String Obtained token.
    =============== ========= ====== ===============
 
-   .. table:: **Table 1** Parameters in the response body
+   .. table:: **Table 2** Parameters in the response body
 
       +------------------------------------------------------------+--------+--------------------+
       | Parameter                                                  | Type   | Description        |
@@ -217,7 +225,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table14259024204717:
 
-   .. table:: **Table 2** token
+   .. table:: **Table 3** token
 
       +--------------------------------------------------------------+-----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Parameter                                                    | Type                  | Description                                                                                                                                                                      |
@@ -308,7 +316,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table18263824174719:
 
-   .. table:: **Table 3** token.catalog
+   .. table:: **Table 4** token.catalog
 
       +----------------------------------------------------------------+------------------+-----------------------------------------------+
       | Parameter                                                      | Type             | Description                                   |
@@ -324,7 +332,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table13263152454713:
 
-   .. table:: **Table 4** token.catalog.endpoints
+   .. table:: **Table 5** token.catalog.endpoints
 
       +-----------+--------+------------------------------------------------------------------------------------------+
       | Parameter | Type   | Description                                                                              |
@@ -342,7 +350,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table52641724184711:
 
-   .. table:: **Table 5** token.domain
+   .. table:: **Table 6** token.domain
 
       ========= ====== ============
       Parameter Type   Description
@@ -353,7 +361,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table4265182419474:
 
-   .. table:: **Table 6** token.project
+   .. table:: **Table 7** token.project
 
       ========= ====== ==================================
       Parameter Type   Description
@@ -363,7 +371,7 @@ Response Parameters
       name      String Project name.
       ========= ====== ==================================
 
-   .. table:: **Table 7** token.project.domain
+   .. table:: **Table 8** token.project.domain
 
       ========= ====== ============
       Parameter Type   Description
@@ -374,7 +382,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table1526632404711:
 
-   .. table:: **Table 8** token.roles
+   .. table:: **Table 9** token.roles
 
       +-----------+--------+-----------------------------------------------------------------------------------------+
       | Parameter | Type   | Description                                                                             |
@@ -386,7 +394,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table926722417478:
 
-   .. table:: **Table 9** token.user
+   .. table:: **Table 10** token.user
 
       +--------------------------------------------------------------+--------+-------------------------------------------------------------------------------------------------+
       | Parameter                                                    | Type   | Description                                                                                     |
@@ -402,7 +410,7 @@ Response Parameters
 
    .. _en-us_topic_0057845583__table202681724204710:
 
-   .. table:: **Table 10** token.user.domain
+   .. table:: **Table 11** token.user.domain
 
       ========= ====== ================================================
       Parameter Type   Description
