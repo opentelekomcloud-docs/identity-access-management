@@ -30,7 +30,7 @@ Request Parameters
 
    .. code-block::
 
-      curl -i -k -H 'Accept:application/json' -H 'Content-Type:application/json;charset=utf8' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/auth/domains
+      curl -i -k -H 'Accept:application/json' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/auth/domains
 
 Response Parameters
 -------------------

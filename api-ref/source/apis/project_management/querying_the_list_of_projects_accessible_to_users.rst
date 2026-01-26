@@ -23,7 +23,7 @@ Request Parameters
    +--------------+-----------+--------+-------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                           |
    +==============+===========+========+=======================================================+
-   | Content-Type | Yes       | String | Fill **application/json;charset=utf8** in this field. |
+   | Accept       | Yes       | String | Fill **application/json** in this field.              |
    +--------------+-----------+--------+-------------------------------------------------------+
    | X-Auth-Token | Yes       | String | Authenticated token of the user.                      |
    +--------------+-----------+--------+-------------------------------------------------------+
@@ -32,7 +32,7 @@ Request Parameters
 
    .. code-block::
 
-      curl -i -k -H 'Accept:application/json' -H 'Content-Type:application/json;charset=utf8' -H "X-Auth-Token:$token" -X GET /v3/auth/projects
+      curl -i -k -H 'Accept:application/json' -H "X-Auth-Token:$token" -X GET /v3/auth/projects
 
 Response Parameters
 -------------------
