@@ -35,11 +35,11 @@ Advantages of Identity Federation
 
 -  Easy identity management
 
-   With an identity provider, the administrator can manage workforce identities outside of the cloud platform and give these external workforce identities permissions to use resources on the cloud platform.
+   With an identity provider, the administrator can manage workforce identities outside of the cloud platform and give these external workforce identities permissions to use resources on cloud platform.
 
 -  Simplified operations
 
-   Workforce users can use their existing accounts in the enterprise to access the cloud platform through SSO.
+   Workforce users can use their existing accounts in the enterprise to access cloud platform through SSO.
 
 
    .. figure:: /_static/images/en-us_image_0000001117174928.png
@@ -54,7 +54,7 @@ IAM supports two SSO types: virtual user SSO and IAM user SSO. For details about
 
 -  Virtual user SSO
 
-   After a federated user logs in to the cloud platform, the system automatically creates a virtual user and grants access permissions to the virtual user based on the configured identity conversion rules.
+   After a federated user logs in to cloud platform, the system automatically creates a virtual user and grants access permissions to the virtual user based on the configured identity conversion rules.
 
 -  IAM user SSO
 
@@ -81,7 +81,7 @@ Precautions
 -  Ensure that your enterprise IdP server and the cloud platform use Greenwich Mean Time (GMT) time in the same time zone.
 -  The identity information (such as email address or mobile number) of federated users is stored in the enterprise IdP. Federated users are mapped to the cloud platform as virtual identities, so their access to the cloud platform has the following constraints:
 
-   -  Federated users do not need to perform a 2-step verification when performing critical operations even though :ref:`critical operation protection <iam_01_0029>` (login protection or operation protection) is enabled.
+   -  Federated users do not need to perform a 2-step verification when performing :ref:`critical operations <iam_01_0029>` even though login protection or operation protection is enabled.
 
    -  Federated users cannot create access keys with unlimited validity, but they can obtain temporary access credentials (access keys and security tokens) using user or agency tokens.
 

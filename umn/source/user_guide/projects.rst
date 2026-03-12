@@ -29,13 +29,6 @@ Procedure
 
    The project list is displayed, and the newly created project is in the **Normal** state.
 
-Follow-Up Procedure
--------------------
-
-Assigning permissions for a specific project
-
-On the user group details page, click the **Permissions** tab, select **Project View**, click **Modify Permissions** in the row containing the target project, and then modify the permissions for this project. For details, see :ref:`Creating a User Group and Assigning Permissions <en-us_topic_0046611269>`.
-
 Related Operations
 ------------------
 

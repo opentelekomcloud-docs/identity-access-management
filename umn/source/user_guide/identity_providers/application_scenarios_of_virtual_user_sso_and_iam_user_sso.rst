@@ -5,7 +5,7 @@
 Application Scenarios of Virtual User SSO and IAM User SSO
 ==========================================================
 
-IAM supports two SSO types: virtual user SSO and IAM user SSO. This section describes the two SSO types and their differences, helping you to choose an appropriate type for your business.
+IAM supports two SSO types: virtual user SSO and IAM user SSO. An account cannot have both types of IdPs. This section describes the two SSO types and their differences, helping you to choose an appropriate type for your business.
 
 Virtual User SSO
 ----------------

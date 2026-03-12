@@ -24,7 +24,11 @@ Only the administrator or an entrusted identity can configure the ACL to control
 IP Address Ranges
 -----------------
 
-You can specify the IP address range from 0.0.0.0 to 255.255.255.255 to control access to the cloud platform. The default setting is 0.0.0.0-255.255.255.255. If you do not specify a range or use the default range, your IAM users can access the cloud platform from IP addresses.
+You can specify the IP address range to control access to the cloud platform. The IPv4 address range is from 0.0.0.0 to 255.255.255.255 and the default setting is 0.0.0.0-255.255.255.255. The IPv6 address range is from 0:0:0:0:0:0:0:0 to FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF and the default setting is 0:0:0:0:0:0:0:0-FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF. If you do not specify a range or use the default range, your IAM users can access the cloud platform from any IP addresses. To disable IPv6 access, set the IP address to all zeros, for example, 0:0:0:0:0:0:0:0-0:0:0:0:0:0:0:0.
+
+.. note::
+
+   The IP address of the current user must be in the allowed IP address range. Otherwise, the setting will fail.
 
 .. _iam_07_0003__en-us_topic_0177717042_en-us_topic_0176803440_section5282253478:
 

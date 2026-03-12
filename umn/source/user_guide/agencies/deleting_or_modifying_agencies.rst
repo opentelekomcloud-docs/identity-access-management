@@ -45,4 +45,4 @@ To delete multiple agencies, select the agencies to be deleted in the list and c
 
 .. note::
 
-   After you delete an agency, all permissions granted to the delegated accounts will be revoked.
+   After you delete an agency, all permissions granted to the delegated account will be cancelled.

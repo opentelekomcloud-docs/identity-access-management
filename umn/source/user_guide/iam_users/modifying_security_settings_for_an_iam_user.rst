@@ -11,7 +11,7 @@ Constraints
 -----------
 
 -  IAM users can change their passwords on the :ref:`Basic Information <iam_01_0703>` tab.
--  By default, only the IAM user's MFA device can be changed on the **Security Settings** tab. The MFA device of the account cannot be changed. To change the MFA device of the account, grant the permissions needed to add and unbind the MFA device.
+-  By default, only the IAM user's MFA device can be changed on the **Security Settings** tab. The MFA device of the account cannot be changed.
 -  The mobile number and email address of the IAM user cannot be the same as those of the account or other IAM users.
 
 Changing the Password of an IAM User

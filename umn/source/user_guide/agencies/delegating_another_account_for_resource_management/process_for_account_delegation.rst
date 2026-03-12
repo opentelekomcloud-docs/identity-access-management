@@ -5,7 +5,7 @@
 Process for Account Delegation
 ==============================
 
-The agency function enables you to delegate another account to implement O&M on your resources based on assigned permissions.
+An agency enables you to delegate another account or service to implement O&M on your resources based on assigned permissions.
 
 .. note::
 

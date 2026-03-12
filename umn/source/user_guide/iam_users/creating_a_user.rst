@@ -39,7 +39,7 @@ Procedure
    +---------------------------+------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Management console access | Console Password | Set by user             | If you are the administrator setting the password for the user, select this option. The user can set a password by clicking on the one-time login URL sent over email.                                                                            |
    |                           |                  |                         |                                                                                                                                                                                                                                                   |
-   |                           |                  |                         | The URL is valid for 7 days. Remind the user to log in and set a password before the URL expires.                                                                                                                                                 |
+   |                           |                  |                         | The URL is valid for 2 days. Remind the user to log in and set a password before the URL expires.                                                                                                                                                 |
    +---------------------------+------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    |                           |                  | Automatically generated | The system will generate a random password after you click **OK**. This option is available only when you create a single user.                                                                                                                   |
    +---------------------------+------------------+-------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -70,7 +70,6 @@ Procedure
 
       -  Users can log in to the cloud platform using the username, mobile number, or email address.
       -  If users forget their password, they can reset it through email address or mobile number verification. If no email address or mobile number has been bound to users, users need to contact the administrator to reset their password.
-      -  After you set the access type for IAM users, you cannot change it later. However, you can control their access by enabling or disabling their accounts.
 
 #. (Optional) Click **Next** and add the user to one or more user groups.
 
@@ -88,6 +87,8 @@ Procedure
    .. note::
 
       If you have specified the access type as **Programmatic access**, download the access key on the **Finish** page.
+
+2
 
 Related Operations
 ------------------

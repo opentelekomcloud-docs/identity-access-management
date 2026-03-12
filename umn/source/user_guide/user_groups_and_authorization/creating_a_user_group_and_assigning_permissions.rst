@@ -28,7 +28,7 @@ Procedure
 
 #. In the row containing the user group, click **Authorize** in the **Operation** column.
 
-#. On the **Authorize User Group** page, select the permissions to be assigned to the user group. You can also click **Go to Old Edition** to use the old version for authorization.
+#. On the **Authorize User Group** page, select the permissions to be assigned to the user group.
 
    If the system-defined policies do not meet your requirements, you can click **Create Policy** in the upper right to create custom policies for fine-grained permissions control. For details, see :ref:`Creating a Custom Policy <iam_01_0016>`.
 
