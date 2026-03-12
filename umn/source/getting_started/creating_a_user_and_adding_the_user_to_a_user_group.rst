@@ -61,12 +61,10 @@ Procedure
 
    .. note::
 
-      -  For security purposes, select only one access type for each user.
+      For security purposes, select only one access type for each user.
 
-         -  Programmatic access: Users can access cloud services using development tools (including APIs, CLI, and SDKs) that support key authentication. This access type is recommended for developers.
-         -  Management console access: Users can log in to the management console using their own usernames and passwords.
-
-      -  You cannot change the access type of users, but you can control their access by enabling or disabling the user accounts.
+      -  Programmatic access: Users can access cloud services using development tools (including APIs, CLI, and SDKs) that support key authentication. This access type is recommended for developers.
+      -  Management console access: Users can log in to the management console using their own usernames and passwords.
 
 #. (Optional) Click **Next** and add the user to one or more user groups.
 

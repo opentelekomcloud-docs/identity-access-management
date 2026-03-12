@@ -10,9 +10,20 @@ You can create custom policies to supplement system-defined policies and impleme
 Creating a Custom Policy in the Visual Editor
 ---------------------------------------------
 
-#. On the IAM console, choose **Policies** in the navigation pane, and click **Create Custom Policy**.
+#. In the navigation pane of the IAM console, choose **Permissions** > **Policies/Roles**.
+
+#. Click **Create Custom Policy**.
+
+
+   .. figure:: /_static/images/en-us_image_0000002498925326.png
+      :alt: **Figure 1** Creating custom policies
+
+      **Figure 1** Creating custom policies
+
 #. Enter a policy name.
+
 #. Select **Visual editor**.
+
 #. Set the policy content.
 
    a. Select **Allow** or **Deny**.
@@ -45,8 +56,11 @@ Creating a Custom Policy in the Visual Editor
       If the policy content is incorrect after modification, check and modify the content, or click **Reset** to cancel the modifications.
 
 #. (Optional) To add another permission block for the policy, click **Add Permissions**. Alternatively, click the plus (+) icon on the right of an existing permission block to clone its permissions.
+
 #. (Optional) Enter a brief description for the policy.
+
 #. Click **OK**.
+
 #. Attach the policy to a user group. Users in the group then inherit the permissions defined in the policy.
 
 Creating a Custom Policy in JSON View

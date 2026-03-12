@@ -86,7 +86,7 @@ To configure the metadata file of the enterprise IdP in the cloud platform, you 
 
          **Figure 3** Modifying an IdP
 
-   #. Click **Select File** and select the metadata file of the enterprise IdP.
+   #. Click **Add** and select the metadata file of the enterprise IdP.
 
 
       .. figure:: /_static/images/en-us_image_0000001606779168.png

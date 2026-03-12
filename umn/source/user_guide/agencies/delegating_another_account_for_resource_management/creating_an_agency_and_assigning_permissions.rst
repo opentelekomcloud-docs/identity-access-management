@@ -5,7 +5,7 @@
 Creating an Agency and Assigning Permissions
 ============================================
 
-By creating an agency, you can share your resources with another account, or delegate an individual or team to manage your resources. You do not need to share your security credentials (the password or access keys) with the delegated party. Instead, the delegated party can log in with its own account credentials and then switches the role to your account and manage your resources.
+By creating an agency, you can share your resources with another account, or delegate an individual or team to manage your resources. You do not need to share your security credentials (the password and access keys) with the delegated party. Instead, the delegated party can log in with its own account credentials and then switches the role to your account and manage your resources.
 
 Prerequisites
 -------------
@@ -52,7 +52,7 @@ Procedure
    .. note::
 
       -  Assigning permissions to an agency is similar to assigning permissions to a user group. The two operations differ only in the number of available permissions. For details about how to assign permissions to a user group, see :ref:`Assigning Permissions to an IAM User <en-us_topic_0079496985>`.
-      -  Agencies cannot be assigned the **Security Administrator** role. For account security purposes, only grant the required permissions to the agency based on the principle of least privilege (PoLP).
+      -  You can assign the **Security Administrator** role to the agency, but we do not recommend you to do so. For account security purposes, only grant the required permissions to the agency based on the principle of least privilege (PoLP).
 
 #. Click **OK**.
 

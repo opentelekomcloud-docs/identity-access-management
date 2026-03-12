@@ -21,36 +21,38 @@ You have installed an MFA application (for example, Google Authenticator) on you
 Procedure
 ---------
 
-#. On the management console, hover the mouse pointer over the username in the upper right corner and choose **My Credentials** from the drop-down list.
+#. Go to the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page.
 
-#. On the **My Credentials** page, click **Bind** next to the **Virtual MFA Device** parameter.
-
-#. Go to the **Bind Virtual MFA Device** page.
+#. Click the **Critical Operations** tab, and click **Bind** in the **Virtual MFA Device** row.
 
 
-   .. figure:: /_static/images/en-us_image_0000001088289742.png
+   .. figure:: /_static/images/en-us_image_0000002525746603.png
       :alt: **Figure 1** Binding a virtual MFA device
 
       **Figure 1** Binding a virtual MFA device
 
-   .. note::
+#. Add a virtual MFA device to your MFA application.
 
-      The secret key is a one-time credential that you can use to obtain an MFA verification code. To ensure account security, do not share the secret key with anyone.
 
-#. Add your account to an MFA application.
+   .. figure:: /_static/images/en-us_image_0000002525618428.png
+      :alt: **Figure 2** Adding a virtual MFA device
+
+      **Figure 2** Adding a virtual MFA device
+
+#. Bind a virtual MFA device to your account by scanning the QR code or entering the secret key.
 
    -  Scanning the QR code
 
-      Open the MFA application on your mobile phone, click the plus sign **+** on the application, and scan the QR code displayed on the **Bind Virtual MFA Device** page. Your account is then automatically added to the application, with the username and secret key displayed.
+      Open the MFA application on your mobile phone, select **Scan QR code**. Click **Show QR code** in step 1 and scan the QR code. Then, the MFA application automatically adds the virtual MFA device.
 
-   -  Manually entering the secret key
+   -  Entering the secret key
 
-      Open the MFA application on your mobile phone, click the plus sign **+** on the application, and manually enter the secret key displayed on the **Bind Virtual MFA Device** page.
+      Open the MFA application on your mobile phone, and enter the secret key.
 
       .. note::
 
-         The manual entry function is time-based. Ensure that automatic time setup has been enabled on your mobile phone.
+         TOTP-based virtual MFA devices can only be manually added. You are advised to enable automatic time setting on your mobile device.
 
-#. View the verification code on the MFA application. The code is automatically updated every 30 seconds.
+#. View the dynamic verification codes on the home page of the MFA application. The code is automatically updated every 30 seconds.
 
-#. On the **Bind Virtual MFA Device** page, enter two consecutive verification codes and click **OK** to bind the virtual MFA device.
+#. On the **Bind Virtual MFA Device** page, enter two consecutive verification codes and click **OK**.

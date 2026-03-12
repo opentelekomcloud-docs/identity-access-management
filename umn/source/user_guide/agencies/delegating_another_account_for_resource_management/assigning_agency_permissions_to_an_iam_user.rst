@@ -12,7 +12,7 @@ You can authorize an IAM user to manage resources for all delegating parties, or
 Prerequisites
 -------------
 
--  A trust relationship has been established between your account and another account.
+-  A trust relationship has been established between another account and your account.
 -  You have obtained the name of the delegating account and the name and ID of the created agency.
 
 Procedure

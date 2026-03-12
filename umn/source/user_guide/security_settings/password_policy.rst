@@ -28,11 +28,11 @@ Changes to the password policy take effect the next time you or your IAM users c
 Password Expiration
 -------------------
 
-Set a validity period for passwords so that users need to change their passwords periodically. The users will be prompted to change their passwords 15 days before password expiration. Expired passwords cannot be used to log in to the cloud platform.
+To require users need to change their passwords periodically, set a validity period for passwords. The users will be prompted to change their passwords 15 days before password expiration. Expired passwords cannot be used to log in to the cloud platform.
 
 This option is disabled by default. It can be enabled by the administrator or an entrusted identity. The validity period range is from 1 day to 180 days.
 
-The changes will take effect immediately for your account and all IAM users under your account.
+Changes to this setting will be immediately applied to both your account and IAM users under your account.
 
 .. note::
 

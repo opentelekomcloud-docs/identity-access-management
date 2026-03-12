@@ -15,7 +15,7 @@ Procedure
 
    -  Viewing user group information
 
-      In the user group list, click |image1| next to the target user group to view its details, including the basic information, permissions, and users.
+      In the user group list, click the target user group to view its details, including the basic information, permissions, and users.
 
    -  Modifying user group information
 
@@ -28,25 +28,45 @@ Procedure
 
    -  Modifying user group permissions
 
-      You can assign new permissions to or cancel the existing permissions of a user group in the policy view or project view.
+      You can view or modify user group permissions on the **Permissions** page of the IAM console.
 
-      -  Changing the authorization scope in the policy view
+      .. note::
 
-         a. Choose **User Groups** in the navigation pane, and click **Manage Permissions** in the row containing the user group you want to modify. On the **Permissions** tab page, select **Policy View**.
-         b. Click **Change Project** on the right of a policy.
-         c. On the **Change Project** page, select or deselect desired projects.
-         d. Click **OK**.
+         -  Modifying the permissions of a user group changes the permissions of all users in the user group.
+         -  Permissions of the default user group **admin** cannot be modified.
 
-      -  Modifying permissions for certain projects in the project view
+      a. Click a user group to go to the details page, and view the group permissions in the **Permissions** tab.
 
-         a. Choose **User Groups** in the navigation pane, and click **Manage Permissions** on the right of a user group. On the **Permissions** tab page, select **Project View**.
-         b. Click **Modify Permissions** on the right of a project.
-         c. Select or deselect desire policies, and click **OK**.
+      b. Click **Delete** in the row that contains the role or policy you want to delete.
+
+
+         .. figure:: /_static/images/en-us_image_0000002530633799.png
+            :alt: **Figure 1** Deleting an assigned permission
+
+            **Figure 1** Deleting an assigned permission
+
+      c. Click **OK**.
+
+      d. On the **Permissions** tab, click **Authorize**.
+
+
+         .. figure:: /_static/images/en-us_image_0000002498759736.png
+            :alt: **Figure 2** Assigning permissions to a user group
+
+            **Figure 2** Assigning permissions to a user group
+
+      e. Select desired permissions and a scope, and click **OK**.
+
+      f. Go back to the **Permissions** tab to view the modified group permissions.
+
+
+         .. figure:: /_static/images/en-us_image_0000002530642105.png
+            :alt: **Figure 3** Permissions assigned
+
+            **Figure 3** Permissions assigned
 
    -  Managing Users
 
       a. In the user group list, click **Manage User** in the row containing the user group you want to modify.
       b. In the **Available Users** area, select users you want to add to the user group.
       c. In the **Selected Users** area, remove users from the user group.
-
-.. |image1| image:: /_static/images/en-us_image_0291358588.png

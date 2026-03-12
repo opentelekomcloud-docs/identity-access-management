@@ -24,8 +24,6 @@ This section describes how to bind a virtual MFA device. If you have installed a
 
 #. Go to the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page.
 #. Click the **Critical Operations** tab, and click **Bind** in the **Virtual MFA Device** row.
-#. On the displayed page, enter a device name. Only letters, digits, hyphens (-), and underscores (_) are allowed.
-#. Select an MFA device. For this example, select **Virtual MFA Device** and click **Next**.
 #. Add a virtual MFA device to your MFA application.
 #. You can bind a virtual MFA device to your account by scanning the QR code or entering the secret key.
 
@@ -53,7 +51,7 @@ For an account, only the account administrator can enable login protection for i
 
 -  **(Administrator) Enabling login protection for an IAM user**
 
-   To enable login protection for an IAM user, go to the **Users** page and choose **Security Settings** in the row that contains the IAM user. In the **Login Protection** area in the displayed **Security Settings** tab, click |image1| next to **Verification Method**, and select a verification method from SMS, email, or virtual MFA device or security key. You can enable or disable API login protection as needed when you select **Virtual MFA device**. The option is disabled by default. API login protection asks you for both a password and a virtual MFA device to obtain an IAM user token. Without API login protection, you can obtain the token with only a password. To obtain an IAM user token, see .
+   To enable login protection for an IAM user, go to the **Users** page and choose **Security Settings** in the row that contains the IAM user. In the **Login Protection** area in the displayed **Security Settings** tab, click |image1| next to **Verification Method**, and select a verification method from SMS, email, or virtual MFA device.
 
 -  **Enabling login protection for your account**
 
@@ -133,7 +131,7 @@ Information Self-Management
 
 -  **Disabling information self-management**
 
-   After you disable information self-management, only administrators can manage their own :ref:`basic information <iam_01_0703>`. If you are an IAM user and want to change your login password, mobile number, or email address, contact the administrator. The administrator can modify the information by referring to :ref:`Viewing and Modifying User Group Information <en-us_topic_0085605493>`.
+   After you disable information self-management, only administrators can manage their own :ref:`basic information <iam_01_0703>`. If you are an IAM user and want to change your login password, mobile number, or email address, contact the administrator. The administrator can modify the information by referring to :ref:`Viewing and Modifying User Information <en-us_topic_0046661675>`.
 
    To disable information self-management, click the **Critical Operations** tab on the :ref:`Security Settings <iam_07_0001__en-us_topic_0179264308_en-us_topic_0179263545_section113256158575>` page, and click **Change** in the **Information Self-Management** row. In the displayed pane, select **Disable** and click **OK**.
 
@@ -279,6 +277,7 @@ The following tables list the critical operations defined by each cloud service.
    |                         |                                                | -  Starting an instance                                       |
    |                         |                                                | -  Restarting an instance                                     |
    |                         |                                                | -  Resetting a password for a database account                |
+   |                         |                                                | -  Downloading a slow query log                               |
    +-------------------------+------------------------------------------------+---------------------------------------------------------------+
    | Database                | RDS for SQL Server                             | -  Resetting the administrator password                       |
    |                         |                                                | -  Deleting a DB instance                                     |
