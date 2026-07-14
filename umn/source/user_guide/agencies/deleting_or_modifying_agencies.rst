@@ -5,6 +5,12 @@
 Deleting or Modifying Agencies
 ==============================
 
+You can modify or delete an agency or a trust agency as needed. Modifying or deleting outdated agencies in a timely manner improves your account security.
+
+.. note::
+
+   Agencies automatically created by IAM Identity Center (whose names start with SysReservedV3) cannot be deleted on the IAM console. To delete such an agency, you need to delete the corresponding permission set on the IAM Identity Center console. For details, see .
+
 Modifying an Agency
 -------------------
 

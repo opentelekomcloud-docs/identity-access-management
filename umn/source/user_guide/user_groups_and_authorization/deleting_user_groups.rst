@@ -5,6 +5,13 @@
 Deleting User Groups
 ====================
 
+You can delete a user group that is no longer needed.
+
+.. warning::
+
+   #. Deleting a user group modifies permissions for all associated users, invalidating their tokens. Affected users must re-obtain their tokens. Before deleting a user group, ensure that no services will be impacted and that the token acquisition logic includes a retry mechanism.
+   #. If the user group has associated users, click the number in the **Users** column to review user information before proceeding.
+
 Procedure
 ---------
 
