@@ -9,6 +9,7 @@ Service Overview
 -  :ref:`IAM Features <en-us_topic_0046611276>`
 -  :ref:`Identity Management <iam_01_0023>`
 -  :ref:`Permissions Management <iam_01_0024>`
+-  :ref:`Supported Cloud Services <iam_01_0041>`
 -  :ref:`Personal Data Protection Mechanism <iam_01_0035>`
 
 .. toctree::
@@ -19,4 +20,5 @@ Service Overview
    iam_features
    identity_management
    permissions_management
+   supported_cloud_services
    personal_data_protection_mechanism

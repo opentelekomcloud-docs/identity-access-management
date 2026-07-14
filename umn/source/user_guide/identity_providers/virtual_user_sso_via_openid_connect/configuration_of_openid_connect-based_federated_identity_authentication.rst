@@ -2,8 +2,8 @@
 
 .. _iam_08_0010:
 
-Overview of Virtual User SSO via OpenID Connect
-===============================================
+Configuration of OpenID Connect-based Federated Identity Authentication
+=======================================================================
 
 This section describes how to configure identity federation and how identity federation works.
 

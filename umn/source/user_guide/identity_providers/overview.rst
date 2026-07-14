@@ -67,13 +67,15 @@ Currently, IAM supports two federated login methods: browser-based SSO (web SSO)
 
 .. table:: **Table 2** Federated logins
 
-   +--------------+-----------------------------+-----------+-------------+---------------+--------------+---------------+
-   | SSO Type     | Supported Protocols         | Web SSO   | API Calling | IdP-initiated | SP-initiated | Multiple IdPs |
-   +==============+=============================+===========+=============+===============+==============+===============+
-   | Virtual user | SAML 2.0 and OpenID Connect | Supported | Supported   | Supported     | Supported    | Supported     |
-   +--------------+-----------------------------+-----------+-------------+---------------+--------------+---------------+
-   | IAM user     | SAML 2.0                    | Supported | Supported   | Supported     | Supported    | Not supported |
-   +--------------+-----------------------------+-----------+-------------+---------------+--------------+---------------+
+   +--------------+---------------------+-----------+-------------+---------------+--------------+---------------+
+   | SSO Type     | Supported Protocols | Web SSO   | API Calling | IdP-initiated | SP-initiated | Multiple IdPs |
+   +==============+=====================+===========+=============+===============+==============+===============+
+   | Virtual user | SAML 2.0            | Supported | Supported   | Supported     | Supported    | Supported     |
+   +--------------+---------------------+-----------+-------------+---------------+--------------+---------------+
+   | Virtual user | OIDC                | Supported | Supported   | Not supported | Supported    | Not supported |
+   +--------------+---------------------+-----------+-------------+---------------+--------------+---------------+
+   | IAM user     | SAML 2.0            | Supported | Supported   | Supported     | Supported    | Supported     |
+   +--------------+---------------------+-----------+-------------+---------------+--------------+---------------+
 
 Precautions
 -----------
