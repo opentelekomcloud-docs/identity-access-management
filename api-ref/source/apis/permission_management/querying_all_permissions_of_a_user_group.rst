@@ -33,6 +33,8 @@ Request Parameters
    +--------------+-----------+--------+----------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                        |
    +==============+===========+========+====================================================+
+   | Accept       | Yes       | String | Fill **application/json** in this field.           |
+   +--------------+-----------+--------+----------------------------------------------------+
    | X-Auth-Token | Yes       | String | Token with **Security Administrator** permissions. |
    +--------------+-----------+--------+----------------------------------------------------+
 
@@ -197,7 +199,7 @@ Request for querying all permissions of a user group
 
 .. code-block:: text
 
-   GET https://sample.domain.com/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/inherited_to_projects
+   curl -i -k -H 'Accept:application/json' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/inherited_to_projects
 
 Example Response
 ----------------

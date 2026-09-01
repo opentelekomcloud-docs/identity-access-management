@@ -33,6 +33,8 @@ Request Parameters
    +--------------+-----------+--------+---------------------------------------------------------------------+
    | Parameter    | Mandatory | Type   | Description                                                         |
    +==============+===========+========+=====================================================================+
+   | Accept       | Yes       | String | Fill application/json;charset=utf8 in this field.                   |
+   +--------------+-----------+--------+---------------------------------------------------------------------+
    | X-Auth-Token | Yes       | String | Authenticated token with the **Security Administrator** permission. |
    +--------------+-----------+--------+---------------------------------------------------------------------+
 
@@ -40,7 +42,7 @@ Request Parameters
 
    .. code-block::
 
-      curl -i -k -H "X-Auth-Token:$token" -H 'Content-Type:application/json;charset=utf8' -X GET https://sample.domain.com/v3/roles/19bb93eec4ca4f08aefdc02da76d8f3c
+      curl -i -k -H 'Accept:application/json' -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3/roles/19bb93eec4ca4f08aefdc02da76d8f3c
 
 Response Parameters
 -------------------

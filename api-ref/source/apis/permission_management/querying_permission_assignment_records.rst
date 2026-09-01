@@ -173,7 +173,7 @@ Example Request
 
 .. code-block:: text
 
-   GET https://sample.domain.com/v3.0/OS-PERMISSION/role-assignments?{domain_id}
+   curl -i -k -H "Accept:application/json" -H "X-Auth-Token:$token" -X GET https://sample.domain.com/v3.0/OS-PERMISSION/role-assignments?domain_id={domain_id}
 
 Example Response
 ----------------
